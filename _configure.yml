@@ -1,0 +1,27 @@
+name: jpablo91.github.io
+output_dir: '.'
+output:
+  html_document:
+    theme: flatly
+    css: style.css
+    lib_dir: site_libs
+    self_contained: no
+navbar:
+  title: Pablo Gomez
+  left:
+  - text: Home
+    href: index.html
+  - text: About
+    href: about.html
+  - text: Research
+    href: projects.html
+  - text: CV
+    href: Pablo_CV.html
+  - text: Get in Touch
+    menu:
+    - icon: fa-github
+      href: https://github.com/jpablo91
+    - icon: fa-linkedin
+      href: https://linkedin.com/
+    - icon: fa-envelope
+      href: mailto:jpablo91@ucdavis.edu
