@@ -21,7 +21,7 @@ navbar:
     menu:
     - icon: fa-github
       href: https://github.com/jpablo91
-    - icon: fa-linkedin
-      href: https://linkedin.com/
-    - icon: fa-envelope
-      href: mailto:jpablo91@ucdavis.edu
+#    - icon: fa-linkedin
+#      href: https://linkedin.com/
+#    - icon: fa-envelope
+#      href: mailto:jpablo91@ucdavis.edu
