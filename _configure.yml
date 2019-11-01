@@ -11,16 +11,16 @@ navbar:
   left:
   - text: Home
     href: index.html
-  - text: About
-    href: about.html
-  - text: Research
-    href: projects.html
-  - text: CV
-    href: Pablo_CV.html
-  - text: Get in Touch
-    menu:
-    - icon: fa-github
-      href: https://github.com/jpablo91
+#  - text: About
+#    href: about.html
+#  - text: Research
+#    href: projects.html
+#  - text: CV
+#    href: Pablo_CV.html
+#  - text: Get in Touch
+#    menu:
+#    - icon: fa-github
+#      href: https://github.com/jpablo91
 #    - icon: fa-linkedin
 #      href: https://linkedin.com/
 #    - icon: fa-envelope
