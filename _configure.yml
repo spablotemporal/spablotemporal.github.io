@@ -10,7 +10,7 @@ navbar:
   title: Pablo Gomez
   left:
   - text: Home
-    href: index.html
+    href: Index.html
 #  - text: About
 #    href: about.html
 #  - text: Research
