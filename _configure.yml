@@ -1,6 +1,6 @@
 name: "mywebpage"  
 author: "YOUR NAME"  
-output_dir: "docs"  
+output_dir: "."  
 output:  
   html_document:  
     self_contained: no  
