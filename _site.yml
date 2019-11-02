@@ -16,6 +16,9 @@ navbar:
     href: Research.html
   - text: CV
     href: CV.html
+  - text: Training
+    href: Training.html
+    
   #- text: Get in Touch
   #  menu:
    # - icon: fa-twitter

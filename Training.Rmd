@@ -1,0 +1,26 @@
+---
+title: "Training"
+---
+
+One of my interests is in building bridges with different institutions that can promove future colaborations. I'm interested in exchanging ideas and sharing my knowledge with others. With contributions of different colaborators I have created two workshops that I have been offering this last year and I'm interested in bringing this knowledge to other places.  
+Other topics for workshops might be available upon request.  
+**Workshops can be offered in English and Spanish**
+
+## Geostatistical tools for Epidemiology
+
+The aim of this workshop is to provide an overview of different tools to manipulate and analyse spatial data. Some of the topics covered include:  
+
+  - Manipulation of databases.
+  - Statistical Inference.
+  - Manipulation of Spatial data.
+  - Geostatistical tools for inference.
+  
+## Spatio-Temporal Analysis of Contact networks
+
+This workshop covers the integration of Network Theory and spatio-Temporal tools for descriptive analysis and some inference of contact networks. Some of the topics covered in this workshop includes:
+
+  - Static and dynamic network analysis.
+  - Visualization of spatio-temporal networks.
+  
+  
+More information is available upon request contacting: jpgo@ucdavi.edu
