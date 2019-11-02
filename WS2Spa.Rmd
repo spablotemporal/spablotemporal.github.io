@@ -1,0 +1,119 @@
+---
+title: "Análisis espacio-temporal de redes de contactos"
+---
+
+Cupo maximo del curso: 25 personas.  
+
+# Introduccion:
+
+Gran parte de las enfermedades infecciosas son transmitidas a traves de contactos directos, por lo que el comercio de animales y los contactos entre animales juega un papel muy importante en la diseminacion de enfermedades.  
+Análisis de redes sociales ha sido reconocido como una valiosa herramienta para describir las interacciones entre agentes en una red de contactos y obtener informacion adicional sobre la estructura y dinamica de una comunidad. Los agentes o nodos en una red pueden ser definidos como las granjas que forman parte de una red de comercio, animales que pueden ser monitoreados para detectar contactos con otros animales silvestres o domesticos, o animales que pueden ser observados dentro de un grupo. Usando estas metodologias podemos identificar agentes que potencialmente tendrian un mayor rol en caso de una epidemia en la transmision de enfermedades.  
+
+En este curso utilizamos datos de movimientos de animales de produccion en una red de comercio en el contexto de transmision de enfermedades para demostrar las aplicaciones de el análisis espacio-temporal de redes. Estas metodologias pueden ser aplicadas a otras areas como monitoreo de fauna silvestre, explorar las relaciones jerarquicas entre animales en un grupo, entre otras. La primera parte del curso se enfoca en las descripcion de redes estaticas y la segunda en el análisis de redes dinamicas que consideran la temporalidad, ambas partes incluyen tambien las relaciones espaciales entre agentes en la red.  
+
+El curso esta dirigido para estudiantes, investigadores y profesionistas interesados en transmision de enfermedades y dinamicas de poblaciones.
+
+________
+
+# Instructór
+
+**Jose Pablo Gomez-Vazquez** (DVM, MPVM), Universidad de California Davis. Pablo es un estudiante de doctorado realizando su trabajo en el Center for Animal Disease Modeling and Surveillance de UC Davis. Sus intereses incluyen la aplicacion de teoria de redes y geoestadistica para informar politicas publicas y toma de decisiones en epidemiologia. Pablo ha trabajado con instituciones gubernamentales en Peru y Ecuador, proporcionando herramientas que pueden ser usadas en toma de decisiones.  
+
+________
+
+
+# Objetivos de este curso:
+
+ - Analizar y describir redes estaticas y dinamicas.
+ - Ventajas y desventajas de redes estaticas y dinamicas y cuando usarlas.
+ - Como incorporar las relaciones espaciales en el análisis de redes.
+ - Presentar y visualizar redes usando metodos espaciales y no espaciales.
+ - Incorporar la transmision y potencial diseminacion de enfermedades en una red.
+ - Como incorporar los resultados de estas metodologias en otros metodos estadisticos.
+ 
+________
+
+
+# Antecedentes del curso:
+
+Este curso fue impartido por primera vez en un evento de la Universidad de California Davis durante la serie de cursos por el grupo de ciencias geoespaciales con un approximado de 15 participnates. El curso tambien fue impartido durante la conferencia internacional GeoVet en Octubre 2019 con 6 participantes de la academia e instituciones gubernamentales.  
+
+________
+
+# Temas:
+
+<!-- ## Formato de un día:   -->
+
+<!-- |Hora       |Tema                                  | -->
+<!-- |-----------|--------------------------------------| -->
+<!-- |8:30-9:30  |Introduccion a análisis de redes y R  | -->
+<!-- |9:30--10:30|Redes estaticas                       | -->
+<!-- |10:30-10:45|Break                                 | -->
+<!-- |10:45-12:00|Visualización de redes                | -->
+<!-- |12:00-13:00|Comida                                | -->
+<!-- |13:00-14:00|Visualización Geoespacial de redes    | -->
+<!-- |14:00-15:00|Análisis de redes dinamicas           | -->
+<!-- |15:00-15:15|Break                                 | -->
+<!-- |15:15-16:30|Visualización de redes dinámicas      | -->
+<!-- |16:30-17:00|Extensiones de aplicaciónes           | -->
+  
+  
+
+
+<!-- **Introducción.** Objetivos del curso, conceptos basicos, el tipo de datos y herramientas que usaremos.   -->
+
+<!-- **Redes Estaticas.** Introducción a teoría de redes, terminología, medidas de centralidad y estadisticas de la red, detección de comunidades y ejemplos.   -->
+
+<!-- **Visualización de redes** Usaremos R para importar y analyzar los datos proporcionados. Dentro del análisis obtendremos estadisticas de la ed, medidas de centralidad y haremos deteccion de comunidades que posteriormente usaremos para crear figuras informativas con la informacion de la red.   -->
+
+<!-- **Visualizacion geoespacial de redes.**  Usaremos sistemas de informacion geografica para representar espacialmente la red usando herramientas de libre acceso como R, OpenRoute service y Google Earth.   -->
+
+<!-- **Analisis de redes dinamicas.** Introduciremos a como analysar redes agregando el componente temporal y estadisticas de redes dinamicas.   -->
+
+<!-- **Visualizacion de Redes Dinamicas.** Metodos para una visualizacion effectiva de redes dinamicas agregando el componente espacial.   -->
+
+<!-- **Discusión final.** Cerraremos con una discusion sobre cuando usar redes estaticas vs dinamicas y futuras aplicaciones.   -->
+
+
+
+|Hora       |Tema                                  |Formato     |
+|-----------|--------------------------------------|------------|
+|**Día 1**  |                                      |            |
+|9:30-10:00 |Introduccion a análisis de redes y R  |Clase       |
+|10:00-10:45|Redes estaticas                       |Clase       |
+|10:45-12:00|Redes estaticas en R                  |Laboratorio |
+|12:00-13:00|Lunch                                 |            |
+|13:00-14:00|Visualizacion geoespacial de redes    |Laboratorio |
+|14:00-14:30|Discusion                             |Discusion   |
+|**Día 2**  |                                      |            |
+|9:30-10:15 |Redes Dinamicas                       |Clase       |
+|9:30-10:15 |Redes dinamicas en R                  |Laboratorio |
+|10:15-11:00|Visualizacion de redes dinamicas      |Clase       |
+|11:00-12:00|Visualizacion de redes dinamicas      |Laboratorio |
+|12:00-13:00|Lunch                                 |            |
+|13:00-14:00|Modelos basados en redes              |Clase       |
+|14:00-14:30|Discusion                             |Discusion   |
+
+
+<!-- **Introduccion a análisis de redes y R** Motivacion de por que estmos interesadon en analisis de redes y ventajas de usar R para analizar los datos. Hablaremos de como definir una red e introduciremos las metodologias que usaremos en el curso.   -->
+
+<!-- **Redes estaticas** Introduccion a la teoria de redes, metodos de muestreo, terminologia, estadisticas globales y locales de la red, deteccion de comunidades y ejemplos de aplicaciones.   -->
+
+<!-- **Visualizacion de redes** Usaremos R para importar y analyzar los datos proporcionados. Dentro del análisis obtendremos estadisticas de la red, medidas de centralidad y haremos deteccion de comunidades que posteriormente usaremos para crear visualizaciones con la informacion de la red.   -->
+
+<!-- **Visualizacion geoespacial de redes.**  Usaremos sistemas de informacion geografica para representar espacialmente la red usando herramientas de libre acceso como R, OpenRoute service y Google Earth.   -->
+
+________
+
+
+# Requisitos para participantes:
+  - Laptop
+  
+  Habilidades deseadas de los participantes (Se dara una breve introduccion a R y a los paquetes que utilizaremos): 
+  
+  - Experiencia basica con el lenguaje de programacion R y R studio.
+  - Conocimiento basico de manipulacion de datos espaciales.
+  
+# Herramientas que usaremos:
+  - R y R studio.
+  - Google earth. 

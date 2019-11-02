@@ -1,0 +1,73 @@
+---
+  title: "Spatio-Temporal analysis of Movement Networks"
+---
+  
+# Instructor:  
+
+**Jose Pablo Gomez-Vazquez** (DVM, MPVM), University of California Davis. Pablo is a PhD student working at the Center for Animal Disease Modeling and Surveillance at UC Davis. He is interested in the application of Network Theory and Geostatistics for inform policy and decision making in epidemiology. Jose Pablo has worked with governamental institutions of Latin American countries, such as Peru and Ecuador, to provide tools that can be used for decision making.  
+
+
+_________
+
+
+# Learning outcomes.  
+
+-	Analyze and describe static and dynamic networks.
+-	Advantages and disadvantages of types of static and dynamic networks, and when to use them.
+-	Incorporate the output for this analysis to other statistical methods.
+-	Present and visualize networks using graphs, spatial, and spatial explicit methods.
+-	Incorporate the disease status to analyze networks. How to apply network analysis, visualization in terms of disease prevention. 
+
+
+_________
+
+# Content and schedule.  
+
+In this workshop we will use open access tools to analyze spatial explicit network data. We will discuss some of the challenges, advantages and limitations of both static and dynamic networks, how to incorporate the spatial component in the analysis and the use of open access tools to obtain relevant information that can be used for the analysis. First we will focus on analyzing spatial explicit static networks, obtaining centrality measures and visualization of the network.  For the second part we will analyze the same data but adding the temporal component to obtain relevant information and visually represent the events and outcomes from the analysis.   
+
+<!-- |Time       |Topic                            |Presenter                |Format | -->
+<!-- |-----------|---------------------------------|-------------------------|-------| -->
+<!-- |8:30-9:30  |Introduction to Network Analysis |Jerome Baron/ Pablo Gomez|Lecture| -->
+<!-- |9:3--10:30 |Static network analysis          |Jerome Baron             |Lecture| -->
+<!-- |10:30-11:00|Coffee Break                     |---                      |       | -->
+<!-- |11:00-12:00|Visualization of networks        |Jerome Baron/ Pablo Gomez|Lab    | -->
+<!-- |12:00-13:00|Lunch                            |---                      |       | -->
+<!-- |13:00-14:00|Advanced visualization           |Jerome Baron             |Lab    | -->
+<!-- |14:00-15:00|Dynamic Network Analysis         |Pablo Gomez              |Lecture| -->
+<!-- |15:00-15:30|Coffee Break                     |---                      |       | -->
+<!-- |15:30-16:30|Visualization of dynamic networks|Jerome Baron/ Pablo Gomez|Lab    | -->
+<!-- |16:30-17:00|Further applications             |Jerome Baron/ Pablo Gomez|Lecture| -->
+
+**Introduction to network analysis.** Will cover the introduction to network theory and centrality measures, we will introduce the terminology and tools we will be using for the workshop.  
+
+**Static network analysis.** We will talk about the centrality measures used to obtain information from networks. Then we will discuss about advantages and limitations on using static networks to analyze movement data.  
+
+**Visualization of networks.** We will use R to create networks and visualize them using, introduce to the R packages used for network analysis.  
+
+**Advanced visualization.** We will use more advanced visualization tools to obtain maps and figures of the networks using centrality measures and spatial characteristics.  
+
+**Introduction to dynamic network analysis.**  Will introduce to dynamic network analysis and talk about some of the advantages and disadvantages over static network analysis, we will introduce some of the terminology and discuss the applications.  
+
+**Visualization of dynamic network analysis.** We will use a combination of tools to create animations and relevant plots to visualize dynamic networks.  
+
+**Further applications.** We will briefly talk about more advanced methods, how to incorporate the output from the network analysis with other statistical methods and the challenges and limitations.   
+
+
+_________
+
+
+# Background and skills workshop attendees should have.  
+The workshop is aimed for students, researchers or professionals working with animal movement data, but the methodologies can be applied to other areas such as contact between indivudials, wildlife monitoring, etc. The first part of the workshop will focus on static network analysis and the second in dynamic network analysis. Both parts will incorporate the spatial component in the analysis and visualization.  
+
+
+
+Requirements:
+  
+  - Basic experience with R and R studio required.
+  - Knowledge of manipulation of spatial data is suggested but not required.  
+
+Tools we will use:  
+  
+  - R and R studio.
+  - Google earth.  
+

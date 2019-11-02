@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Análisis espacio-temporal de redes de contactos</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Jose Pablo Gomez-Vazquez</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="Research.html">Research</a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+<li>
+  <a href="Training.html">Training</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Contact
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://github.com/jpablo91">
+        <span class="fa fa-github"></span>
+         
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/pablo-gomez-v-b19553129/">
+        <span class="fa fa-linkedin"></span>
+         
+      </a>
+    </li>
+    <li>
+      <a href="mailto:jpgo@ucdavis.edu">
+        <span class="fa fa-envelope"></span>
+         
+      </a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Análisis espacio-temporal de redes de contactos</h1>
+
+</div>
+
+
+<p>Cupo maximo del curso: 25 personas.</p>
+<div id="introduccion" class="section level1">
+<h1>Introduccion:</h1>
+<p>Gran parte de las enfermedades infecciosas son transmitidas a traves de contactos directos, por lo que el comercio de animales y los contactos entre animales juega un papel muy importante en la diseminacion de enfermedades.<br />
+Análisis de redes sociales ha sido reconocido como una valiosa herramienta para describir las interacciones entre agentes en una red de contactos y obtener informacion adicional sobre la estructura y dinamica de una comunidad. Los agentes o nodos en una red pueden ser definidos como las granjas que forman parte de una red de comercio, animales que pueden ser monitoreados para detectar contactos con otros animales silvestres o domesticos, o animales que pueden ser observados dentro de un grupo. Usando estas metodologias podemos identificar agentes que potencialmente tendrian un mayor rol en caso de una epidemia en la transmision de enfermedades.</p>
+<p>En este curso utilizamos datos de movimientos de animales de produccion en una red de comercio en el contexto de transmision de enfermedades para demostrar las aplicaciones de el análisis espacio-temporal de redes. Estas metodologias pueden ser aplicadas a otras areas como monitoreo de fauna silvestre, explorar las relaciones jerarquicas entre animales en un grupo, entre otras. La primera parte del curso se enfoca en las descripcion de redes estaticas y la segunda en el análisis de redes dinamicas que consideran la temporalidad, ambas partes incluyen tambien las relaciones espaciales entre agentes en la red.</p>
+<p>El curso esta dirigido para estudiantes, investigadores y profesionistas interesados en transmision de enfermedades y dinamicas de poblaciones.</p>
+<hr />
+</div>
+<div id="instructór" class="section level1">
+<h1>Instructór</h1>
+<p><strong>Jose Pablo Gomez-Vazquez</strong> (DVM, MPVM), Universidad de California Davis. Pablo es un estudiante de doctorado realizando su trabajo en el Center for Animal Disease Modeling and Surveillance de UC Davis. Sus intereses incluyen la aplicacion de teoria de redes y geoestadistica para informar politicas publicas y toma de decisiones en epidemiologia. Pablo ha trabajado con instituciones gubernamentales en Peru y Ecuador, proporcionando herramientas que pueden ser usadas en toma de decisiones.</p>
+<hr />
+</div>
+<div id="objetivos-de-este-curso" class="section level1">
+<h1>Objetivos de este curso:</h1>
+<ul>
+<li>Analizar y describir redes estaticas y dinamicas.</li>
+<li>Ventajas y desventajas de redes estaticas y dinamicas y cuando usarlas.</li>
+<li>Como incorporar las relaciones espaciales en el análisis de redes.</li>
+<li>Presentar y visualizar redes usando metodos espaciales y no espaciales.</li>
+<li>Incorporar la transmision y potencial diseminacion de enfermedades en una red.</li>
+<li>Como incorporar los resultados de estas metodologias en otros metodos estadisticos.</li>
+</ul>
+<hr />
+</div>
+<div id="antecedentes-del-curso" class="section level1">
+<h1>Antecedentes del curso:</h1>
+<p>Este curso fue impartido por primera vez en un evento de la Universidad de California Davis durante la serie de cursos por el grupo de ciencias geoespaciales con un approximado de 15 participnates. El curso tambien fue impartido durante la conferencia internacional GeoVet en Octubre 2019 con 6 participantes de la academia e instituciones gubernamentales.</p>
+<hr />
+</div>
+<div id="temas" class="section level1">
+<h1>Temas:</h1>
+<!-- ## Formato de un día:   -->
+<!-- |Hora       |Tema                                  | -->
+<!-- |-----------|--------------------------------------| -->
+<!-- |8:30-9:30  |Introduccion a análisis de redes y R  | -->
+<!-- |9:30--10:30|Redes estaticas                       | -->
+<!-- |10:30-10:45|Break                                 | -->
+<!-- |10:45-12:00|Visualización de redes                | -->
+<!-- |12:00-13:00|Comida                                | -->
+<!-- |13:00-14:00|Visualización Geoespacial de redes    | -->
+<!-- |14:00-15:00|Análisis de redes dinamicas           | -->
+<!-- |15:00-15:15|Break                                 | -->
+<!-- |15:15-16:30|Visualización de redes dinámicas      | -->
+<!-- |16:30-17:00|Extensiones de aplicaciónes           | -->
+<!-- **Introducción.** Objetivos del curso, conceptos basicos, el tipo de datos y herramientas que usaremos.   -->
+<!-- **Redes Estaticas.** Introducción a teoría de redes, terminología, medidas de centralidad y estadisticas de la red, detección de comunidades y ejemplos.   -->
+<!-- **Visualización de redes** Usaremos R para importar y analyzar los datos proporcionados. Dentro del análisis obtendremos estadisticas de la ed, medidas de centralidad y haremos deteccion de comunidades que posteriormente usaremos para crear figuras informativas con la informacion de la red.   -->
+<!-- **Visualizacion geoespacial de redes.**  Usaremos sistemas de informacion geografica para representar espacialmente la red usando herramientas de libre acceso como R, OpenRoute service y Google Earth.   -->
+<!-- **Analisis de redes dinamicas.** Introduciremos a como analysar redes agregando el componente temporal y estadisticas de redes dinamicas.   -->
+<!-- **Visualizacion de Redes Dinamicas.** Metodos para una visualizacion effectiva de redes dinamicas agregando el componente espacial.   -->
+<!-- **Discusión final.** Cerraremos con una discusion sobre cuando usar redes estaticas vs dinamicas y futuras aplicaciones.   -->
+<table>
+<thead>
+<tr class="header">
+<th>Hora</th>
+<th>Tema</th>
+<th>Formato</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Día 1</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>9:30-10:00</td>
+<td>Introduccion a análisis de redes y R</td>
+<td>Clase</td>
+</tr>
+<tr class="odd">
+<td>10:00-10:45</td>
+<td>Redes estaticas</td>
+<td>Clase</td>
+</tr>
+<tr class="even">
+<td>10:45-12:00</td>
+<td>Redes estaticas en R</td>
+<td>Laboratorio</td>
+</tr>
+<tr class="odd">
+<td>12:00-13:00</td>
+<td>Lunch</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>13:00-14:00</td>
+<td>Visualizacion geoespacial de redes</td>
+<td>Laboratorio</td>
+</tr>
+<tr class="odd">
+<td>14:00-14:30</td>
+<td>Discusion</td>
+<td>Discusion</td>
+</tr>
+<tr class="even">
+<td><strong>Día 2</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9:30-10:15</td>
+<td>Redes Dinamicas</td>
+<td>Clase</td>
+</tr>
+<tr class="even">
+<td>9:30-10:15</td>
+<td>Redes dinamicas en R</td>
+<td>Laboratorio</td>
+</tr>
+<tr class="odd">
+<td>10:15-11:00</td>
+<td>Visualizacion de redes dinamicas</td>
+<td>Clase</td>
+</tr>
+<tr class="even">
+<td>11:00-12:00</td>
+<td>Visualizacion de redes dinamicas</td>
+<td>Laboratorio</td>
+</tr>
+<tr class="odd">
+<td>12:00-13:00</td>
+<td>Lunch</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>13:00-14:00</td>
+<td>Modelos basados en redes</td>
+<td>Clase</td>
+</tr>
+<tr class="odd">
+<td>14:00-14:30</td>
+<td>Discusion</td>
+<td>Discusion</td>
+</tr>
+</tbody>
+</table>
+<!-- **Introduccion a análisis de redes y R** Motivacion de por que estmos interesadon en analisis de redes y ventajas de usar R para analizar los datos. Hablaremos de como definir una red e introduciremos las metodologias que usaremos en el curso.   -->
+<!-- **Redes estaticas** Introduccion a la teoria de redes, metodos de muestreo, terminologia, estadisticas globales y locales de la red, deteccion de comunidades y ejemplos de aplicaciones.   -->
+<!-- **Visualizacion de redes** Usaremos R para importar y analyzar los datos proporcionados. Dentro del análisis obtendremos estadisticas de la red, medidas de centralidad y haremos deteccion de comunidades que posteriormente usaremos para crear visualizaciones con la informacion de la red.   -->
+<!-- **Visualizacion geoespacial de redes.**  Usaremos sistemas de informacion geografica para representar espacialmente la red usando herramientas de libre acceso como R, OpenRoute service y Google Earth.   -->
+<hr />
+</div>
+<div id="requisitos-para-participantes" class="section level1">
+<h1>Requisitos para participantes:</h1>
+<ul>
+<li>Laptop</li>
+</ul>
+<p>Habilidades deseadas de los participantes (Se dara una breve introduccion a R y a los paquetes que utilizaremos):</p>
+<ul>
+<li>Experiencia basica con el lenguaje de programacion R y R studio.</li>
+<li>Conocimiento basico de manipulacion de datos espaciales.</li>
+</ul>
+</div>
+<div id="herramientas-que-usaremos" class="section level1">
+<h1>Herramientas que usaremos:</h1>
+<ul>
+<li>R y R studio.</li>
+<li>Google earth.</li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

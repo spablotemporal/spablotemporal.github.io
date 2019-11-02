@@ -30,5 +30,9 @@ This workshop covers the integration of Network Theory and spatio-Temporal tools
   - Static and dynamic network analysis.
   - Visualization of spatio-temporal networks.
   
+More information [English](WS2.html) | [Spanish](WS2Spa.html)
+
+________________________
+
   
 More information is available upon request contacting: jpgo@ucdavi.edu
