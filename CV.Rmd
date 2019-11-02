@@ -2,14 +2,45 @@
 title: "Jose Pablo Gomez-Vazquez"
 ---
 
-# Jose Pablo Gomez-Vazquez
-
 ## Education:
+
+**PhD in Epidemiology** (2017-Current)  
+*University of California Davis, California, United States*  
+  
+
+**Master in Preventive Veterinary Medicine** (2016-2017)  
+*University of California Davis, California, United States*  
+  
+
+**Veterinary Medicine** (2010-2015)  
+*UANL, Escobedo N.L., Mexico*  
+  
 
 ## Profesional Experience
 
-## Publications
+
+
+## Publications:
+
+  - Garcia-Mazcorro JF, Castillo-Carranza SA, Guard B, **Gomez-Vazquez JP**, Dowd SE, Brigthsmith DJ. 2016. Comprehensive molecular characterization of bacterial communities in feces of pet birds using 16S marker sequencing. Microbial Ecology Epub ahead of print Aug 27 2016 DOI 10.1007/s00248-016-0840-7.
+  - **Gómez-Vázquez JP**, Quevedo-Valle M, Portilla-Jarufe K, Flores U, Martinez-Lopez B. 2018. Evaluation of the impact of live pig trade network, vaccination coverage and socio-economic factors in the classical swine fever eradication program in Peru. Preventive Veterinary Medicine, (Accepted, to be Published)
+
 
 ## Participation at conferences
 
+### Oral Presentations:
+
+  - Spatio-Temporal analysis of the trade network of the cattle industry in California, October 2019, GeoVet 2019, Davis, California, United States
+  - Evaluacion espacio-temporal de factores de riesgo para la ocurrencia de peste porcina clásica en Perú (Spatio-Temporal analysis for the CSF occurrence in Peru), October 2017, “III SIEVMP (Iberoamerican society of veterinary epidemiology and preventive medicine) symposium”, Valdivia, Chile.
+
+
+### Poster presentations:
+
+  - Identification of areas at risk for low immunity herds against Foot-and-Mouth disease virus in Ecuador using maximum entropy models, November 2018, “International Symposium of Veterinary Epidemiology and Economics 15”, Chiang Mai, Thailand
+    - Live pig trade network modeling and prediction using Network analysis and exponential random graph models in Peru, June 2018, 25th International Pig Veterinary Society Congress”, Chongging Yuelai, China
+  - Herramientas bioinformáticas para el estudio de la microbiota intestinal” (Bioinformatics tools for gastrointestinal microbiota analysis), October 2015, “XXVIII Congreso Nacional de Investigación en Medicina UANL” (National symposium of Medical research UANL), Monterrey N.L., Mexico
+  - Perfil metabólico de comunidades microbianas en heces de aves en cautiverio” (Metabolic profiles of pet birds microbiota), October 2015, “4th KALAANKAB Symposium”, Villahermosa, Tabasco, Mexico
+
 ## Training
+
+
