@@ -3,6 +3,20 @@ title: "Research"
 output: html_notebook
 ---
 
+
+
+## Research Interest
+
+I find exciting the applications of spatio-temporal statistics and network theory to study the dynamic of diseases in populations and the impact of anthropogenic activities in human, animal and environmental health.  
+
+
+
 ## Current projects
 
+### Foot and mouth disease modeling in Ecuador.  
+Foot and mouth disease(FMD) is a viral disease that affects cloven hooved animals such as cows, pigs, sheep, among other domestic and wildlife ruminants. The importance of the disease is in the economic impact for affected countries. There has been great advances towards the eradication of the disease in South America in the last couple of years. Ecuador is in the last phase of eradication and the veterinary services is working hard on the eradication program. In this project in colaboration with AGROCALIDAD and PANAFTOSA, we apply tools from network theory and geostatistics to to develop tools that inform decision making.
+
 ## Previous projects
+
+### Classical Swine Fever in Peru.
+Classical Swine Fever is a viral disease that affects the swine industry. In Peru, the disease is endemic and there is a current vaccination program. We applied methodologies from network theory and regression analysis to investigate the asociation of the incidence of the disaese with socio economic factors and the networ structure, and evaluate the vaccination program.

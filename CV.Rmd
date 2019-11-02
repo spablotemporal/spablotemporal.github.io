@@ -37,10 +37,15 @@ title: "Jose Pablo Gomez-Vazquez"
 ### Poster presentations:
 
   - Identification of areas at risk for low immunity herds against Foot-and-Mouth disease virus in Ecuador using maximum entropy models, November 2018, “International Symposium of Veterinary Epidemiology and Economics 15”, Chiang Mai, Thailand
-    - Live pig trade network modeling and prediction using Network analysis and exponential random graph models in Peru, June 2018, 25th International Pig Veterinary Society Congress”, Chongging Yuelai, China
+  - Live pig trade network modeling and prediction using Network analysis and exponential random graph models in Peru, June 2018, 25th International Pig Veterinary Society Congress”, Chongging Yuelai, China
   - Herramientas bioinformáticas para el estudio de la microbiota intestinal” (Bioinformatics tools for gastrointestinal microbiota analysis), October 2015, “XXVIII Congreso Nacional de Investigación en Medicina UANL” (National symposium of Medical research UANL), Monterrey N.L., Mexico
   - Perfil metabólico de comunidades microbianas en heces de aves en cautiverio” (Metabolic profiles of pet birds microbiota), October 2015, “4th KALAANKAB Symposium”, Villahermosa, Tabasco, Mexico
 
 ## Training
+
+  - Análisis espacio-temporal de redes de contactos, UNAM, Mexico City, Mexico, November 19-20 2019
+  - Spatio-Temporal analysis of Movement Networks, Geovet 2019, Davis California, October 7 2019
+  - Herramientas geoestadisticas en epidemiologia, Agrocalidad, Quito, Pichincha, Ecuador, August 12-15 2019
+  - Analyzing Animal Health Spatial-explicit Networks Using R, UC Davis, Davis, California, February 6 2019
 
 
