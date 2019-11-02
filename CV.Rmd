@@ -1,7 +1,7 @@
 ---
 title: "Jose Pablo Gomez-Vazquez"
 ---
-
+________________________
 ## Education:
 
 **PhD in Epidemiology** (2017-Current)  
@@ -14,15 +14,17 @@ title: "Jose Pablo Gomez-Vazquez"
 
 **Veterinary Medicine** (2010-2015)  
 *UANL, Escobedo N.L., Mexico*  
-  
+
+________________________
 
 ## Profesional Experience
 
-#### University of California Davis. Davis, California, United States - Graduate Student Researcher
+#### Department of Population Health and Reproduction, University of California Davis. Davis, California, United States - Graduate Student Researcher
 *August 2019 - Current*
 
 #### University of California Davis. Davis, California, United States - Teaching assistant on Spatial epidemiology (EPI 223)
 *March 2019 - June 2019*
+  - 
 
 #### University of California Davis. Davis, California, United States - Teaching assistant on Mathematical Statistics (EPI 203)
 *January 2019 - March 2019*
@@ -33,12 +35,14 @@ title: "Jose Pablo Gomez-Vazquez"
 #### One Health Institute, University of California Davis. Davis, California, United States - Graduate Student Researcher
 *January 2018 - March 2018*
 
+________________________
+
 ## Publications:
 
   - Garcia-Mazcorro JF, Castillo-Carranza SA, Guard B, **Gomez-Vazquez JP**, Dowd SE, Brigthsmith DJ. 2016. Comprehensive molecular characterization of bacterial communities in feces of pet birds using 16S marker sequencing. Microbial Ecology Epub ahead of print Aug 27 2016 DOI 10.1007/s00248-016-0840-7.
-  - **Gómez-Vázquez JP**, Quevedo-Valle M, Portilla-Jarufe K, Flores U, Martinez-Lopez B. 2018. Evaluation of the impact of live pig trade network, vaccination coverage and socio-economic factors in the classical swine fever eradication program in Peru. Preventive Veterinary Medicine, (Accepted, to be Published)
+  - **Gómez-Vázquez, J. P.**, Quevedo-Valle, M., Flores, U., Portilla Jarufe, K., & Martínez-López, B. (2019). Evaluation of the impact of live pig trade network, vaccination coverage and socio-economic factors in the classical swine fever eradication program in Peru. Preventive Veterinary Medicine, 162(May 2018), 29–37. https://doi.org/10.1016/j.prevetmed.2018.10.019
 
-
+________________________
 ## Participation at conferences
 
 ### Oral Presentations:
@@ -54,11 +58,16 @@ title: "Jose Pablo Gomez-Vazquez"
   - Herramientas bioinformáticas para el estudio de la microbiota intestinal” (Bioinformatics tools for gastrointestinal microbiota analysis), October 2015, *“XXVIII Congreso Nacional de Investigación en Medicina UANL” (National symposium of Medical research UANL), Monterrey N.L., Mexico*
   - Perfil metabólico de comunidades microbianas en heces de aves en cautiverio” (Metabolic profiles of pet birds microbiota), October 2015, *“4th KALAANKAB Symposium”, Villahermosa, Tabasco, Mexico*
 
+________________________
+
+
 ## Training
 
   - Análisis espacio-temporal de redes de contactos, UNAM, Mexico City, Mexico, November 19-20, 2019
   - Spatio-Temporal analysis of Movement Networks, Geovet 2019, Davis California, October 7, 2019
   - Herramientas geoestadisticas en epidemiologia, Agrocalidad, Quito, Pichincha, Ecuador, August 12-15, 2019
   - Analyzing Animal Health Spatial-explicit Networks Using R, UC Davis, Davis, California, February 6, 2019
+
+
 
 
