@@ -5,5 +5,25 @@ output:
   html_document:  
     self_contained: no  
     theme: sandstone  
-navbar:  
-  title: "Jose Pablo Gomez-Vazquez" 
+navbar:
+  title: Jose Pablo Gomez-Vazquez
+  left:
+  - text: Home
+    href: index.html
+  #- text: About
+   # href: about.html
+  - text: Research
+    href: Research.html
+  - text: CV
+    href: CV.html
+  #- text: Get in Touch
+  #  menu:
+   # - icon: fa-twitter
+  #    href: https://twitter.com/MAPdonnelly
+  #  - icon: fa-github
+   #   href: https://github.com/mapdonnelly
+    #- icon: fa-linkedin
+    #  href: https://linkedin.com/in/mapdonnelly
+  #  - icon: fa-envelope
+  #    href: mailto:madonnelly@ucdavis.edu
+#© 2019 GitHub, Inc.
