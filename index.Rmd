@@ -1,5 +1,5 @@
 ---
-title: "Pablo Gomez V"
+title: ""
 ---
 
 
@@ -7,10 +7,10 @@ title: "Pablo Gomez V"
   <div class="main-photo"><img src="Images/LogoNB.png"></div>
   <div id="main-text">
   <div class="inner-text">
-  <h4>PhD Epidemiology</h4>
-  <h5>Center for Animal Disease Modeling and Surveillance</h5>
-  <h5>Veterinary Medicine and Epidemiology</h5>
-  <h5>UC Davis</h5>
+  <!-- <h4>PhD Epidemiology</h4> -->
+  <!-- <h5>Center for Animal Disease Modeling and Surveillance</h5> -->
+  <!-- <h5>Veterinary Medicine and Epidemiology</h5> -->
+  <!-- <h5>UC Davis</h5> -->
   </div>
   </div>
 </div>
