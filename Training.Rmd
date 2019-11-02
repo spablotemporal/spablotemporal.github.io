@@ -17,6 +17,8 @@ The aim of this workshop is to provide an overview of different tools to manipul
   - Manipulation of Spatial data.
   - Geostatistical tools for inference.
 
+More information [English](WS1.html) [Spanish](WS1Spa.html)
+
 ________________________
 
 ## Spatio-Temporal Analysis of Contact networks

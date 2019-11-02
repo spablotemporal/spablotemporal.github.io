@@ -1,0 +1,46 @@
+---
+title: "Herramientas Geostadisticas para Mapeo de enfermedades e Inferencia"
+---
+
+**Objetivo:** The goal of this workshop is to provide an overview of the available tools we can use in Gestatistics for Disease mapping and Inference.  
+
+# Introduction:
+
+According to the Tobler's first law of geography, *"everything is related to everything else, but near things are more related than distant things"*. This is a problem that we dont always address when making statistical inference, and for some of the most popular methos (i.e. regression analysis), we often asume that ur samples are independent.  
+In this workshop we will introduce, from the very begining, to methods to manipulate and analyze spatial data. With the current technologies, the amount of available data can be overwhelming when trying to find asociation between events we are interested in. There are plenty of resources that can help us to better inform our statistical models and obtain more information from our data. Open access tools, such as `R`, offers a very flexible environment to manipulate and analyze this kind of data.  
+For this workshop we use examples in Epidemiology, the workshop is oriented to understand epidemiological concepts such as asociation, causality and confounding. This concepts can be applied to any area where we want to find asociation between two events.  
+
+________
+
+# Instructor
+
+**Jose Pablo Gomez-Vazquez** (DVM, MPVM), University of California Davis. Pablo is a PhD student working at the Center for Animal Disease Modeling and Surveillance at UC Davis. He is interested in the application of Network Theory and Geostatistics for inform policy and decision making in epidemiology. Jose Pablo has worked with governamental institutions of Latin American countries, such as Peru and Ecuador, to provide tools that can be used for decision making.  
+
+
+________
+
+
+# Learning outcomes
+
+  - Understand the struture of spatial data (Vectors and Rasters)
+  - Extract and maniulate spatial data
+  - Statistical inference for non spatial data
+  - Statistical inference for spatial data
+  - Visualization and presentation of the results
+
+________
+
+
+# Schedule
+
+The workshop can be offered in different formats, previously this workshop was offered as a 3-day workshop where topics ranging from the basic use of R to geostatistical inference with regression models was covered.  
+The schedule will vary depending on the time and desired outcomes of the participants.  
+
+________
+
+
+# Background and skills of the participants
+
+The workshop is aimed for students and profesionists interested in statistics and Geographical Information Systems. A very basic understanding of statistics and R is desired, but not necessary. In the past, this workshop has been offered to people from academia and goverment institutions.  
+  
+For the workshop we will be using mainly R and R studio, but other tools such as QGIS and Google Maps will also be used to demonstrate the applications of the results. 
