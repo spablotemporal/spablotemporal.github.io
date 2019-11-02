@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "HOME"
 ---
 
 <div class="index-main">
