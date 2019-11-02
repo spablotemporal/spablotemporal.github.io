@@ -4,6 +4,6 @@ output_dir: "."
 output:  
   html_document:  
     self_contained: no  
-    theme: lux  
+    theme: sandstone  
 navbar:  
   title: "Jose Pablo Gomez-Vazquez" 
