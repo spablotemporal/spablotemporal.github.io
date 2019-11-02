@@ -19,12 +19,12 @@ navbar:
     
   - text: Contact
     menu:
-   # - icon: fa-twitter
-  #    href: https://twitter.com/MAPdonnelly
     - icon: fa-github
       href: https://github.com/jpablo91
     - icon: fa-linkedin
       href: https://www.linkedin.com/in/pablo-gomez-v-b19553129/
     - icon: fa-envelope
       href: mailto:jpgo@ucdavis.edu
+      
+      
 #© 2019 GitHub, Inc.
