@@ -1,9 +1,9 @@
-name: "mywebpage"  
-author: "YOUR NAME"  
+name: "Jose Pablo Gomez-Vazquez"  
+author: "Jose Pablo Gomez-Vazquez"  
 output_dir: "."  
 output:  
   html_document:  
     self_contained: no  
     theme: flatly  
 navbar:  
-  title: "My First Webpage" 
+  title: "Jose Pablo Gomez-Vazquez" 
