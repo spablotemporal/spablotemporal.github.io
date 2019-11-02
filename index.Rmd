@@ -2,7 +2,6 @@
 title: ""
 ---
 
-
 <div class="index-main">
   <div class="main-photo"><img src="Images/LogoNB.png"></div>
   <div id="main-text">

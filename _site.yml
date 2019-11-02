@@ -10,8 +10,6 @@ navbar:
   left:
   - text: Home
     href: index.html
-  #- text: About
-   # href: about.html
   - text: Research
     href: Research.html
   - text: CV
@@ -19,14 +17,14 @@ navbar:
   - text: Training
     href: Training.html
     
-  #- text: Get in Touch
-  #  menu:
+  - text: Contact
+    menu:
    # - icon: fa-twitter
   #    href: https://twitter.com/MAPdonnelly
-  #  - icon: fa-github
-   #   href: https://github.com/mapdonnelly
-    #- icon: fa-linkedin
-    #  href: https://linkedin.com/in/mapdonnelly
-  #  - icon: fa-envelope
-  #    href: mailto:madonnelly@ucdavis.edu
+    - icon: fa-github
+      href: https://github.com/mapdonnelly
+    - icon: fa-linkedin
+      href: https://www.linkedin.com/in/pablo-gomez-v-b19553129/
+    - icon: fa-envelope
+      href: mailto:jpgo@ucdavis.edu
 #© 2019 GitHub, Inc.
