@@ -6,7 +6,7 @@ title: "Geoestatistical Tools for Disese mapping and Inference"
 
 # Introduction:
 
-According to the Tobler's first law of geography, *"everything is related to everything else, but near things are more related than distant things"*. This is a problem that we dont always address when making statistical inference, and for some of the most popular methos (i.e. regression analysis), we often asume that ur samples are independent.  
+According to the Tobler's first law of geography, *"everything is related to everything else, but near things are more related than distant things"*. This is a problem that we dont always address when making statistical inference, and for some of the most popular methods (i.e. regression analysis), we often asume that our samples are independent.  
 In this workshop we will introduce, from the very begining, to methods to manipulate and analyze spatial data. With the current technologies, the amount of available data can be overwhelming when trying to find asociation between events we are interested in. There are plenty of resources that can help us to better inform our statistical models and obtain more information from our data. Open access tools, such as `R`, offers a very flexible environment to manipulate and analyze this kind of data.  
 For this workshop we use examples in Epidemiology, the workshop is oriented to understand epidemiological concepts such as asociation, causality and confounding. This concepts can be applied to any area where we want to find asociation between two events.  
 
@@ -43,5 +43,5 @@ ________
 
 The workshop is aimed for students and profesionists interested in statistics and Geographical Information Systems. A very basic understanding of statistics and R is desired, but not necessary. In the past, this workshop has been offered to people from academia and goverment institutions.  
   
-For the workshop we will be using mainly R and R studio, but other tools such as QGIS and Google Maps will also be used to demonstrate the applications of the results. 
+For the workshop we will be using mainly R and R studio, but other tools such as QGIS and Google Earth will also be used to demonstrate the applications of the results. 
 

@@ -6,6 +6,8 @@ One of my interests is in building bridges with different institutions that can 
 
 Other topics for workshops might be available upon request.  
 **Workshops can be offered in English and Spanish**
+
+  
 ________________________
 
 ## Geostatistical tools for Epidemiology
@@ -17,7 +19,7 @@ The aim of this workshop is to provide an overview of different tools to manipul
   - Manipulation of Spatial data.
   - Geostatistical tools for inference.
 
-More information [English](WS1.html) [Spanish](WS1Spa.html)
+More information [English](WS1.html) | [Spanish](WS1Spa.html)
 
 ________________________
 
