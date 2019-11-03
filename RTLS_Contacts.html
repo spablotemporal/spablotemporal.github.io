@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>RLTS Contacts</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Jose Pablo Gomez-Vazquez</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="Research.html">About Me</a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+<li>
+  <a href="Training.html">Training</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Contact
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://github.com/jpablo91">
+        <span class="fa fa-github"></span>
+         
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/pablo-gomez-v-b19553129/">
+        <span class="fa fa-linkedin"></span>
+         
+      </a>
+    </li>
+    <li>
+      <a href="mailto:jpgo@ucdavis.edu">
+        <span class="fa fa-envelope"></span>
+         
+      </a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">RLTS Contacts</h1>
+
+</div>
+
+
+<p>R Package from the Lanzas Lab: <a href="https://github.com/lanzaslab/contact" class="uri">https://github.com/lanzaslab/contact</a></p>
+<pre class="r"><code># devtools::install_github(&quot;lanzaslab/contact&quot;)
+library(contact)
+library(dplyr)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>library(sf)</code></pre>
+<pre><code>## Linking to GEOS 3.6.1, GDAL 2.2.3, PROJ 4.9.3</code></pre>
+<p>Here is an example of how to read all the sheets in a data frame from a <em>xlsx</em> file.</p>
+<pre class="r"><code>L &lt;- list()
+for(g in 2:5){
+  # g &lt;- 5
+  L[[g]] &lt;- readxl::read_xlsx(path = &quot;../../Box Sync/MPVM/RP/PERU 2016 DATA/Vacunacion/Data/VacDepDisProv_2016.xlsx&quot;, sheet = g)
+  L[[g]]$species &lt;- i
+}
+
+
+
+DF &lt;- do.call(rbind, L)</code></pre>
+<div id="create-a-point-location-based-environmental-contact-network" class="section level1">
+<h1>Create a point-location-based environmental contact network</h1>
+<p>The network will represent contacts between calves in a single feedlot pen with theut water source. We will identify the number of “contacts” each individual had with the water sourcein the pen. A “contact” is defined as occuring when point-locations were within a pre-determine spatial-treshold distance (SpTh) of the water source. We wil set a SpTh of 0.333 m (i.e. the approximate distance from RFID tags to calves noses), then re-define this SpTh to account for RTLS accuracy using the <code>findDistTresh</code> function.</p>
+<pre class="r"><code>data(&quot;calves&quot;)
+calves %&gt;%
+  head()</code></pre>
+<pre><code>##   calftag     x     y     time       date
+## 1     101 63.38 47.43 00:00:14 05-02-2016
+## 2     101 63.48 46.59 00:00:22 05-02-2016
+## 3     101 62.90 47.07 00:00:26 05-02-2016
+## 4     101 63.27 47.26 00:00:34 05-02-2016
+## 5     101 63.04 46.62 00:00:38 05-02-2016
+## 6     101 63.53 47.24 00:00:42 05-02-2016</code></pre>
+<div id="ensure-all-required-columns-exists-in-the-dataset." class="section level2">
+<h2>Ensure all required columns exists in the dataset.</h2>
+<pre class="r"><code># we must append the columns date and time together first:
+calves &lt;- calves %&gt;% 
+  mutate(DateTime = paste0(date, &quot;:&quot;, time)) %&gt;% # Paste the date and time volumns
+  mutate(DateTime = as.POSIXct(DateTime, format = &quot;%m-%d-%Y:%H:%M:%S&quot;)) # Format as date time (POSIXct)</code></pre>
+</div>
+<div id="calculate-the-distances-between-the-water-polygon-and-the-calves-at-each-time-step" class="section level2">
+<h2>Calculate the distances between the water polygon and the calves at each time step</h2>
+<pre class="r"><code>waterSp &lt;- cbind(x = c(61.43315, 61.89377, 62.37518, 61.82622, 61.43315), y = c(62.44815, 62.73341, 61.93864, 61.67411, 62.44815)) # this is the location of the water source
+waterSp &lt;- st_polygon(list(waterSp)) # convert to a spatial polygon
+# convert the calves location to spatial points
+calvesSp &lt;- calves %&gt;%
+  st_as_sf(coords = c(&quot;x&quot;, &quot;y&quot;)) 
+
+# Visualize the data:
+# Plot the calves
+calvesSp %&gt;%
+  st_geometry() %&gt;%
+  plot(pch = 16, cex= 0.5)
+# Plot the water source
+waterSp %&gt;%
+  st_geometry() %&gt;%
+  plot(add = T, col = &quot;red&quot;)</code></pre>
+<p><img src="RTLS_Contacts_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<pre class="r"><code># Calculate the distance to water source
+calvesSp$WaterDistance &lt;- st_distance(calvesSp, waterSp)
+# Plot the ones that are within the SpTh
+## Plot the calves 
+calvesSp %&gt;%
+  filter(WaterDistance &lt;= 0.333) %&gt;% # Filter the ones that are below the SpTh
+  st_geometry() %&gt;% 
+  plot(pch = 16, cex = 0.5, main = &quot;Contacts within a SpTh = 0.333&quot;)
+## Polot the water source:
+waterSp %&gt;%
+  st_geometry() %&gt;%
+  plot(add = T)</code></pre>
+<p><img src="RTLS_Contacts_files/figure-html/Get%20the%20distance-1.png" width="672" /></p>
+</div>
+<div id="identify-the-optimal-spth-value-that-will-allow-us-to-capture-99-of-the-contacts-defined-as-instances-when-point-locations-were-within-0.33-m-of-the-water-trough" class="section level2">
+<h2>Identify the optimal SpTh value that will allow us to capture 99% of the contacts, defined as instances when point locations were within 0.33 m of the water trough</h2>
+<pre class="r"><code>SpThValues&lt;-contact::findDistThresh(n1 = 1000, n2 = 1000, acc.Dist1 = 0.5, acc.Dist2 = NULL, pWithin1 = 90, pWithin2 = NULL, spTh = 0.5)
+SpThValues</code></pre>
+<pre><code>##      mean     5%-CI    10%-CI    15%-CI    20%-CI    25%-CI    30%-CI 
+## 0.7072577 0.7079433 0.7086316 0.7093254 0.7100276 0.7107415 0.7114705 
+##    35%-CI    40%-CI    45%-CI    50%-CI    55%-CI    60%-CI    65%-CI 
+## 0.7122188 0.7129911 0.7137932 0.7146321 0.7155169 0.7164594 0.7174758 
+##    70%-CI    75%-CI    80%-CI    85%-CI    90%-CI    95%-CI    99%-CI 
+## 0.7185893 0.7198348 0.7212693 0.7229965 0.7252414 0.7286866 0.7354200 
+##       max 
+## 1.9782565</code></pre>
+<pre class="r"><code>CI_99&lt;-unname(SpThValues[21]) #we will use this SpTh value moving forward.</code></pre>
+<p><code>SpThValues</code> will have the distances that captures the % of the population, we will use the value 0.7353102 which represents the 99%.</p>
+<pre class="r"><code>calvesSp %&gt;%
+  filter(WaterDistance &lt;= CI_99) %&gt;% # Filter the ones that are below the SpTh
+  st_geometry() %&gt;% 
+  plot(pch = 16, cex = 0.5, main = &quot;Contacts within a SpTh = 99%&quot;)
+## Polot the water source:
+waterSp %&gt;%
+  st_geometry() %&gt;%
+  plot(add = T)</code></pre>
+<p><img src="RTLS_Contacts_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code>water_edges &lt;- calvesSp %&gt;% 
+  data.frame() %&gt;%
+  filter(WaterDistance &lt;= CI_99) %&gt;%
+  group_by(from = calftag) %&gt;%
+  summarise(to = &quot;water&quot;, durations = n())</code></pre>
+<pre class="r"><code>calvesSp %&gt;% data.frame() %&gt;%
+  filter(WaterDistance &lt;= CI_99) %&gt;%
+  arrange(calftag, DateTime) %&gt;% # Order by time and ID
+  mutate(Interval = DateTime - lag(DateTime)) %&gt;% # Difference from previous 
+  group_by(calftag) %&gt;%
+  mutate(Interval = replace(Interval, row_number() == 1, NA)) %&gt;%
+  ungroup(calftag) %&gt;%
+  mutate(Contact = ifelse(abs(Interval) &gt;= (5*60) | is.na(Interval), 1:n(), NA)) %&gt;% 
+  do(zoo::na.locf(.))# Identify if contact was initiated</code></pre>
+<pre><code>## # A tibble: 205 x 8
+##    calftag time  date  DateTime                             geometry
+##      &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;dttm&gt;                                &lt;POINT&gt;
+##  1     101 00:4~ 05-0~ 2016-05-02 00:47:43             (62.69 62.46)
+##  2     101 00:4~ 05-0~ 2016-05-02 00:47:47             (62.33 62.23)
+##  3     101 00:4~ 05-0~ 2016-05-02 00:47:59             (62.09 61.76)
+##  4     101 00:4~ 05-0~ 2016-05-02 00:48:15             (61.11 61.84)
+##  5     101 00:4~ 05-0~ 2016-05-02 00:48:36             (62.55 62.53)
+##  6     101 00:4~ 05-0~ 2016-05-02 00:48:44             (62.38 62.57)
+##  7     102 00:3~ 05-0~ 2016-05-02 00:39:04             (62.69 61.87)
+##  8     102 00:3~ 05-0~ 2016-05-02 00:39:16             (61.88 62.89)
+##  9     102 00:3~ 05-0~ 2016-05-02 00:39:24             (62.05 63.23)
+## 10     102 00:3~ 05-0~ 2016-05-02 00:39:28             (62.77 62.31)
+## # ... with 195 more rows, and 3 more variables: WaterDistance &lt;dbl&gt;,
+## #   Interval &lt;dbl&gt;, Contact &lt;int&gt;</code></pre>
+<pre class="r"><code>  # group_by(calftag, Contact) %&gt;%
+  # summarise(Duration = sum(Interval, na.rm = T), DateTime = first(DateTime))</code></pre>
+<pre class="r"><code>Calves_Edges &lt;- calvesSp %&gt;% data.frame() %&gt;%
+  filter(WaterDistance &lt;= CI_99) %&gt;%
+  arrange(calftag, DateTime) %&gt;% # Order by time and ID
+  mutate(Interval = DateTime - lag(DateTime)) %&gt;% # Difference from previous 
+  group_by(calftag) %&gt;% # Gourp by calftag for identifying intervals
+  mutate(Interval = replace(Interval, row_number() == 1 | abs(Interval) &gt;= (5*60), NA)) %&gt;% # New contacts defined for a contact with interval larger than 5 min
+  ungroup(calftag) %&gt;%
+  mutate(Contact = ifelse(is.na(Interval), 1:n(), NA)) %&gt;% # get a contact ID based on the number of row
+  do(zoo::na.locf(.)) %&gt;% # Replace NAs with the ContactID
+  group_by(from = calftag, Contact) %&gt;% # Sum the duration by contact ID
+  summarise(Duration = sum(Interval), DateTime = first(DateTime)) %&gt;%
+  mutate(to = &quot;water&quot;) %&gt;%
+  select(from, to, DateTime, Duration, Contact)</code></pre>
+<pre class="r"><code>G1 &lt;- igraph::graph_from_data_frame(Calves_Edges)</code></pre>
+<pre><code>## Warning in if (class(newval) == &quot;factor&quot;) {: the condition has length &gt; 1
+## and only the first element will be used</code></pre>
+<pre class="r"><code>plot(G1)</code></pre>
+<p><img src="RTLS_Contacts_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>We will define our distance treshold based on what we did before. Might not mkake a lot of sense.</p>
+<pre class="r"><code># FUnction to get the contacts
+CreateNetwork &lt;- function(DF, DTh){
+  # DF &lt;- calves
+  # DTh &lt;- CI_99
+  TimePoints &lt;- DF %&gt;% # Get unique timepoints
+    distinct(DateTime)
+  
+  D_DF &lt;- data.frame(Var1 = NA, Var2 = NA, Distance = NA, DateTime = TimePoints[1,]) # Create a data frame to fill with the data
+  
+  # Loop to get the contacts
+  for(i in 1:nrow(TimePoints)){
+    # i &lt;- 1
+    SP_i &lt;- calvesSp %&gt;% 
+      filter(DateTime == TimePoints[i,])
+    
+    D_DF_i &lt;- expand.grid(SP_i$calftag, SP_i$calftag) # Create a data frame for all combinations of possible Origin-Destination
+    V1 &lt;- match(D_DF_i$Var1, SP_i$calftag) # match variables from the O-D data frame to the spatial points for origins
+    V2 &lt;- match(D_DF_i$Var2, SP_i$calftag) # match variables from the O-D data frame to the spatial points for destinations
+    # Calculate distance
+    D_DF_i$Distance &lt;- st_distance(SP_i[V1,], # order by matched origin variables
+                                   SP_i[V2,], # order by matched Destination variables 
+                                   by_element = T) 
+    
+    D_DF_i &lt;- D_DF_i %&gt;%
+      mutate(DateTime = TimePoints[i,]) %&gt;%
+      filter(Var1 != Var2) %&gt;% # Exclude the ones that are same origin-destination
+      filter(Distance &lt;= DTh) # Filter to the ones that are under the Spatial treshold
+    
+    D_DF &lt;- rbind(D_DF, D_DF_i)
+  }
+  return(D_DF)
+}
+
+
+
+Calces_Edges &lt;- CreateNetwork(DF = calves, DTh = 10)</code></pre>
+<pre class="r"><code>Calces_Edges %&gt;%
+ group_by(Distance, DateTime) %&gt;%
+  summarise(V1 = first(Var1), V2 = first(Var2)) %&gt;%
+  head(10)</code></pre>
+<pre><code>## # A tibble: 10 x 4
+## # Groups:   Distance [10]
+##    Distance DateTime               V1    V2
+##       &lt;dbl&gt; &lt;dttm&gt;              &lt;int&gt; &lt;int&gt;
+##  1    0.240 2016-05-02 01:01:23   109   106
+##  2    0.320 2016-05-02 01:01:11   109   106
+##  3    0.336 2016-05-02 01:01:19   109   106
+##  4    0.361 2016-05-02 01:01:27   109   106
+##  5    0.443 2016-05-02 00:58:01   108   102
+##  6    0.489 2016-05-02 01:10:29   108   105
+##  7    0.493 2016-05-02 01:13:11   108   101
+##  8    0.497 2016-05-02 01:25:06   110   109
+##  9    0.587 2016-05-02 01:27:00   110   104
+## 10    0.588 2016-05-02 01:34:39   106   102</code></pre>
+<p>The next ste will be to identify unique contacts like we did in the water contacts, I’ll have a look to that and update the code</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
