@@ -25,6 +25,7 @@ ________
   - Understand the struture of spatial data (Vectors and Rasters)
   - Extract and maniulate spatial data
   - Statistical inference for non spatial data
+  - Spatial Autocorrelation
   - Statistical inference for spatial data
   - Visualization and presentation of the results
 

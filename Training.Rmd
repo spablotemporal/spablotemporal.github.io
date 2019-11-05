@@ -17,6 +17,7 @@ The aim of this workshop is to provide an overview of different tools to manipul
   - Manipulation of databases.
   - Statistical Inference.
   - Manipulation of Spatial data.
+  - Spatial Autocorrelation
   - Geostatistical tools for inference.
 
 More information [English](WS1.html) | [Spanish](WS1Spa.html)
@@ -29,6 +30,7 @@ This workshop covers the integration of Network Theory and spatio-Temporal tools
 
   - Static and dynamic network analysis.
   - Visualization of spatio-temporal networks.
+  - Network Based models and applications. 
   
 More information [English](WS2.html) | [Spanish](WS2Spa.html)
 
