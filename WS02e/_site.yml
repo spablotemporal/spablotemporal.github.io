@@ -1,0 +1,24 @@
+name: "Jose Pablo Gomez-Vazquez"  
+author: "Jose Pablo Gomez-Vazquez"  
+output_dir: "."  
+output:  
+  html_document:  
+    self_contained: no  
+    theme: sandstone  
+navbar:
+  title: Jose Pablo Gomez-Vazquez
+  left:
+  - text: Home
+    href: Temario_WS02.html
+    
+  - text: Contact
+    menu:
+    - icon: fa-github
+      href: https://github.com/jpablo91
+    - icon: fa-linkedin
+      href: https://www.linkedin.com/in/pablo-gomez-v-b19553129/
+    - icon: fa-envelope
+      href: mailto:jpgo@ucdavis.edu
+      
+      
+#© 2019 GitHub, Inc.
