@@ -1,0 +1,300 @@
+---
+title: "Introduccion a R"
+author: Jose Pablo Gomez-Vazquez
+---
+
+____________________________________________________________________
+
+# 1. Operaciones basicas 
+R es como una calculadora, puedes hacer operaciones matematicas, por ejemplo:  
+
+```{r}
+2 + 2
+```
+
+R funciona con objetos, puedes crear objetos y asignarles valores (puedes usar el operador `=` o `<-`), y hacer operaciones con objetos del mismo tipo (cuando asignas valores a un objeto, R no imprime nungun resultado):
+
+```{r}
+x = 2
+y <- 2
+x + y
+```
+
+Puedes guardar mas de un valor en un objeto, usulmente usamos `c()` para guardar una serie de valores. Por ejemplo guardaremos una sequencia del 1 al 10 de dos maneras diferentes y le preguntaremos a R si son iguales:   
+**Pro tip:** usando las teclas "Alt" + "-" nos pone automaticamente el operador *<-*, es cuestion de gustos pero en lo personal me parece mas facil de leer el codigo con el operador *<-* que con *=*, para asignar un objeto
+
+```{r}
+x <- c(5, 6, 7, 8, 9, 10)
+y = 5:10
+x == y
+```
+
+
+Tambien podemos pedirle a R valores especificos en un objeto:  
+
+```{r}
+# pidamosle el 3er valor de nuestra sequencia
+x[3]
+# Multipliquemos el 3er valor de la primera sequencia por el 5to valor de la segunda sequencia
+x[3] * y[5]
+```
+
+R tiene unas funciones de base, pero podemos crear nuestras propias funciones. En R studio, la tecla *Tab* nos ayuda bastante a autocompletar, esto nos facilita las cosas cuando no nos acordamos bien del nombre de una funcion o simplemente para programar mas rapido. 
+Hay gente que ya se ha tomado la tarea de crear funciones y las compila en librerias. Podemos descargar esas librerias y acceder a todas esas funciones.  
+Las funciones en R tienen argumentos, los cuales automaticamente apareceran si dentro de la funcion presionamos *Tab*.   
+```{r}
+# usemos la funcion sum() para sumar los numeros del 1 al 10 que se encuentran dentro de x
+sum(x)
+```
+
+Podemos poner una funcion dentro de otra, por ejemplo para sacar la $\sqrt{\sum_1^n x}$ raiz cuadrada de la suma de x podemos usar:
+
+```{r}
+# ahora usemos una funcion dentro de otra:
+sqrt(sum(x))
+```
+
+
+## 1.1 Funciones en R
+
+Hacer funciones en R no es tan complicado como parece y nos puede servir para agilizar nuestro trabajo. En una funcion que definamos nostros, necesitaremos incluir los argumentos que queramos y que haremos con ese argumentos. Por ejemplo, la siguiente funcion toma como argumento un nombre (texto) y le pega otro texto antes y despues.  
+
+```{r}
+F1 <- function(name){
+  x <- paste("Hola", name, "!")
+  print(x)
+}
+
+F1(name = "Pablo")
+```
+
+
+Ademas de guardar valores numericos en objetos en R tambien puedes guardar texto, matrices, tablas, objetos espaciales y otros tipos de objetos. A continuacion importaremos datos y haremos un poco de manipulacion.
+
+____________________________________________________________________
+
+# 2. Importar datos en R
+
+En R tenemos varias alternativas para importar los datos, los formatos mas comunes son archvos de excel (*.csv*, *.xls* y *.xlsx*), tablas en formato *.txt* y datos espaciales *.shp*, de los que hablaremos mas adelante.  
+Para leer los archivos *.xls*, *.xlsx* y *.shp* necesitaremos instalar algunos paquetes. Usamos la funcion `install.packages()` para instalar un paquete y la funcion `library()` para cargarlo.  
+
+**Pro tip:** Algunas veces queremos usar solo una funcion de un paquete y podemos escribir el nombre del paquete seguido de "::" y el nombre de la funcion, ejemplo: `paquete::funcion()`
+
+
+```{r}
+# Si no tenemos instalado el paquete usamos:
+# install.packages("readxl")
+library(readxl)
+
+# Leer archivo de excel:
+PRRS <- readxl::read_xlsx("../Data/PRRS.xlsx")
+```
+Los formatos de tablas mas populares en R son los `data.frame`, cuando importamos los datos, desde un *.csv* o *.xlsx*. Podemos investigar que clase de objeto tenemos usando la funcion`class()`, un objeto puede tener mas de una tipo  de clase.
+
+```{r}
+class(PRRS)
+```
+
+____________________________________________________________________
+
+# 3. Creando tablas en R
+
+Podemos usar las funciones base de R para crear tablas basicas. Por ejemplo, crearemos una tabla que nos diga el numero de positivos por sexo:
+
+```{r}
+TBL <- table(PRRS$Sex, PRRS$Result)
+TBL
+```
+
+Cuando tenemos una tabla podemos pedir una columna y/o fila en especifico, donde se representa como [fila, columna]
+```{r}
+TBL[,2]
+```
+
+Estas tablas no son muy atractivas a la vista y siempre podemos usar otros paquetes para crear tablas mas informativas y faciles de leer.
+
+## 3.1 Manipulacion de datos con dplyr
+
+La libreria `dplyr` tiene varias funciones para manipulacion de datos que nos ayudan o limpiar, resumir, y conectar diferentes bases de datos
+
+```{r message = F}
+# Si no tenemos la libreria requerimos instalarla:
+# install.packages("dplyr")
+# cargamos el paquete con la funcion library()
+library(dplyr)
+```
+
+La libreria dplyr incorpora los pipes `%>%`, los cuales pueden conectar varias funciones a un objeto. esta es una alternativa para escribir varias funciones en una linea de codigo de una manera mas organizada.  
+Por ejemplo:  
+**F2(F1(x)) es igual a x %>% F1() %>% F2()**
+
+Para empezar vamos a calcular la prevalencia por condado:
+```{r}
+PRRS %>% 
+  group_by(County) %>% 
+  summarise(N = n(), positivos = sum(Result)) %>% 
+  mutate(Prev = positivos/N) %>% 
+  arrange(desc(Prev))
+```
+
+Ok, hemos usado muchas funciones conectadas para calcular la prevalencia, asi que lo explicamos por partes:  
+  - Primero ponemos el nombre de nuestra tabla.  
+  - La primera funcion `group_by()` nos agrupara las observaciones por una o mas variables que indiquemos.   
+  - La funcion `summarise()` realizara funciones a la variable que indiquemos estratificada por la variable por la cual estamos agrupando, p.e. cuando ponemos el argumento `sum(resultado)`, estamos sumando todos los resultados positivos por condado. `n()` simplemente nos regresa el numero de observaciones por grupo.    
+  - La funcion `mutate()` creara una nueva variable, aqui usamos las variables N y positivos creadas con la anterior funcion y calculamos la prevalencia aparente.  
+
+
+**Ejercicio:** Ahora intenta calcular la prevalencia por tipo de granja (variable farm_type):
+
+```{r}
+# Tu respuesta
+```
+
+
+Podemos utilizar cualquier funcion que ocupe un argumento dentro de summarize, esto es muy util por que nos permite obtener estadisticas estratificando por grupos, por ejemplopodemos obtener la media, mediana y varianza de edad por sexo:
+```{r}
+PRRS %>% 
+  group_by(Sex) %>% 
+  summarise(media_edad = mean(Age), mediana_edad = median(Age), SD_edad = sd(Age))
+```
+
+
+## 3.2 Uniendo diferentes bases de datos:
+
+
+```{r}
+# Importamos la base de datos de attributos del predio
+nodes <- read.csv("../Data/node_attrib.csv")
+# Importamos la base de datos de movimientos
+mov <- read.csv("../Data/network.csv")
+# Obtenemos el numero de envios y arribos
+Out <- mov %>% 
+  group_by(id_orig) %>%
+  summarise(Envios = n()) %>%
+  rename(id = id_orig)
+In <- mov %>%
+  group_by(id_dest) %>%
+  summarise(Arribos = n()) %>% 
+  rename(id = id_dest)
+
+# Unimos la base de datos de predios con el numero de envios/arribos
+nodes <- nodes %>% 
+  left_join(Out, by ="id")
+nodes <- nodes %>%
+  left_join(In, by = "id")
+```
+
+
+```{r}
+mov %>% 
+  group_by(id_orig) %>% 
+  summarise(N = n(), NUm.Cerdos = sum(pigs.moved)) %>%
+  mutate(p.mov = NUm.Cerdos /N) 
+mov %>%
+  group_by(id_dest) %>%
+  summarise(N = n(), NUm.Cerdos = sum(pigs.moved)) %>%
+  mutate(p.mov = NUm.Cerdos /N) 
+```
+
+
+Algunos de las granjas no tuvieron envios o arribos y se marcan como NA, hay que cambiarlos a 0
+```{r}
+nodes[is.na(nodes)] <- 0
+```
+
+```{r}
+nodes %>% 
+  dplyr::select(id, Envios) %>% 
+  arrange(desc(Envios)) %>% 
+  knitr::kable(format = "latex", booktabs = T)
+```
+
+
+____________________________________________________________________
+
+# 4. Graficando con R
+
+El paquete base de R incluye varias herramientas para hacer basicamente cualqier tipo de grafico con nuestros datos. Existen otras librerias que ofrecen funciones para hacer graficos (`ggplot` es la mas popular), pero en lo personal yo hago todos mis graficos con el paquete base.  
+
+## Grafico de puntos (Scatterplot)
+Uno de los graficos mas basicos que podemos hacer son los graficos scatterplot, son utiles cuando queremos ver la relacion entre dos variables continuas.  
+
+```{r}
+plot(Envios~Arribos, data = nodes)
+
+plot(nodes$Envios, nodes$Arribos)
+```
+
+
+## 4.1 Grafico de pay
+
+Los graficos de pay nos sirven para mostrar proporciones, por ejemplo a continuacion haremos un grafico que represente los porcentajes de animales positivos por tipo de granja.  
+Para seleccionar una variable dentro de una data.frame, utilizamos el caracter `$`, por ejemplo, si queremos accesar a la variable tipo de granja (farm_type) de la tabla PRRS, usamos `PRRS$farm_type`
+```{r}
+# Primero creamos una tabla para el resultado por sexo del animal
+TM <- table(PRRS$farm_type, PRRS$Result)
+# Despues usaremos la segunda columna de nuestra tabla, que contiene los positivos unicamente
+pie(TM[,2])
+```
+
+## 4.2 Boxplots  
+En mi opinion los boxplots son los graficos mas utiles para ver la distribucion de una variable continua. Como todas las funciones en R, la funcion `boxplot()` tiene varios argumentos que podemos proporcionar, pero si solo le proporcionamis el nombre de una variable continua, nos regresara un boxplot un poco aburrido de la variable  
+```{r}
+boxplot(x = PRRS$Age)
+```
+
+Podemos poporcionar differentes argumentos para mejorar nuestra grafica, asi como estratificar nuestra variable por otra variable categorica:  
+```{r}
+boxplot(Age~Sex, data = PRRS, col = "lightgreen", 
+        main = "Grafico de caja de la edad estratificado por sexo")
+```
+
+Las funciones de base para graficos de R son muy flexibles, mientras mas las utilices mas te daras cuenta de todos los argumentos que tienen para ayudarte a hacer graficos mas informativos y personalizables, la mayoria de los argumentos son intuitivos, pero puedes ver que hace cada uno en la documentacion de la funcion o en la opcion de autocompletar. 
+
+
+
+## 4.3 Graficos de barras
+
+Para el siguiente grafico utilizaremos mas argumentos, vamos a estratificar el resultado por el sexo del animal:
+```{r }
+# Primero creamos una tabla de los resultados por tipo de granja
+TM <- table(PRRS$Result, PRRS$Sex)
+# Despues usaremos la duncion par() para incrementar los margenes:
+par(mar = c(2, 6, 2, 2))
+barplot(TM[, order(colSums(TM), decreasing = T)], beside = T, horiz = T, 
+        las = 2, main = "Resultados por tipo de granja", col = c("green", "red"), 
+        legend = rownames(TM))
+```
+
+**Ejercicio:** Haz un grafico de barras estratificando el resultado por el tipo de granja:
+
+```{r}
+# Primero creamos una tabla de los resultados por tipo de granja
+TM <- table(PRRS$Result, PRRS$farm_type)
+# Despues usaremos la duncion par() para incrementar los margenes:
+par(mar = c(2, 6, 2, 2))
+barplot(TM[, order(colSums(TM), decreasing = T)], beside = T, horiz = T, 
+        las = 2, main = "Resultados por tipo de granja", col = c("green", "red"), 
+        legend = rownames(TM))
+```
+
+
+## 4.4 Graficos temporales.
+
+Para hacer un grafico temporal primero tenemos que manipular un poco las fechas para que R pueda reconocerlas y despues veremos el numero de movimientos por semana
+```{r}
+mov$date <- as.Date(mov$date, "%m/%d/%y")
+# Creamos una variable para identificar la semana del año
+mov$week <- format(mov$date, "%V")
+```
+
+```{r}
+mw <- mov %>% 
+  group_by(week) %>% 
+  summarise(N = n())
+
+plot(N~week, data = mw, type = "l", col = "darkgreen", main = "Movimientos por semana", xlab = "Semana del año", ylab = "Numero de movimientos")
+```
+
+[Regresar](../Temario.html)
+

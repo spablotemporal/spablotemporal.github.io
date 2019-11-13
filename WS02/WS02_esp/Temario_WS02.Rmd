@@ -1,0 +1,36 @@
+---
+title: "Temario"
+---
+
+
+Tutoriales pre congresos para familiarizarse con R y manupilacion de datos espaciales se puede encontrar en los siguientes links:  
+
+  - [Introduccion a R](Pre_Workshop/Intro_a_R.html)
+  - [Datos espaciales en R](Pre_Workshop/Espacial_Intro.html)
+
+
+
+### Dia 1
+|Hora       |Tema                                         |
+|-----------|---------------------------------------------|
+|9:00-9:45  |Introduccion al curso                        |
+|9:45-10:45 |[I: Analisis de redes estaticas](Part_I.html)|
+|10:45-11:00|Break                                        |
+|11:00-12:00|Lab 1                                        |
+|12:00-13:00|Lunch                                        |
+|13:00-14:00|II: Estadisticas de la Red                   |
+|14:00-15:00|Lab 2                                        |
+
+### Dia 2
+
+|Hora       |Tema                               |
+|-----------|-----------------------------------|
+|9:00-9:15  |Recapitulacion del dia anterior    |
+|9:15-10:15 |III: Redes dinamicas               |
+|11:00-12:00|Lab 3                              |
+|12:00-13:00|Lunch                              |
+|13:00-14:00|IV: Modelos Basados en Redes       |
+|14:00-15:00|Lab 4                              |
+
+
+

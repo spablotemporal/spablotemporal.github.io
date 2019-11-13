@@ -1,0 +1,69 @@
+---
+title: "Manipulacion de datos espaciales"
+author: Pablo Gomez-Vazquez
+---
+
+En este tutorial introduciremos a manipulacion de datos espaciales en R.    
+Existen dos formatos principales para manipular datos espaciales en R:  
+  
+  - **SpatialDataFrame** de la libreria `sp`: Este formato fue de los primeros introducidos para cargar datos en R, por lo tanto existen muchas librerias que dependen de este formato (i.e. `raster`, `spdep`, `spstat`).  
+  - **Simple features** de la libreria `sf`: Esta libreria fue desarrollada mas recientemente, esta libreria fue creada para ser mas intuitiva con otros paquetes de tidyverse. este tipo de objetos tiene sopporte para el formato de pipelines (`%>%`). El problema de esta libreria es que dado a ue es mas reciente, aldunas librerias no son compatibles con este formato.  
+  
+   
+
+Aprender a trabajar con los dos formatos tiene sus ventajas, para manipulacion de los datos `sf` es mas intuitivo y poderoso, pero para analisis espacial `sp` es mas robusto.  
+    
+  
+En este curso usaremos `sf` principalmente, pero habra situaciones en las que tengamos que cambiar de un formato a otro.    
+  
+  
+___________________________________________
+  
+  
+Para este curso, se ha desarrollado el paquete en R `STNet` que incluye los datos y algunas funciones que usaremos.  
+Para instalar la libreria tenemos que usar el paquete `devtools`, si no esta instalado habra que instalarlo.  
+
+```{r eval=FALSE, include=FALSE}
+# Instalamos devtools
+install.packages("devtools")
+# Instalamos STNet desde github
+devtools::install_github("jpablo91/STNet")
+```
+  
+________________________________________
+  
+
+```{r message = F}
+# Cargamos las librerias
+library(STNet) 
+library(sf)
+# cargamos los datos
+data("PRRS") 
+data("SwinePrem")
+# Cargamos los datos espaciales
+Io <- st_read(system.file("data/Io.shp", package = "STNet"))
+```
+
+La funcion `st_read()` automaticamente muestra algo de informacion sobre nuestro shapefile, pero podemos ver mas detalles cuando lo imprimimos desde la consola:
+
+```{r}
+Io
+```
+
+
+El resultado muestra:  
+  - `geometry type`: El tipo de shapefiles (ya sea point, lines o polygons).  
+  - `dimension` Dimensiones usadas en el shapefile.  
+  - `bbox`: La extension de nuestros datos.  
+  - `epsg (SRID)`: La proyeccion en formato *EPSG* (El cual es un codigo estandarizado para describir la proyeccion).  
+  - `proj4string`: La proyeccion en formato proj4string.  
+  - Los 10 primeros elementos.  
+  
+Los objetos `sf` son escencialmente un `data.frame` con informacion extra sobre la geometria y proyeccion. Podemos obtener la geometria unicamente usando el operador `$` o la funcion `st_geometry()` y despues mostrarla en una figura
+
+```{r}
+plot(Io$geometry)
+```
+
+
+

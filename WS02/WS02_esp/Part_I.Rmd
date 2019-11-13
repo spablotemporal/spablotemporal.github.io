@@ -1,0 +1,11 @@
+---
+title: "Parte I: Analisis de redes estaticas"
+---
+
+<object data="PDFs/Part_I.pdf" width="750px" height="750px">
+    <embed src="PDFs/Part_I.pdf">
+    </embed>
+</object>
+
+
+[Inicio](Temario_WS02.html)
