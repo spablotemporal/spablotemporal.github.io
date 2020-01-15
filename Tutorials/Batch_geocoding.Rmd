@@ -1,0 +1,68 @@
+---
+title: "Batch Geocode"
+author: "Pablo Gomez"
+---
+
+Geocoing in R can be tricky, there are many packages that can do the job, one of my favorites is `taRifx.geo` which queries trought bing maps. In order to use the service you must get a key, [Get here](https://www.bingmapsportal.com/).  
+Here we will do an example of geocoding addressess in washington DC from different locations.  
+
+First we will get a table with the name of the bulding and the address.  
+
+```{r}
+# Construct a table of addresses
+dc_addresses <- data.frame(name = c("White House", 
+                                    "National Academy of Sciences", 
+                                    "Department of Justice", "Supreme Court", 
+                                    "Washington Monument"), 
+                           addr = c("1600 Pennsylvania Ave Washington, DC", 
+                                    "2101 Constitution Ave NW, Washington, DC 20418", 
+                                    "950 Pennsylvania Ave NW, Washington, DC 20530", 
+                                    "1 1st St NE, Washington, DC 20543", 
+                                    "2 15th St NW, Washington, DC 20024"))
+```
+
+Next we will load the library and we put our Bing maps key
+```{r}
+library(taRifx.geo)
+options(BingMapsKey = "AtTAWG0w8AC5alcTk2swTE8R24GuTDRoZWTv75gizt-1FBULSUaVtMDQ3Y35ColY")
+```
+
+The finction `geocode` will give us what we want, we use verbose to get a confidence in the geocoding query, the confidence can be high, medium or low.  
+```{r}
+geocode(dc_addresses$addr[1], service = "bing", verbose = T)
+```
+
+This fucntion can only do one address at the time, if we want to geocode multiple addresses we will need to create a function:
+
+```{r}
+batch_geocode <- function(Address){
+  Lat <- Lon <- vector()
+  for(i in 1:length(Address)){
+    GC <- geocode(Address[i], service = "bing")
+    Lat <- c(Lat, GC[1])
+    Lon <- c(Lon, GC[2])
+  }
+  return(data.frame(Lat, Lon))
+}
+
+
+# Now we will bind our geocoded columns to the data:
+geocoded_addresses <- cbind(dc_addresses, 
+                            batch_geocode(Address = dc_addresses$addr))
+```
+
+We can then convert the coordinates to a spatial object:
+
+```{r}
+library(sf)
+Pts <- geocoded_addresses %>%
+  st_as_sf(coords = c("Lon", "Lat"), crs = st_crs(4326))
+```
+
+Then we use tmap to plot our locations in an interactive view.
+```{r}
+library(tmap)
+tmap_mode("view")
+tm_shape(Pts) +
+  tm_dots(col = "red")
+```

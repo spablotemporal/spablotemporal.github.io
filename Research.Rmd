@@ -1,12 +1,18 @@
 ---
 title: "About me"
 ---
+<!-- <center> -->
 
-#### Hi I'm Pablo. I have always been fascinated by the application of mathematics to solve problems, I study Diseases in populations and in my free time I enjoy doing producing and composing music.  
+<p>
+<img src ="Images/headshot.png" style="width:40%;float:right">
 
+<h3>Hi I'm Pablo. I have always been fascinated by the application of mathematics to solve problems, I study Diseases in populations and in my free time I enjoy doing producing and composing music.</h3>
+</p>
 
-</center>
-<img src="Images/Headshot.png" style="width:600px;">  
+  
+  
+  
+  
 
 ________________________
 
