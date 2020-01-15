@@ -8,6 +8,10 @@ Other topics for workshops might be available upon request.
 **Workshops can be offered in English and Spanish**
 
   
+<img src="Images/WS19.jpg">  
+  
+  
+  
 ________________________
 
 ## Geostatistical tools for Epidemiology
@@ -20,7 +24,10 @@ The aim of this workshop is to provide an overview of different tools to manipul
   - Spatial Autocorrelation
   - Geostatistical tools for inference.
 
+<img src="Images/T/Map.png" style="width:300px;"><img src="Images/T/RoadUse.png" style="width:300px;"><img src="Images/T/SpatialHex.png" style="width:300px;">
+
 More information [English](WS1.html) | [Spanish](WS1Spa.html)
+
 
 ________________________
 
@@ -32,6 +39,8 @@ This workshop covers the integration of Network Theory and spatio-Temporal tools
   - Visualization of spatio-temporal networks.
   - Network Based models and applications. 
   
+<img src="Images/T/CNT.png" style="width:300px;"><img src="Images/T/TS2.png" style="width:300px;"><img src="Images/T/FNetwork.png" style="width:300px;">
+
 More information [English](WS2.html) | [Spanish](WS2Spa.html)
 
 ________________________
