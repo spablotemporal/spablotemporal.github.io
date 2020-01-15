@@ -1,7 +1,6 @@
 ---
 title: "About me"
 ---
-<!-- <center> -->
 
 <p>
 <img src ="Images/headshot.png" style="width:40%;float:right">
