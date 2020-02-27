@@ -1,0 +1,17 @@
+---
+title: "Detecting strings"
+---
+
+We can use gsub to replace any string of numbers, characters or letters.
+
+# Detecting numbers.
+
+We use `"([0-9])"` to detect any number, for example:
+
+```{r}
+# Create a string of numbers from 1 to 10
+x <- 1:10
+# Replcae it
+gsub(pattern = "([0-9])", replacement = ".", x = x)
+```
+

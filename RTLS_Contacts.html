@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -234,6 +233,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -331,8 +331,13 @@ $(document).ready(function () {
 
 <p>R Package from the Lanzas Lab: <a href="https://github.com/lanzaslab/contact" class="uri">https://github.com/lanzaslab/contact</a></p>
 <pre class="r"><code># devtools::install_github(&quot;lanzaslab/contact&quot;)
-library(contact)
-library(dplyr)</code></pre>
+library(contact)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;contact&#39;</code></pre>
+<pre><code>## The following object is masked _by_ &#39;.GlobalEnv&#39;:
+## 
+##     calves</code></pre>
+<pre class="r"><code>library(dplyr)</code></pre>
 <pre><code>## 
 ## Attaching package: &#39;dplyr&#39;</code></pre>
 <pre><code>## The following objects are masked from &#39;package:stats&#39;:
@@ -410,14 +415,8 @@ waterSp %&gt;%
 <h2>Identify the optimal SpTh value that will allow us to capture 99% of the contacts, defined as instances when point locations were within 0.33 m of the water trough</h2>
 <pre class="r"><code>SpThValues&lt;-contact::findDistThresh(n1 = 1000, n2 = 1000, acc.Dist1 = 0.5, acc.Dist2 = NULL, pWithin1 = 90, pWithin2 = NULL, spTh = 0.5)
 SpThValues</code></pre>
-<pre><code>##      mean     5%-CI    10%-CI    15%-CI    20%-CI    25%-CI    30%-CI 
-## 0.7072577 0.7079433 0.7086316 0.7093254 0.7100276 0.7107415 0.7114705 
-##    35%-CI    40%-CI    45%-CI    50%-CI    55%-CI    60%-CI    65%-CI 
-## 0.7122188 0.7129911 0.7137932 0.7146321 0.7155169 0.7164594 0.7174758 
-##    70%-CI    75%-CI    80%-CI    85%-CI    90%-CI    95%-CI    99%-CI 
-## 0.7185893 0.7198348 0.7212693 0.7229965 0.7252414 0.7286866 0.7354200 
-##       max 
-## 1.9782565</code></pre>
+<pre><code>##      mean     5%-CI    10%-CI    15%-CI    20%-CI    25%-CI    30%-CI    35%-CI    40%-CI    45%-CI    50%-CI    55%-CI    60%-CI    65%-CI    70%-CI    75%-CI    80%-CI    85%-CI    90%-CI    95%-CI    99%-CI       max 
+## 0.7083008 0.7089866 0.7096751 0.7103692 0.7110716 0.7117857 0.7125150 0.7132635 0.7140361 0.7148384 0.7156776 0.7165626 0.7175055 0.7185222 0.7196361 0.7208820 0.7223169 0.7240447 0.7262903 0.7297366 0.7364722 1.9767089</code></pre>
 <pre class="r"><code>CI_99&lt;-unname(SpThValues[21]) #we will use this SpTh value moving forward.</code></pre>
 <p><code>SpThValues</code> will have the distances that captures the % of the population, we will use the value 0.7353102 which represents the 99%.</p>
 <pre class="r"><code>calvesSp %&gt;%
@@ -444,20 +443,19 @@ waterSp %&gt;%
   mutate(Contact = ifelse(abs(Interval) &gt;= (5*60) | is.na(Interval), 1:n(), NA)) %&gt;% 
   do(zoo::na.locf(.))# Identify if contact was initiated</code></pre>
 <pre><code>## # A tibble: 205 x 8
-##    calftag time  date  DateTime                             geometry
-##      &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;dttm&gt;                                &lt;POINT&gt;
-##  1     101 00:4~ 05-0~ 2016-05-02 00:47:43             (62.69 62.46)
-##  2     101 00:4~ 05-0~ 2016-05-02 00:47:47             (62.33 62.23)
-##  3     101 00:4~ 05-0~ 2016-05-02 00:47:59             (62.09 61.76)
-##  4     101 00:4~ 05-0~ 2016-05-02 00:48:15             (61.11 61.84)
-##  5     101 00:4~ 05-0~ 2016-05-02 00:48:36             (62.55 62.53)
-##  6     101 00:4~ 05-0~ 2016-05-02 00:48:44             (62.38 62.57)
-##  7     102 00:3~ 05-0~ 2016-05-02 00:39:04             (62.69 61.87)
-##  8     102 00:3~ 05-0~ 2016-05-02 00:39:16             (61.88 62.89)
-##  9     102 00:3~ 05-0~ 2016-05-02 00:39:24             (62.05 63.23)
-## 10     102 00:3~ 05-0~ 2016-05-02 00:39:28             (62.77 62.31)
-## # ... with 195 more rows, and 3 more variables: WaterDistance &lt;dbl&gt;,
-## #   Interval &lt;dbl&gt;, Contact &lt;int&gt;</code></pre>
+##    calftag time     date       DateTime                 geometry WaterDistance Interval Contact
+##      &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;      &lt;dttm&gt;                    &lt;POINT&gt;         &lt;dbl&gt;    &lt;dbl&gt;   &lt;int&gt;
+##  1     101 00:47:43 05-02-2016 2016-05-02 00:47:43 (62.69 62.46)        0.539         8       1
+##  2     101 00:47:47 05-02-2016 2016-05-02 00:47:47 (62.33 62.23)        0.112         4       1
+##  3     101 00:47:59 05-02-2016 2016-05-02 00:47:59 (62.09 61.76)        0.0371       12       1
+##  4     101 00:48:15 05-02-2016 2016-05-02 00:48:15 (61.11 61.84)        0.563        16       1
+##  5     101 00:48:36 05-02-2016 2016-05-02 00:48:36 (62.55 62.53)        0.456        21       1
+##  6     101 00:48:44 05-02-2016 2016-05-02 00:48:44 (62.38 62.57)        0.331         8       1
+##  7     102 00:39:04 05-02-2016 2016-05-02 00:39:04 (62.69 61.87)        0.322         8       8
+##  8     102 00:39:16 05-02-2016 2016-05-02 00:39:16 (61.88 62.89)        0.157        12       8
+##  9     102 00:39:24 05-02-2016 2016-05-02 00:39:24 (62.05 63.23)        0.521         8       8
+## 10     102 00:39:28 05-02-2016 2016-05-02 00:39:28 (62.77 62.31)        0.530         4       8
+## # ... with 195 more rows</code></pre>
 <pre class="r"><code>  # group_by(calftag, Contact) %&gt;%
   # summarise(Duration = sum(Interval, na.rm = T), DateTime = first(DateTime))</code></pre>
 <pre class="r"><code>Calves_Edges &lt;- calvesSp %&gt;% data.frame() %&gt;%
@@ -474,8 +472,7 @@ waterSp %&gt;%
   mutate(to = &quot;water&quot;) %&gt;%
   select(from, to, DateTime, Duration, Contact)</code></pre>
 <pre class="r"><code>G1 &lt;- igraph::graph_from_data_frame(Calves_Edges)</code></pre>
-<pre><code>## Warning in if (class(newval) == &quot;factor&quot;) {: the condition has length &gt; 1
-## and only the first element will be used</code></pre>
+<pre><code>## Warning in if (class(newval) == &quot;factor&quot;) {: the condition has length &gt; 1 and only the first element will be used</code></pre>
 <pre class="r"><code>plot(G1)</code></pre>
 <p><img src="RTLS_Contacts_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <p>We will define our distance treshold based on what we did before. Might not mkake a lot of sense.</p>

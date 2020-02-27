@@ -1,0 +1,74 @@
+---
+title: "Extracting Tables from pdfs"
+---
+The package `tabulizer` can extract tables from online resources in pdf format. 
+
+# Load libraries
+
+```{r message = F, warning = F}
+library(tabulizer)
+library(dplyr)
+library(stringr)
+```
+
+We will use as an example, a table from the California clivestock census:
+
+```{r}
+# The link to the file
+Link <- "https://www.cdfa.ca.gov/statistics/PDFs/2017-18AgReport.pdf"
+# We use the function on page 98
+out <- extract_tables(file = Link, pages = 98)
+```
+
+The output will be a messy list, so we have to do some reformatting to extract the information we need.  
+In this example is a list of 3 elements. The first element is the first clumn, the second columns 2 to 5 and the third one os column 6.
+
+```{r}
+## First element:
+# We will get rid of the first 5 rows because we dont need this info.
+CensusDF <- out[[1]][,1][-c(1:5)] %>% data.frame()
+## Second Element:
+# Add the columns from the first part with the formatted second part: 
+CensusDF <- cbind(CensusDF,
+out[[1]][,2][-c(1:5)] %>% # Exclude the first rows (weir formatting)
+  str_split(., pattern = " ") %>% # split the rows by the character " "
+  do.call(rbind,.) %>% # bind the rows
+  data.frame() # transform into a data frame
+)
+# Set column names:
+colnames(CensusDF) <- c("County", "N_Cows_16", "N_Dairies_16", "Avg_Cows_per_Dairy_16", "N_Cows_17", "N_Dairies_17")
+# Add the 6th column from the 3rd element of the list
+CensusDF$Avg_Cows_per_Dairy_17 <- out[[1]][,3][-c(1:5)] 
+# Print the data frame
+CensusDF %>% 
+  head() %>%
+  knitr::kable()
+```
+
+All the numbers are formated as characters and We can see that some of the county names has a number. We need to get rid of the commas (also the one from one of the Counties) and then convert from fator to numeric, we will just create one function for the numbers and one for the character variables and then use mutate to use our function: 
+
+```{r}
+# Function we will use for numbers:
+F1 <- function(x){
+  gsub(pattern = ",", replacement = "", x) %>%
+    as.numeric()
+}
+# Function for characters
+F2 <- function(x){
+  gsub(pattern = ",", replacement = "", x) %>% # delete all commas
+    gsub(pattern = "([0-9])", replacement = "", x) # Delete all numbers from the name
+}
+# Now mutate all:
+CensusDF <- CensusDF %>%
+  mutate_at(.vars = c(2:7), .funs = F1) %>%
+  mutate(County = F2(County))
+```
+
+The final table should look like this:
+```{r}
+CensusDF %>% 
+  knitr::kable()
+```
+
+
+
