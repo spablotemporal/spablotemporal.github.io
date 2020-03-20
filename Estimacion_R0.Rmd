@@ -135,6 +135,8 @@ df2 <- fit[fit$I == max(fit$I), "I", drop = FALSE] # height of pandemic
 ```
 
 
-Si deseas ver mas sobre la distribucion espacial de la epidemia, puedes ver el mapa que he hecho siguiendo este **[LINK](https://jpablo91.shinyapps.io/COVID19_Mx/)**
+Si deseas ver mas sobre la distribucion espacial de la epidemia, puedes ver el mapa que he hecho siguiendo este [LINK](https://jpablo91.shinyapps.io/COVID19_Mx/)  
+
+<a href="https://jpablo91.shinyapps.io/COVID19_Mx/" title="LINK">LINK</a>
 
 
