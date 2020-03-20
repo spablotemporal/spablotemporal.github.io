@@ -18,7 +18,7 @@ knitr::opts_chunk$set(warning = F, message = F, echo = F)
 ```{r}
 MexDF <- read.csv("MexDF.csv")
 # Population of Mexico
-N <- 128932753
+N <- 12893275
 
 Infected <- MexDF %>%
   group_by(fecha) %>%
@@ -89,7 +89,7 @@ init <- c(S = N-Infected[1],
 Opt <- optim(c(0.5, 0.5), RSS, method = "L-BFGS-B", lower = c(0, 0), upper = c(1, 1)) # optimize with some sensible conditions
 Opt_par <- setNames(Opt$par, c("beta", "gamma"))
 ```
-Usando los datos proporcionados por secretaria de salud logramos una **`r CNV(Opt$message)`**, y los parametros estimados son: $\beta=$ `r Opt$par[1]`, $\gamma=$ `r Opt$par[2]` resultando en un$R_0$ de `r Opt$par[1]/Opt$par[2]`  
+Usando los datos proporcionados por secretaria de salud logramos una **`r CNV(Opt$message)`**, y los parametros estimados son: $\beta=$ `r Opt$par[1]`, $\gamma=$ `r Opt$par[2]` resultando en un $R_0$ de `r Opt$par[1]/Opt$par[2]`. $R_0$ es un valor utilizado frequentemente para describir el impacto de una enfermedad en la poblacion. Un $R_0 > 1$ significa que la enfermedad causara una epidemia en la poblacion y un $R_0 < 0$ significa que no habra epidemia.     
   
   
 A continuacion usamos esos parametros estimados para nuestras ecuaciones por un periodo de 150 dias.  
@@ -110,7 +110,7 @@ df <- fit[fit$I == max(fit$I), "I", drop = FALSE] # height of pandemic
 ```
 
 
-Finalmente podemos obtener una extrapolacion de la epidemia. De acuerdo a la extrapolacion, el dia esperado del pico de la epidemia es el dia **`r rownames(df)`** despues de haber empezado la epidemia con un estimado de `r df$I` infectados.  
+Finalmente podemos obtener una extrapolacion de la epidemia. De acuerdo a la extrapolacion, el dia esperado del pico de la epidemia es el dia **`r rownames(df)`** despues de haber empezado la epidemia con un estimado de `r df$I` infectados, lo cual puede que sea no muy realista por algunos aspectos que comentaremos a continuacion.    
 
 ### Consideraciones para este tipo de modelos.
 
