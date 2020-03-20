@@ -2,7 +2,7 @@
 title: "Como podemos predecir el comportamiento de las enfermedades?"
 ---
 
-El comportamiento de muchas enfermedades infecciosas puede ser predecido usando simples ecuaciones diferenciales. En este post explicare, de manera introductoria, como podemos utilizar informacion para ajustar un modelo matematico y hacer algunas predicciones.  
+El comportamiento de muchas enfermedades infecciosas puede ser predicho usando simples ecuaciones diferenciales. En este post explicare, de manera introductoria, como podemos utilizar informacion para ajustar un modelo matematico y hacer algunas predicciones.  
 
 Aprovechando la atencion que esta teniendo el coronavirus, usare los datos officiales reportados por secretaria de salud para crear un modelo en el cual podamos obtener informacion como la tasa de transmission y el tamaño esperado de la epidemia.  
 
