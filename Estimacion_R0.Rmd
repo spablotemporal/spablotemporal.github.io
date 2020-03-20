@@ -118,11 +118,11 @@ Este tipo de modelos asume que existe una probabilidad de contactar con un infec
 Otro aspecto importante que no consideramos en este modelo es la reaccion de la gente ante la epidemia. Sabemos que esto puede disminuir notoriamente el numero de casos y la duracion de la epidemia. He ahi la importancia de la reduccion de contactos entre las personas.  
 
 ```{r}
-Opt_par[1] <- Opt_par[1]*0.9
-
-fit <- data.frame(ode(y = init, times = t, func = SIR, parms = Opt_par))
-plot(I~time, data = fit, type = "l", xlab = "Dia", ylab = "Poblacion", lwd = 2, lty = 1, col = "darkred")
-df2 <- fit[fit$I == max(fit$I), "I", drop = FALSE] # height of pandemic
+# Opt_par[1] <- Opt_par[1]*0.9
+# 
+# fit <- data.frame(ode(y = init, times = t, func = SIR, parms = Opt_par))
+# plot(I~time, data = fit, type = "l", xlab = "Dia", ylab = "Poblacion", lwd = 2, lty = 1, col = "darkred")
+# df2 <- fit[fit$I == max(fit$I), "I", drop = FALSE] # height of pandemic
 ```
 
 ```{r}
@@ -137,6 +137,6 @@ df2 <- fit[fit$I == max(fit$I), "I", drop = FALSE] # height of pandemic
 
 Si deseas ver mas sobre la distribucion espacial de la epidemia, puedes ver el mapa que he hecho siguiendo este [LINK](https://jpablo91.shinyapps.io/COVID19_Mx/)  
 
-<a href="https://jpablo91.shinyapps.io/COVID19_Mx/" title="LINK">LINK</a>
+<!-- <a href="https://jpablo91.shinyapps.io/COVID19_Mx/" title="LINK">LINK</a> -->
 
 
