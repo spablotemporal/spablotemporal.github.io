@@ -333,25 +333,110 @@ $(document).ready(function () {
 <p>Aprovechando la atencion que esta teniendo el coronavirus, usare los datos officiales reportados por secretaria de salud para crear un modelo en el cual podamos obtener informacion como la tasa de transmission y el tamaño esperado de la epidemia.</p>
 <p>Si observamos la siguiente grafica, del lado izquierdo veremos el numero cumulativo de casos infectados por COVID-19 empezando desde el dia 02 de febrero del 2020, cuando se reporto el primer caso en Mexico. podemos observar como existe un crecimiento exponencial en el numero de infectados. Si hacemos una transformacion logaritmica a este numero de casos, veremos que hay una buena relacion lineal entre el dia y el numero de casos. Idealmente nos gustaria ver que todos los puntos siguieran la linea recta y asi podriamos predecir con mejor certeza como se comportara la enfermedad.</p>
 <p><img src="Estimacion_R0_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Para que nuestro modelo tenga buena convergencia, los puntos del graficod e la derecha deben de seguir la linea recta, esto quiere decir que existe una relacion exponencial en el numero de casos y la longitud de la epidemia. En nuestro ejemplo podemos ver que existe cierto patron lineal, pero no del todo.</p>
 <p>Usando estas relaciones, podemos usar un modelo que es muy conocido en epidemiologia por su simplicidad. El tipo de modelo que usaremos se llama SIR (Susceptibles <span class="math inline">\(\rightarrow\)</span> Infectados<span class="math inline">\(\rightarrow\)</span> Recuperados), en el cual dividimos nuestra poblacion en compartimentos y asumimos que existe una tasa de contactos e infectividad que puede representar bien a nuestra poblacion.</p>
 <p><span class="math display">\[\frac{dS}{dt}=-\frac{\beta IS}{N} \\
  \frac{dI}{dt} = \frac{\beta IS}{N} - \gamma I \\
  \frac{dR}{dt} = \gamma I\]</span></p>
-<p>Las ecuaciones anteriores simplemente describen la tasa en la que los individuos pasan de un compartimento a otro. Uno de los retos mas grandes de este modelo es escoger los parametros de <span class="math inline">\(\beta\)</span> y <span class="math inline">\(\gamma\)</span> que representan la tasa en la que se transmite la enfermedad a la poblacion y la tasa en la que se recupera.<br />
+<p>Las ecuaciones anteriores simplemente describen la tasa en la que los individuos pasan de un compartimento a otro. En donde <span class="math inline">\(S\)</span> representa el compartimento de la poblacion susceptible, <span class="math inline">\(I\)</span> los infectados y <span class="math inline">\(R\)</span> recuperados. En las ecuaciones diferenciales definimos un intervalo de tiempo y la ecuacion se resolvera a ese intervalo. <span class="math inline">\(\frac{dS}{dt}\)</span> representa el cambio en el numero de susceptibles en cada paso de nuestro modelo en el que se mueven del compartimento <span class="math inline">\(S \rightarrow I\)</span> <span class="math inline">\(\frac{\beta IS}{N}\)</span> numero de individuos y del compartimento <span class="math inline">\(I\rightarrow R\)</span> <span class="math inline">\(\gamma I\)</span> numero de individuos.</p>
+<p>Uno de los retos mas grandes de este modelo es escoger los parametros de <span class="math inline">\(\beta\)</span> y <span class="math inline">\(\gamma\)</span> que representan la tasa en la que se transmite la enfermedad a la poblacion y la tasa en la que se recupera.<br />
 Usando los datos de el numero de casos, podemos usar optimizadores, como por ejemplo uno que minimize la suma de los cuadrados (Ecuacion a continuacion), para encontrar los parametros de <span class="math inline">\(\beta\)</span> y <span class="math inline">\(\gamma\)</span> para nuestro modelo que tengan un comportamiento mas parecido a los datos observados.</p>
 <p><span class="math display">\[RSS(\beta, \gamma) = \sum_t\left(I(t)-\hat{I}(t)\right)^2\]</span> En donde <span class="math inline">\(I(t)\)</span> es el numero de casos observados y <span class="math inline">\(\hat{I}(t)\)</span> es el numero de casso que nuestro modelo predice.<br />
 Una vez que encontremos esos valores para nuestros parametros <span class="math inline">\(\beta\)</span> y <span class="math inline">\(\gamma\)</span>, podemos usarlos en un modelo de simulacion y realizar predicciones sobre la epidemia.</p>
-<p>Usando los datos proporcionados por secretaria de salud logramos una <strong>Buena Convergencia del Modelo</strong>, y los parametros estimados son: <span class="math inline">\(\beta=\)</span> 0.6211862, <span class="math inline">\(\gamma=\)</span> 0.378814 resultando en un <span class="math inline">\(R_0\)</span> de 1.6398186. <span class="math inline">\(R_0\)</span> es un valor utilizado frequentemente para describir el impacto de una enfermedad en la poblacion. Un <span class="math inline">\(R_0 &gt; 1\)</span> significa que la enfermedad causara una epidemia en la poblacion y un <span class="math inline">\(R_0 &lt; 0\)</span> significa que no habra epidemia.</p>
+<p>Usando los datos proporcionados por secretaria de salud logramos una <strong>Buena Convergencia del Modelo</strong>, y los parametros estimados son: <span class="math inline">\(\beta=\)</span> 0.6213356, <span class="math inline">\(\gamma=\)</span> 0.3786644 resultando en un <span class="math inline">\(R_0\)</span> de 1.640861. <span class="math inline">\(R_0\)</span> es un valor utilizado frequentemente para describir el impacto de una enfermedad en la poblacion. Un <span class="math inline">\(R_0 &gt; 1\)</span> significa que la enfermedad causara una epidemia en la poblacion y un <span class="math inline">\(R_0 &lt; 0\)</span> significa que no habra epidemia.</p>
 <p>A continuacion usamos esos parametros estimados para nuestras ecuaciones por un periodo de 150 dias.<br />
 En el grafico del lado derecho vemos el la poblacion para cada uno de nuestros compartimentos a traves del periodo de tiempo que simulamos, y del lado derecho vemos el logaritmos de los valores de cada compartimento, Los asteriscos rojos en el grafico del lado derecho representan los casos reales reportados por secretaria de salud, esto nos ayuda a visualizar que tan bien nuestro modelo se ajusta a los datos reales.</p>
 <p><img src="Estimacion_R0_files/figure-html/unnamed-chunk-5-1.png" width="1344" /></p>
-<p>Finalmente podemos obtener una extrapolacion de la epidemia. De acuerdo a la extrapolacion, el dia esperado del pico de la epidemia es el dia <strong>65</strong> despues de haber empezado la epidemia con un estimado de 1.140996510^{6} infectados, lo cual puede que sea no muy realista por algunos aspectos que comentaremos a continuacion.</p>
+<p>Finalmente podemos obtener una extrapolacion de la epidemia. De acuerdo a la extrapolacion, el dia esperado del pico de la epidemia es el dia <strong>84</strong> despues de haber empezado la epidemia con un estimado de 1.143974310^{8} infectados, lo cual puede que sea no muy realista por algunos aspectos que comentaremos a continuacion.</p>
 <div id="consideraciones-para-este-tipo-de-modelos." class="section level3">
 <h3>Consideraciones para este tipo de modelos.</h3>
 <p>Este tipo de modelos asume que existe una probabilidad de contactar con un infectado para toda la poblacion, lo cual no es algo cierto en muchos casos. La transmision de enfermedades a nivel individual, frequentemente se ve influida por la red de contactos de cada persona y sabemos que la estructura de esa red de contactos depende de caracteristicas individuales de cada persona, tales como su profesion o ubicacion geografica, algo que en este modelo no estamos representando.<br />
 Otro aspecto importante que no consideramos en este modelo es la reaccion de la gente ante la epidemia. Sabemos que esto puede disminuir notoriamente el numero de casos y la duracion de la epidemia. He ahi la importancia de la reduccion de contactos entre las personas.</p>
 <p>Si deseas ver mas sobre la distribucion espacial de la epidemia, puedes ver el mapa que he hecho siguiendo este <a href="https://jpablo91.shinyapps.io/COVID19_Mx/">LINK</a></p>
+<p><img src="Images/COVID19.jpg" style="width:50%" align="center"></p>
 <!-- <a href="https://jpablo91.shinyapps.io/COVID19_Mx/" title="LINK">LINK</a> -->
+</div>
+<div id="apendice" class="section level1">
+<h1>Apendice</h1>
+<pre class="r"><code># Librerias que usamos
+library(dplyr); library(deSolve)
+#Opciones para correr el documento (No es necesario correr esta linea)
+knitr::opts_chunk$set(warning = F, message = F, echo = F)
+#### Obtener los datos de la epidemia, se tiene que tener instalado el paquete devtools y nCovid2019
+
+# install.packages(&quot;devtools&quot;)
+# devtools::install_github(&quot;GuangchuangYu/nCov2019&quot;)
+
+COVID &lt;- nCov2019::load_nCov2019(source = &quot;github&quot;, lang = &quot;en&quot;)
+COVID &lt;- COVID[&#39;global&#39;]
+# Obtener el numero de infectados para Mexico
+Infected &lt;- COVID %&gt;%
+  filter(country == &quot;Mexico&quot;) %&gt;%
+  pull(cum_confirm)
+
+# Poblacion actual de Mexico
+N &lt;- 1289327530
+
+# Dias desde el comienzo
+Day &lt;- 1:(length(Infected))
+#####
+##Obtener grafico de infectados totales y en escala logaritmica
+par(mfrow = c(1, 2), bty = &#39;n&#39;)
+plot(Day, Infected, type =&quot;b&quot;, pch = 16, col = &quot;red3&quot;, xlab = &quot;Dia&quot;, ylab = &quot;Infectados&quot;, bty = &quot;n&quot;)
+plot(Day, Infected, log = &quot;y&quot;, pch = 16, col = &quot;red3&quot;, xlab = &quot;Dia&quot;, ylab = &quot;log(Infectados)&quot;, bty = &#39;n&#39;)
+abline(lm(log10(Infected) ~ Day), col = &quot;grey20&quot;)
+title(&quot;Infecciones totales por  COVID-19 en Mexico&quot;, outer = TRUE, line = -1)
+################################### 
+## Funciones que usaremos
+# Funcion para las ecuaciones diferenciales
+SIR &lt;- function(time, state, parameters) {
+  par &lt;- as.list(c(state, parameters))
+  with(par, {
+    dS &lt;- -beta/N * I * S
+    dI &lt;- beta/N * I * S - gamma * I
+    dR &lt;- gamma * I
+    list(c(dS, dI, dR))
+    })
+}
+## FUnction para la optimizacion del modelo
+RSS &lt;- function(parameters) {
+  names(parameters) &lt;- c(&quot;beta&quot;, &quot;gamma&quot;)
+  out &lt;- ode(y = init, times = Day, func = SIR, parms = parameters)
+  fit &lt;- out[ , 3]
+  sum((Infected - fit)^2)
+}
+# Funcion para determinar si existe buena convergencia del modelo
+CNV &lt;- function(x){
+  if(x == &quot;CONVERGENCE: REL_REDUCTION_OF_F &lt;= FACTR*EPSMCH&quot;){
+    return(&quot;Buena Convergencia del Modelo&quot;)
+  } else{
+    return(&quot;Modelo fallo a converger&quot;)
+  }
+}
+###################################
+# Condiciones iniciales del modelo
+init &lt;- c(S = N-Infected[1], 
+          I = Infected[1], 
+          R = 0)
+# Optimizacion del modelo
+Opt &lt;- optim(c(0.5, 0.5), RSS, method = &quot;L-BFGS-B&quot;, lower = c(0, 0), upper = c(1, 1))
+# Nombrar los parametros obtenidos en la optimizacion
+Opt_par &lt;- setNames(Opt$par, c(&quot;beta&quot;, &quot;gamma&quot;))
+#### Graficos del resultado del modelo
+t &lt;- 1:180 # time in days
+# Correr el modelo con los parametros obtenidos
+fit &lt;- data.frame(ode(y = init, times = t, func = SIR, parms = Opt_par))
+# Crear paleta de colores
+col &lt;- c(&quot;darkgreen&quot;, &quot;darkred&quot;, &quot;darkblue&quot;)
+## Graficar los datos
+par(mfrow = c(1, 2), bty = &#39;n&#39;)
+plot(I~time, data = fit, type = &quot;l&quot;, xlab = &quot;Dia&quot;, ylab = &quot;Poblacion&quot;, lwd = 2, lty = 1, col = &quot;darkred&quot;)
+plot(I~time, data = fit, type = &quot;l&quot;, xlab = &quot;Dia&quot;, ylab = &quot;Poblacion&quot;, lwd = 2, lty = 1, col = &quot;darkred&quot;, log = &quot;y&quot;)
+points(Day, Infected, pch = 8, col = &quot;red&quot;, cex = 1.5)
+
+legend(&quot;topright&quot;, c(&quot;Susceptibles&quot;, &quot;Infectados&quot;, &quot;Recuperados&quot;), lty = 1, lwd = 2, col = col)
+title(&quot;Modelo de ecuaciones diferenciales para COVID-19 en Mexico&quot;, outer = TRUE, line = -1)
+df &lt;- fit[fit$I == max(fit$I), &quot;I&quot;, drop = FALSE] # height of pandemic</code></pre>
 </div>
 
 
