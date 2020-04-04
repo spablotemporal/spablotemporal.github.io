@@ -3,7 +3,7 @@ title: "About me"
 ---
 
 <p>
-<img src ="Images/headshot.png" style="width:40%;float:right">
+<img src ="Images/headshot.png" style="width:30%;float:right">
 
 <h3>Hi I'm Pablo. I have always been fascinated by the application of mathematics to solve problems, I study Diseases in populations and in my free time I enjoy producing and composing music.</h3>
 </p>
@@ -36,11 +36,27 @@ Foot and mouth disease(FMD) is a viral disease that affects cloven hooved animal
 
 ________________________
 
+## Other Side Quests.
+
+### Consulting 
+Since 2018, I also colaborate as consultant for the Veterinary Center for Clinical Trials of the Veterinary Teaching Hospital of UC Davis. As part of my work there I assist on study design, sample size estimation and data analysis.  
+
+### Following the COIVD-19 epidemic in Mexico.  
+During the las couple of weeks I've been following the COVID epidemic and using some simple tools to explore the progress of an outbreak using COVID19 in Mexico as an example.  
+You can find my posts [Here](https://jpablo91.github.io/COVIDMx/).  
+  
+<img src="Images/COVID19_TS.png" style="width:50%" align="center">
+  
+I also developed this app to track the number of cases and the spatial distribution in Mexico
+
+<img src="Images/COVID19.jpg" style="width:50%" align="center">  
+
+
+________________________
+
+
+
 ## Previous projects
 
 ### Classical Swine Fever in Peru.
 Classical Swine Fever is a viral disease that affects the swine industry. In Peru, the disease is endemic and there is a current vaccination program. We applied methodologies from network theory and regression analysis to investigate the asociation of the incidence of the disaese with socio economic factors and the networ structure, and evaluate the vaccination program.
-
-## Other Side Quests.
-
-Since 2018, I also colaborate as consultant for the Veterinary Center for Clinical Trials, I enjoy talking about statistics and helping others for study design and data analysis.  
