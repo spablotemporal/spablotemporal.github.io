@@ -41,15 +41,13 @@ ________________________
 ### Consulting 
 Since 2018, I also colaborate as consultant for the Veterinary Center for Clinical Trials of the Veterinary Teaching Hospital of UC Davis. As part of my work there I assist on study design, sample size estimation and data analysis.  
 
-### Following the COIVD-19 epidemic in Mexico.  
+### Following the COIVD-19 epidemic.  
 During the las couple of weeks I've been following the COVID epidemic and using some simple tools to explore the progress of an outbreak using COVID19 in Mexico as an example.  
 You can find my posts [Here](https://jpablo91.github.io/COVIDMx/).  
-  
-<img src="Images/COVID19_TS.png" style="width:50%" align="center">
-  
-I also developed this app to track the number of cases and the spatial distribution in Mexico
+I am also developing web apps for other regions to estimate the hospital beds and ICU use, more information of this projects available upon request.  
 
-<img src="Images/COVID19.jpg" style="width:50%" align="center">  
+<img src="Images/COVID19_TS.png" style="width:300px;"><img src="Images/COVID19.jpg" style="width:300px;"><img src="Images/COVIDHosp.jpg" style="width:300px;">
+  
 
 
 ________________________
