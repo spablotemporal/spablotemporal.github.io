@@ -392,9 +392,11 @@ $(document).ready(function () {
 <div id="estimation-of-beta_i" class="section level1">
 <h1>Estimation of <span class="math inline">\(\beta_i\)</span></h1>
 <p>The <span class="math inline">\(\beta_i\)</span> parameter is a time dependent estimation based on the <span class="math inline">\(R_e\)</span>, the effect of interventions and the seasonality.</p>
-<div id="effective-reproduction-number-rt" class="section level3">
-<h3>Effective reproduction number (Rt)</h3>
-<p><img src="Images/COVIDModel/Rt.png" width="50%" style="display: block; margin: auto;" /></p>
+<div id="effective-reproduction-number-r_e" class="section level3">
+<h3>Effective reproduction number (<span class="math inline">\(R_e\)</span>)</h3>
+<p>The effective reproduction number is calculated using the package <code>EpiEstim</code>, then we use an average of the calculated <span class="math inline">\(R_e\)</span> of the previous 7 days to obtain the <span class="math inline">\(R_e\)</span> at each simulation step.<br />
+The stochastic version of the model uses the <span class="math inline">\(\sigma\)</span> estimated to include incertainty on the <span class="math inline">\(R_e\)</span> estimation for each iteration.</p>
+<p><img src="Images/COVIDModel/Rt.png" width="70%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="interventions" class="section level3">
 <h3>Interventions</h3>
@@ -405,7 +407,7 @@ The transmission parameter (<span class="math inline">\(\beta_I\)</span>) is sca
 <h3>Seasonal effect.</h3>
 <p>The seasonal variation is based on a function where the seasonal peak is modeled based on a sinusoidal function with an annual period. The model allows to specify the seasonal peak and the force of the seasonality.</p>
 <p><span class="math inline">\(\beta_i(t) = R_e(1+\epsilon \cos(2\pi(t-t_{peak})))/365\)</span></p>
-<p><img src="Images/COVIDModel/Seasonality.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><img src="Images/COVIDModel/Seasonality.png" width="20%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="go-back-to-the-app" class="section level3">
 <h3><a href="https://jpablo91.shinyapps.io/StanTest/">Go back to the app</a></h3>

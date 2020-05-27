@@ -57,10 +57,13 @@ Parameters (indicated with the $i$ subscript) were calculated for each of the st
 
 The $\beta_i$ parameter is a time dependent estimation based on the $R_e$, the effect of interventions and the seasonality.  
 
-### Effective reproduction number (Rt)
+### Effective reproduction number ($R_e$)
 
-```{r out.width = '50%', fig.show='hold', echo=F, fig.align='center'}
-knitr::include_graphics(rep('Images/COVIDModel/Rt.png'))
+The effective reproduction number is calculated using the package `EpiEstim`, then we use an average of the calculated $R_e$ of the previous 7 days to obtain the $R_e$ at each simulation step.  
+The stochastic version of the model uses the $\sigma$ estimated to include incertainty on the $R_e$ estimation for each iteration.  
+
+```{r out.width = '70%', fig.show='hold', echo=F, fig.align='center'}
+knitr::include_graphics('Images/COVIDModel/Rt.png')
 ```
 
 ### Interventions
@@ -74,8 +77,8 @@ The seasonal variation is based on a function where the seasonal peak is modeled
 $\beta_i(t) = R_e(1+\epsilon \cos(2\pi(t-t_{peak})))/365$  
 
 
-```{r out.width = '50%', fig.show='hold', echo=F, fig.align='center'}
-knitr::include_graphics(rep('Images/COVIDModel/Seasonality.png'))
+```{r out.width = '20%', fig.show='hold', echo=F, fig.align='center'}
+knitr::include_graphics('Images/COVIDModel/Seasonality.png')
 ```
   
   
