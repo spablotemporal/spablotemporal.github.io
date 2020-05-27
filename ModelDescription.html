@@ -331,8 +331,9 @@ $(document).ready(function () {
 
 <p>Our model is an adaptation of another model developed by the research group of Richard Neher from the university of Basel.</p>
 <p>The model consists on a compartmental extended SIR model, where the population is break down in multiple compartments stratified by age group and condition (having Smoking, diabetes or hearth disease vs none). The population of the county (<span class="math inline">\(N\)</span>) is distributed between the estimations for each of the stratification groups (<span class="math inline">\(N_i\)</span>), the proportion of the population for each group was estimated using the CHIS census.</p>
+<p><img src="Images/COVIDModel/StratTable.png" width="50%" style="display: block; margin: auto;" /></p>
 <p>The flow of the population among the compartments goes as follows:</p>
-<p><img src="Images/Model.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><img src="Images/COVIDModel/Model.png" width="50%" style="display: block; margin: auto;" /></p>
 <p>Where the subscript <span class="math inline">\(i\)</span> indicates each of the stratification groups, and the compartments represent:</p>
 <ul>
 <li>Susceptible (<span class="math inline">\(S\)</span>), population that is susceptible for the infection (in this model we assume that everyone in the county are susceptible, N = 550,000).</li>
@@ -390,16 +391,24 @@ $(document).ready(function () {
 </table>
 <div id="estimation-of-beta_i" class="section level1">
 <h1>Estimation of <span class="math inline">\(\beta_i\)</span></h1>
-<p>The <span class="math inline">\(\beta_i\)</span> parameter is a time dependent estimation based on the <span class="math inline">\(R_0\)</span>, the effect of interventions and the seasonality.</p>
+<p>The <span class="math inline">\(\beta_i\)</span> parameter is a time dependent estimation based on the <span class="math inline">\(R_e\)</span>, the effect of interventions and the seasonality.</p>
+<div id="effective-reproduction-number-rt" class="section level3">
+<h3>Effective reproduction number (Rt)</h3>
+<p><img src="Images/COVIDModel/Rt.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
 <div id="interventions" class="section level3">
 <h3>Interventions</h3>
 <p>The interventions can be applied to a time frame with an effect that is assumed to be constant over the time the intervention was applied.<br />
-The transmission parameter (<span class="math inline">\(\beta_I\)</span>) is scaed by the effect (<span class="math inline">\(\phi\)</span>)of intervention as follows: <span class="math inline">\(\beta_i(t) = R_0\phi M(t)\)</span></p>
+The transmission parameter (<span class="math inline">\(\beta_I\)</span>) is scaed by the effect (<span class="math inline">\(\phi\)</span>)of intervention as follows: <span class="math inline">\(\beta_i(t) = R_e\phi M(t)\)</span></p>
 </div>
 <div id="seasonal-effect." class="section level3">
 <h3>Seasonal effect.</h3>
 <p>The seasonal variation is based on a function where the seasonal peak is modeled based on a sinusoidal function with an annual period. The model allows to specify the seasonal peak and the force of the seasonality.</p>
-<p><span class="math inline">\(\beta_i(t) = R_0(1+\epsilon \cos(2\pi(t-t_{peak})))/365\)</span></p>
+<p><span class="math inline">\(\beta_i(t) = R_e(1+\epsilon \cos(2\pi(t-t_{peak})))/365\)</span></p>
+<p><img src="Images/COVIDModel/Seasonality.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="go-back-to-the-app" class="section level3">
+<h3><a href="https://jpablo91.shinyapps.io/StanTest/">Go back to the app</a></h3>
 </div>
 </div>
 

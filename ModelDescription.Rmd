@@ -6,10 +6,15 @@ Our model is an adaptation of another model developed by the research group of R
 
 The model consists on a compartmental extended SIR model, where the population is break down in multiple compartments stratified by age group and condition (having Smoking, diabetes or hearth disease vs none). The population of the county ($N$) is distributed between the estimations for each of the stratification groups ($N_i$), the proportion of the population for each group was estimated using the CHIS census.  
 
+```{r out.width = '50%', fig.show='hold', echo=F, fig.align='center'}
+knitr::include_graphics(rep('Images/COVIDModel/StratTable.png'))
+```
+  
+  
 The flow of the population among the compartments goes as follows:  
 
 ```{r out.width = '50%', fig.show='hold', echo=F, fig.align='center'}
-knitr::include_graphics(rep('Images/Model.png'))
+knitr::include_graphics(rep('Images/COVIDModel/Model.png'))
 ```
 
 Where the subscript $i$ indicates each of the stratification groups, and the compartments represent:  
@@ -35,7 +40,6 @@ $$ \begin{split}
 \end{split}
 $$
 
-
 Parameters (indicated with the $i$ subscript) were calculated for each of the stratification groups based on the observed hospitalization rates by age and condition reported by the CDC (https://www.cdc.gov/mmwr/volumes/69/wr/pdfs/mm6915e3-H.pdf) . Parameters $t^{-1}$, represent the inverse of the average number of days the individuals spend on each of the compartments ($t_l$ = latency period, $t_I$ = infectious period, $t_h$ = days at the hospital, $t_c$ = days at ICU). Detailed information of the parameters can be found on the following table.  
 
 * All the parameters were estimated based on National statistics, it is important to note that the disease dynamic might have a different behavior in the county 
@@ -51,17 +55,32 @@ Parameters (indicated with the $i$ subscript) were calculated for each of the st
 
 # Estimation of $\beta_i$
 
-The $\beta_i$ parameter is a time dependent estimation based on the $R_0$, the effect of interventions and the seasonality.  
+The $\beta_i$ parameter is a time dependent estimation based on the $R_e$, the effect of interventions and the seasonality.  
+
+### Effective reproduction number (Rt)
+
+```{r out.width = '50%', fig.show='hold', echo=F, fig.align='center'}
+knitr::include_graphics(rep('Images/COVIDModel/Rt.png'))
+```
 
 ### Interventions
 The interventions can be applied to a time frame with an effect that is assumed to be constant over the time the intervention was applied.  
 The transmission parameter ($\beta_I$) is scaed by the effect ($\phi$)of intervention as follows:
-$\beta_i(t) = R_0\phi M(t)$
+$\beta_i(t) = R_e\phi M(t)$
 
 ### Seasonal effect.  
 The seasonal variation is based on a function where the seasonal peak is modeled based on a sinusoidal function with an annual period. The model allows to specify the seasonal peak and the force of the seasonality.  
 
-$\beta_i(t) = R_0(1+\epsilon \cos(2\pi(t-t_{peak})))/365$
+$\beta_i(t) = R_e(1+\epsilon \cos(2\pi(t-t_{peak})))/365$  
+
+
+```{r out.width = '50%', fig.show='hold', echo=F, fig.align='center'}
+knitr::include_graphics(rep('Images/COVIDModel/Seasonality.png'))
+```
+  
+  
+  
+### [Go back to the app](https://jpablo91.shinyapps.io/StanTest/)
 
 
 
