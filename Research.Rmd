@@ -57,4 +57,6 @@ ________________________
 ## Previous projects
 
 ### Classical Swine Fever in Peru.
-Classical Swine Fever is a viral disease that affects the swine industry. In Peru, the disease is endemic and there is a current vaccination program. We applied methodologies from network theory and regression analysis to investigate the asociation of the incidence of the disaese with socio economic factors and the networ structure, and evaluate the vaccination program.
+Classical Swine Fever is a viral disease that affects the swine industry. In Peru, the disease is endemic and there is a current vaccination program. We applied methodologies from network theory and regression analysis to investigate the asociation of the incidence of the disaese with socio economic factors and the networ structure, and evaluate the vaccination program.  
+  
+<img src="Images/Peru.jpg" style="width:30%" align="center">
