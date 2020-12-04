@@ -9,6 +9,8 @@ output:
 ---
 
 \begin{center}
+DVM, MPVM, PhDc.  
+  
 website: https://jpablo91.github.io/
 \end{center}
 
@@ -32,10 +34,20 @@ ________________________
 
 ________________________
 
-## Profesional Experience
+## Profesional Experience:
+
+#### Department of Veterinary Medicine and Epidemiology, University of California Davis. Davis, California, United States - Graduate Student Researcher
+*June 2020 - Current*
 
 #### Department of Population Health and Reproduction, University of California Davis. Davis, California, United States - Graduate Student Researcher
-*August 2019 - Current*
+*August 2019 - June 2020*
+
+#### One Health Institute, University of California Davis. Davis, California, United States - Graduate Student Researcher
+*January 2018 - March 2018*
+  
+________________________
+
+## Teaching Experience:
 
 #### University of California Davis. Davis, California, United States - Teaching assistant on Spatial epidemiology (EPI 223)
 *March 2019 - June 2019*
@@ -47,15 +59,13 @@ ________________________
 #### University of California Davis. Davis, California, United States - Teaching assistant on medical statistics (MPM 204)
 *January 2018 - March 2019*
 
-#### One Health Institute, University of California Davis. Davis, California, United States - Graduate Student Researcher
-*January 2018 - March 2018*
-
 ________________________
 
 ## Publications:
 
-  - Garcia-Mazcorro JF, Castillo-Carranza SA, Guard B, **Gomez-Vazquez JP**, Dowd SE, Brigthsmith DJ. 2016. Comprehensive molecular characterization of bacterial communities in feces of pet birds using 16S marker sequencing. Microbial Ecology Epub ahead of print Aug 27 2016 DOI 10.1007/s00248-016-0840-7.
   - **Gómez-Vázquez, J. P.**, Quevedo-Valle, M., Flores, U., Portilla Jarufe, K., & Martínez-López, B. (2019). Evaluation of the impact of live pig trade network, vaccination coverage and socio-economic factors in the classical swine fever eradication program in Peru. Preventive Veterinary Medicine, 162(May 2018), 29–37. https://doi.org/10.1016/j.prevetmed.2018.10.019
+  
+  - Garcia-Mazcorro JF, Castillo-Carranza SA, Guard B, **Gomez-Vazquez JP**, Dowd SE, Brigthsmith DJ. 2016. Comprehensive molecular characterization of bacterial communities in feces of pet birds using 16S marker sequencing. Microbial Ecology Epub ahead of print Aug 27 2016 DOI 10.1007/s00248-016-0840-7.
 
 ________________________
 ## Participation at conferences
@@ -76,7 +86,7 @@ ________________________
 ________________________
 
 
-## Training
+## Training 
 
   - Análisis espacio-temporal de redes de contactos, UNAM, Mexico City, Mexico, November 19-20, 2019
   - Spatio-Temporal analysis of Movement Networks, Geovet 2019, Davis California, October 7, 2019
