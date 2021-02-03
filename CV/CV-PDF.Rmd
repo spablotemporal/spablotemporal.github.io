@@ -59,6 +59,13 @@ ________________________
 #### University of California Davis. Davis, California, United States - Teaching assistant on medical statistics (MPM 204)
 *January 2018 - March 2019*
 
+### Workhsops and training provided:
+
+  - Análisis espacio-temporal de redes de contactos, UNAM, Mexico City, Mexico, November 19-20, 2019
+  - Spatio-Temporal analysis of Movement Networks, Geovet 2019, Davis California, October 7, 2019
+  - Herramientas geoestadisticas en epidemiologia, Agrocalidad, Quito, Pichincha, Ecuador, August 12-15, 2019
+  - Analyzing Animal Health Spatial-explicit Networks Using R, UC Davis, Davis, California, February 6, 2019
+  
 ________________________
 
 ## Publications:
@@ -66,7 +73,11 @@ ________________________
   - **Gómez-Vázquez, J. P.**, Quevedo-Valle, M., Flores, U., Portilla Jarufe, K., & Martínez-López, B. (2019). Evaluation of the impact of live pig trade network, vaccination coverage and socio-economic factors in the classical swine fever eradication program in Peru. Preventive Veterinary Medicine, 162(May 2018), 29–37. https://doi.org/10.1016/j.prevetmed.2018.10.019
   
   - Garcia-Mazcorro JF, Castillo-Carranza SA, Guard B, **Gomez-Vazquez JP**, Dowd SE, Brigthsmith DJ. 2016. Comprehensive molecular characterization of bacterial communities in feces of pet birds using 16S marker sequencing. Microbial Ecology Epub ahead of print Aug 27 2016 DOI 10.1007/s00248-016-0840-7.
-
+  
+### As Consultant:  
+  
+  - Emery CB, Outerbridge CA, Knych HK, Lam ATH, **Gomez-Vazquez JP**, White SD. Preliminary study of the stability of dexamethasone when added to commercial veterinary ear cleaners over a 90 day period. Vet Dermatol. 2021 Feb 2. doi: 10.1111/vde.12924. Epub ahead of print. PMID: 33528860.  
+  
 ________________________
 ## Participation at conferences
 
@@ -82,16 +93,6 @@ ________________________
   - Live pig trade network modeling and prediction using Network analysis and exponential random graph models in Peru, June 2018, *25th International Pig Veterinary Society Congress”, Chongging Yuelai, China*
   - Herramientas bioinformáticas para el estudio de la microbiota intestinal” (Bioinformatics tools for gastrointestinal microbiota analysis), October 2015, *“XXVIII Congreso Nacional de Investigación en Medicina UANL” (National symposium of Medical research UANL), Monterrey N.L., Mexico*
   - Perfil metabólico de comunidades microbianas en heces de aves en cautiverio” (Metabolic profiles of pet birds microbiota), October 2015, *“4th KALAANKAB Symposium”, Villahermosa, Tabasco, Mexico*
-
-________________________
-
-
-## Training 
-
-  - Análisis espacio-temporal de redes de contactos, UNAM, Mexico City, Mexico, November 19-20, 2019
-  - Spatio-Temporal analysis of Movement Networks, Geovet 2019, Davis California, October 7, 2019
-  - Herramientas geoestadisticas en epidemiologia, Agrocalidad, Quito, Pichincha, Ecuador, August 12-15, 2019
-  - Analyzing Animal Health Spatial-explicit Networks Using R, UC Davis, Davis, California, February 6, 2019
 
 
 

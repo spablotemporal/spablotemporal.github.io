@@ -8,14 +8,14 @@ title: "Herramientas Geostadisticas para Mapeo de enfermedades e Inferencia"
 # Introduccion:
 
 De acurdo a la primera ley de geografia de Tobler, *"todo esta relacionado entre si, pero eventos que suceden cerca tienen mayor relacion comparados con eventos que suceden a mayor distancia"*. Este no siempre consideramos cuando realizamos inferencia estadistica, y para la mayoria de los metodos estadisticos (por ejemplo regression), asumimos que las observaciones fueron muestreadas de manera independiente.  
-En este Workshop introduciremos, desde lo mas basico, a metodos para manipular y analizar datos espaciales. Con las tecnologías actuales, la cantidad de informacion disponeible puede ser un poco abrumadora cuando intentamos encontrar asociaciones entre dos o mas eventos. Existen muchos recursos que pueden ayudarnos a informar de mejor manera nuestros modelos estadisticos y obtener mas informacion de nuestros datos. Herramientas de libre acceso, tales como `R`, ofrecen un medio muy flexible para manipular y analizar este tipo de datos.  
+En este Workshop introduciremos, desde lo mas basico, a metodos para manipular y analizar datos espaciales. Con las tecnologías actuales, la cantidad de informacion disponeible puede ser un poco abrumadora cuando intentamos encontrar asociaciones entre dos o mas eventos. Existen muchos recursos que pueden ayudarnos a informar de mejor manera nuestros modelos estadisticos y obtener mas informacion de nuestros datos. Herramientas de libre acceso, tales como QGIS y `R`, ofrecen un medio muy flexible para manipular y analizar este tipo de datos.  
 Para este workshop usaremos ejemplos en epidemiologia, el workshop esta orientado a entender conceptos en epidemiologia tales como asociacion, causalidad y confusion. Estos conceptos pueden ser aplicados a cualquier area en la que busquemos la asociacion entre dos o mas eventos.  
 
 ________
 
 # Instructor
 
-**Jose Pablo Gomez-Vazquez** (DVM, MPVM), Universidad de California Davis. Pablo es un estudiante de doctorado realizando su trabajo en el Center for Animal Disease Modeling and Surveillance de UC Davis. Sus intereses incluyen la aplicacion de teoria de redes y geoestadistica para informar politicas publicas y toma de decisiones en epidemiologia. Pablo ha trabajado con instituciones gubernamentales en Peru y Ecuador, proporcionando herramientas que pueden ser usadas en toma de decisiones.  
+**Jose Pablo Gomez-Vazquez** (PhDc, MPVM, DVM), Universidad de California Davis. Pablo es un candidato de doctorado realizando su trabajo en el Center for Animal Disease Modeling and Surveillance de UC Davis. Sus intereses incluyen la aplicacion de teoria de redes y geoestadistica para informar politicas publicas y toma de decisiones en epidemiologia. Pablo ha trabajado con instituciones gubernamentales en Peru, Ecuador y California, proporcionando herramientas que pueden ser usadas en toma de decisiones.  
 
 ________
 
@@ -23,12 +23,40 @@ ________
 # Resultados de aprendizaje
 
   - Entender la estructura de datos espaciales (Vectores y Rasters)
-  - Extraer y manipular datos espaciales
+  - Extraer y procesar datos espaciales
   - Inferencia estadistica para datos no espaciales
   - Correlacion e inferencia estadistica para datos espaciales
   - Visualizacion y presentacion de los resultados
 
 ________
+
+# Estructura del curso:
+
+
+## Modulo basico
+
+  - Fundamentos de SIGs (QGIS)
+    - Estructura de datos espaciales.  
+    - Sistemas de coordenadas geograficas.  
+  
+  - Manipulacion de bases de datos en R:  
+    - Operaciones con vectores.  
+    - Operaciones con rasters.
+    - Proyeccion y transformacion de los datos.  
+    - Geocodificacion de datos.  
+    - Limpieza y procesamiento de datos.  
+  
+  - Herramientas para visualizacion de datos
+    - Visualizacion estatica y generacion de reportes.  
+    - Visualizacion dinamica mediante videos, gifs y applicaciones web.  
+  
+  - Analisis de datos espaciales
+    - Operaciones basadas en distancia  
+    - Adjacencia.  
+    - Autocorrelacion espacial.  
+    - Clustering: Estadisticas globales y locales.  
+    
+
 
 
 # Horario
