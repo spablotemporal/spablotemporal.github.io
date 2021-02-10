@@ -5,7 +5,7 @@ title: "About me"
 <p>
 <img src ="Images/headshot.png" style="width:30%;float:right">
 
-<h3>Hi I'm Pablo. I have always been fascinated by the application of mathematics to solve problems, I study Diseases in populations and in my free time I enjoy producing and composing music.</h3>
+<h3>Hi I'm Pablo. I have always been fascinated by the application of mathematics to solve problems, I study Diseases in populations and in my free time I enjoy applying concepts of music, math and programming to create [music](https://linktr.ee/synthesaurio).</h3>
 </p>
 
   
@@ -26,11 +26,11 @@ ________________________
 
 ## Current projects.
 
-As part of my work in my PhD i'm currently part of the Center for Animal Disease Modeling and Surveillance at UC Davis https://cadms.vetmed.ucdavis.edu/
+As part of my work in my PhD I'm currently part of the [Center for Animal Disease Modeling and Surveillance at UC Davis](https://cadms.vetmed.ucdavis.edu/)
 
 
 ### Foot and mouth disease modeling in Ecuador.  
-Foot and mouth disease(FMD) is a viral disease that affects cloven hooved animals such as cows, pigs, sheep, among other domestic and wildlife ruminants. The importance of the disease is in the economic impact for affected countries. There has been great advances towards the eradication of the disease in South America in the last couple of years. Ecuador is in the last phase of eradication and the veterinary services is working hard on the eradication program. In this project in colaboration with AGROCALIDAD and PANAFTOSA, we apply tools from network theory and geostatistics to to develop tools that inform decision making.  
+Foot and mouth disease(FMD) is a viral disease that affects cloven hoofed animals such as cows, pigs, sheep, among other domestic and wildlife ruminants. The importance of the disease is in the economic impact for affected countries. There has been great advances towards the eradication of the disease in South America in the last couple of years. Ecuador is in the last phase of eradication and the veterinary services is working hard on the eradication program. In this project in collaboration with AGROCALIDAD and PANAFTOSA, we apply tools from network theory and geostatistics to to develop tools that inform decision making.  
   
 <img src="Images/Ecuador.jpeg" style="width:50%" align="center">
 
@@ -39,12 +39,12 @@ ________________________
 ## Other Side Quests.
 
 ### Consulting 
-Since 2018, I also colaborate as consultant for the Veterinary Center for Clinical Trials of the Veterinary Teaching Hospital of UC Davis. As part of my work there I assist on study design, sample size estimation and data analysis.  
+Since 2018, I also collaborate as consultant for the Veterinary Center for Clinical Trials of the Veterinary Teaching Hospital of UC Davis. As part of my work there I assist on study design, sample size estimation and data analysis. You can [book me](https://www.picktime.com/6b6b1cbf-8f49-47a6-9a39-65573880dd13) trough my department website 
 
 ### Following the COIVD-19 epidemic.  
-During the las couple of weeks I've been following the COVID epidemic and using some simple tools to explore the progress of an outbreak using COVID19 in Mexico as an example.  
-You can find my posts [Here](https://jpablo91.github.io/COVIDMx/).  
-I am also developing web apps for other regions to estimate the hospital beds and ICU use, more information of this projects available upon request.  
+During the last couple of months I've participated in different activities related with the COVID pandemic. 
+You can find some posts from the early epidemic in Mexico [Here](https://jpablo91.github.io/COVIDMx/).  
+I am also part of a collaborative project funded by [Alianza UCMX](https://alianzaucmx.ucr.edu) where we are looking at the vulnerable areas in Mexico city.  
 
 <img src="Images/COVID19_TS.png" style="width:300px;"><img src="Images/COVID19.jpg" style="width:300px;"><img src="Images/COVIDHosp.jpg" style="width:300px;">
   
