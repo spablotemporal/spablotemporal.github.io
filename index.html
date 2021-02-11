@@ -13,6 +13,7 @@
 
 <title>HOME</title>
 
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
@@ -24,6 +25,15 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -69,6 +79,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -294,20 +305,30 @@ $(document).ready(function () {
   <ul class="dropdown-menu" role="menu">
     <li>
       <a href="https://github.com/jpablo91">
-        <span class="fa fa-github"></span>
+        <span class="fas fa-github-alt"></span>
          
+        Github
       </a>
     </li>
     <li>
       <a href="https://www.linkedin.com/in/pablo-gomez-v-b19553129/">
-        <span class="fa fa-linkedin"></span>
+        <span class="fas fa-linkedin"></span>
          
+        LinkedIn
       </a>
     </li>
     <li>
       <a href="mailto:jpgo@ucdavis.edu">
-        <span class="fa fa-envelope"></span>
+        <span class="fas fa-optin-monster"></span>
          
+        email me
+      </a>
+    </li>
+    <li>
+      <a href="https://synthesaurio.github.io">
+        <span class="fas fa-user-secret"></span>
+         
+        Synthesaurio
       </a>
     </li>
   </ul>
@@ -349,7 +370,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

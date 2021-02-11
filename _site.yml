@@ -19,12 +19,19 @@ navbar:
     
   - text: Contact
     menu:
-    - icon: fa-github
+    - icon: fa-github-alt
+      text: Github
       href: https://github.com/jpablo91
     - icon: fa-linkedin
+      text: LinkedIn
       href: https://www.linkedin.com/in/pablo-gomez-v-b19553129/
-    - icon: fa-envelope
+    - icon: fa-optin-monster
+      text: email me
       href: mailto:jpgo@ucdavis.edu
+    - icon: fa-user-secret
+      text: Synthesaurio
+      href: https://synthesaurio.github.io
+      
       
       
 #© 2019 GitHub, Inc.
