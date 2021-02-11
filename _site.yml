@@ -4,10 +4,13 @@ output_dir: "."
 output:  
   html_document:  
     self_contained: no  
-    theme: sandstone  
+    theme: cosmo  
 navbar:
-  title: Jose Pablo Gomez-Vazquez
-  left:
+  logo:
+    image: Images/LogoNB.png
+    href: https://www.rstudio.com
+  title: "<img id=\"logo\" style=\"width: 30px;\" src=\"Images/logo-nb.png\" />"
+  right:
   - text: Home
     href: index.html
   - text: About Me
