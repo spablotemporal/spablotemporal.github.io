@@ -26,8 +26,12 @@ ________________________
 
 ## Current projects.
 
-As part of my work in my PhD I'm currently part of the [Center for Animal Disease Modeling and Surveillance at UC Davis](https://cadms.vetmed.ucdavis.edu/)
+As part of my work in my PhD I'm currently part of the [Center for Animal Disease Modeling and Surveillance at UC Davis](https://cadms.vetmed.ucdavis.edu/)  
 
+### Testing and Vaccination to reduce the impact of COVID 19 in nursery homes.  
+Residents of long-term care facilities have experienced a disproportionate burden of the COVID-19 pandemic. In this project we use Agent based modeling to explore the interventions such as testing and vaccination in reducing the impact of COVID-19 outbreaks in nursery homes. 
+
+<img src="Images/COVIDNH/COVIDNHSchematics.png" style="width:50%" align="center">
 
 ### Foot and mouth disease modeling in Ecuador.  
 Foot and mouth disease(FMD) is a viral disease that affects cloven hoofed animals such as cows, pigs, sheep, among other domestic and wildlife ruminants. The importance of the disease is in the economic impact for affected countries. There has been great advances towards the eradication of the disease in South America in the last couple of years. Ecuador is in the last phase of eradication and the veterinary services is working hard on the eradication program. In this project in collaboration with AGROCALIDAD and PANAFTOSA, we apply tools from network theory and geostatistics to to develop tools that inform decision making.  

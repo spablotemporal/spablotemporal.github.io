@@ -61,10 +61,11 @@ ________________________
 
 ### Workhsops and training provided:
 
-  - Análisis espacio-temporal de redes de contactos, UNAM, Mexico City, Mexico, November 19-20, 2019
-  - Spatio-Temporal analysis of Movement Networks, Geovet 2019, Davis California, October 7, 2019
-  - Herramientas geoestadisticas en epidemiologia, Agrocalidad, Quito, Pichincha, Ecuador, August 12-15, 2019
-  - Analyzing Animal Health Spatial-explicit Networks Using R, UC Davis, Davis, California, February 6, 2019
+  - Social Network Analysis, ASF NIFAF virtual workshop, ~40 participants.
+  - Análisis espacio-temporal de redes de contactos, UNAM, Mexico City, Mexico, November 19-20, 2019, ~20 participants.
+  - Spatio-Temporal analysis of Movement Networks, Geovet 2019, Davis California, October 7, 2019, 9 participants.
+  - Herramientas geoestadisticas en epidemiologia, Agrocalidad, Quito, Pichincha, Ecuador, August 12-15, 2019, ~20 participants.
+  - Analyzing Animal Health Spatial-explicit Networks Using R, UC Davis, Davis, California, February 6, 2019 ~25 participants. 
   
 ________________________
 
