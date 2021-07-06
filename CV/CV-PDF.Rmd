@@ -70,7 +70,8 @@ ________________________
 ________________________
 
 ## Publications:
-
+  - **Gómez-Vázquez, J. P.**, García, Y., Schmidt A.J, Martínez-López, B., Nuño M. (2021). Testing and Vaccination to Reduce the Impact of COVID-19 in Nursing Homes: An Agent-Based Approach. medRxiv 2021.03.22.21254125; doi: https://doi.org/10.1101/2021.03.22.21254125 **THIS IS A PREPRINT AND IS BEING PEER REVIEWED**
+  
   - **Gómez-Vázquez, J. P.**, Quevedo-Valle, M., Flores, U., Portilla Jarufe, K., & Martínez-López, B. (2019). Evaluation of the impact of live pig trade network, vaccination coverage and socio-economic factors in the classical swine fever eradication program in Peru. Preventive Veterinary Medicine, 162(May 2018), 29–37. https://doi.org/10.1016/j.prevetmed.2018.10.019
   
   - Garcia-Mazcorro JF, Castillo-Carranza SA, Guard B, **Gomez-Vazquez JP**, Dowd SE, Brigthsmith DJ. 2016. Comprehensive molecular characterization of bacterial communities in feces of pet birds using 16S marker sequencing. Microbial Ecology Epub ahead of print Aug 27 2016 DOI 10.1007/s00248-016-0840-7.
