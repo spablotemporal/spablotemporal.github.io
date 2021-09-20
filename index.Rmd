@@ -13,3 +13,7 @@ title: "Pablo Gomez"
   </div>
   </div>
 </div>
+
+<hr>
+
+This is a website for my work related with Epidemiology research, for the other Pablo Gomez (a.k.a Synthesaurio) visit my [other website](https://synthesaurio.github.io/index.html)

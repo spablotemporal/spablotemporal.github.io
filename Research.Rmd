@@ -19,6 +19,7 @@ ________________________
 ## Research Interest
 
 I find exciting the applications of spatio-temporal statistics and network theory to study the dynamic of diseases in populations and the impact of anthropogenic activities in human, animal and environmental health.  
+I am also interested in the accessibility of tools that can be used to support decision making. Most of my work is available trough my github profile and I enjoy working with others to develop open access tools (i.e. r packages, dashboards for data collection, visualization and analysis, among others). 
 
 ________________________
 
@@ -55,6 +56,13 @@ ________________________
 ### Consulting 
 
 Since 2018, I also collaborate as consultant for the Veterinary Center for Clinical Trials of the Veterinary Teaching Hospital of UC Davis. As part of my work there I assist on study design, sample size estimation and data analysis. You can [book me](https://www.picktime.com/6b6b1cbf-8f49-47a6-9a39-65573880dd13) trough my department website 
+
+### Development of web applications.
+  
+I am interested in the development of applications to make more accessible research and analysis of information. In the past I've developed applications for data collection, risk assessment, and visualization of complex data.
+
+
+<img src="Images/Sidequests/NM_Dashboard.png" style="width:300px;"><img src="Images/Sidequests/RA_Dashboard.png" style="width:300px;"><img src="Images/Sidequests/SNA_SA_Dashboard.png" style="width:300px;">
 
 ________________________
 
