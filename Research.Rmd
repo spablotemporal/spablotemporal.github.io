@@ -27,7 +27,62 @@ I am also interested in the accessibility of tools that can be used to support d
 
 ________________________
 
+# Places of previous and current collaborations
 
+```{r echo=FALSE, warning = F, message = F}
+library(dplyr); library(plotly)
+library(ggmap)
+register_google(key = "AIzaSyBGmagUalZVXS-8eoCTfyoGYm_m6AxcEt8", write = TRUE)
+Locations <- data.frame(location = c('Quito, Ecuador', 
+                                     'Lima, Peru',
+                                     'Iowa, USA',
+                                     'Pretoria, South Africa',
+                                     'Muizenberg, South Africa', 
+                                     'Ocala, FLorida, USA',
+                                     'Mexico City, Mexico', 'Monterrey, Nuevo Leon, Mexico',
+                                     'California, USA'))
+
+
+Locations <- Locations %>%
+  ggmap::mutate_geocode(location)
+## Map
+geo <- list(
+  showland = TRUE,
+  showcountries = TRUE,
+  showocean = TRUE,
+  countrywidth = 0.5,
+  landcolor = rgb(0.8, 1, 0.85),
+  oceancolor = rgb(0.8, 0.9, 1),
+  projection = list(
+    type = 'orthographic',
+    rotation = list(
+      lon = -100,
+      lat = 10,
+      roll = 0
+    )
+  ),
+  lonaxis = list(
+    showgrid = TRUE,
+    gridcolor = toRGB("gray20"),
+    gridwidth = 0.2
+  ),
+  lataxis = list(
+    showgrid = TRUE,
+    gridcolor = toRGB("gray20"),
+    gridwidth = 0.2
+  )
+)
+
+fig <- plot_geo(Locations) %>% 
+  add_markers(x = ~lon, y = ~lat, marker = list(color = "red"),
+              hovertext = Locations$location) %>% 
+  layout(
+    showlegend = FALSE, geo = geo,
+    title = 'Places where I have collaborated with'
+  )
+
+fig
+```
 
 ## Current projects.
 
@@ -87,62 +142,5 @@ Classical Swine Fever is a viral disease that affects the swine industry. In Per
 <img src="Images/Peru.jpg" style="width:30%" align="center">
 
 ________________________
-
-# Places of previous and current collaborations
-
-```{r echo=FALSE, warning = F, message = F}
-library(dplyr); library(plotly)
-library(ggmap)
-register_google(key = "AIzaSyBGmagUalZVXS-8eoCTfyoGYm_m6AxcEt8", write = TRUE)
-Locations <- data.frame(location = c('Quito, Ecuador', 
-                                     'Lima, Peru',
-                                     'Iowa, USA',
-                                     'Pretoria, South Africa',
-                                     'Muizenberg, South Africa', 
-                                     'Ocala, FLorida, USA',
-                                     'Mexico City, Mexico', 'Monterrey, Nuevo Leon, Mexico',
-                                     'California, USA'))
-
-
-Locations <- Locations %>%
-  ggmap::mutate_geocode(location)
-## Map
-geo <- list(
-  showland = TRUE,
-  showcountries = TRUE,
-  showocean = TRUE,
-  countrywidth = 0.5,
-  landcolor = rgb(0.8, 1, 0.85),
-  oceancolor = rgb(0.8, 0.9, 1),
-  projection = list(
-    type = 'orthographic',
-    rotation = list(
-      lon = -100,
-      lat = 10,
-      roll = 0
-    )
-  ),
-  lonaxis = list(
-    showgrid = TRUE,
-    gridcolor = toRGB("gray20"),
-    gridwidth = 0.2
-  ),
-  lataxis = list(
-    showgrid = TRUE,
-    gridcolor = toRGB("gray20"),
-    gridwidth = 0.2
-  )
-)
-
-fig <- plot_geo(Locations) %>% 
-  add_markers(x = ~lon, y = ~lat, marker = list(color = "red"),
-              hovertext = Locations$location) %>% 
-  layout(
-    showlegend = FALSE, geo = geo,
-    title = 'Places where I have collaborated with'
-  )
-
-fig
-```
 
 
