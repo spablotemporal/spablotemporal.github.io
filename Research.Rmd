@@ -27,7 +27,7 @@ I am also interested in the accessibility of tools that can be used to support d
 
 ________________________
 
-# Places of previous and current collaborations
+# Places of previous and ongoing collaborations
 
 ```{r echo=FALSE, warning = F, message = F}
 library(dplyr); library(plotly)
@@ -50,9 +50,9 @@ geo <- list(
   showland = TRUE,
   showcountries = TRUE,
   showocean = TRUE,
-  countrywidth = 0.5,
-  landcolor = rgb(0.8, 1, 0.85),
-  oceancolor = rgb(0.8, 0.9, 1),
+  countrywidth = 0.7,
+  landcolor = rgb(0.5, 0.75, 0.65),
+  oceancolor = rgb(0.5, 0.55, 0.7),
   projection = list(
     type = 'orthographic',
     rotation = list(
@@ -78,7 +78,7 @@ fig <- plot_geo(Locations) %>%
               hovertext = Locations$location) %>% 
   layout(
     showlegend = FALSE, geo = geo,
-    title = 'Places where I have collaborated with'
+    title = ''
   )
 
 fig
