@@ -6,7 +6,7 @@ title: "Pablo Gomez"
   <div class="main-photo"><img src="Images/logo-nb.png" style="width:50%;float:right"></div>
   <div id="main-text">
   <div class="inner-text">
-  <h4>DVM, MPVM, PhDc</h4>
+  <h4>DVM, MPVM, PhD</h4>
   <h5>Center for Animal Disease Modeling and Surveillance</h5>
   <h5>Veterinary Medicine and Epidemiology</h5>
   <h5>UC Davis</h5>

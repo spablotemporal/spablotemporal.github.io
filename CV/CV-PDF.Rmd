@@ -9,7 +9,7 @@ output:
 ---
 
 \begin{center}
-DVM, MPVM, PhDc.  
+DVM, MPVM, PhD.  
   
 website: https://jpablo91.github.io/
 \end{center}
@@ -20,7 +20,7 @@ ________________________
 
 
 
-**PhD in Epidemiology** (2017-Current)  
+**PhD in Epidemiology** (2017-2021)  
 *University of California Davis, California, United States*  
   
 
@@ -36,8 +36,11 @@ ________________________
 
 ## Profesional Experience:
 
+#### Department of Veterinary Medicine and Epidemiology, University of California Davis. Davis, California, United States - Post doctoral researcher
+*January 2022 - Current*
+
 #### Department of Veterinary Medicine and Epidemiology, University of California Davis. Davis, California, United States - Graduate Student Researcher
-*June 2020 - Current*
+*June 2020 - December 2021*
 
 #### Department of Population Health and Reproduction, University of California Davis. Davis, California, United States - Graduate Student Researcher
 *August 2019 - June 2020*
