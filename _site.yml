@@ -22,6 +22,8 @@ navbar:
     
   - text: Contact
     menu:
+    - icon: journal-whills
+      text: Book Me
     - icon: fa-github-alt
       text: Github
       href: https://github.com/jpablo91
