@@ -14,9 +14,6 @@ output:
 
   
   
-  
-  
-
 ________________________
 
 
@@ -40,7 +37,8 @@ Locations <- data.frame(location = c('Quito, Ecuador',
                                      'Muizenberg, South Africa', 
                                      'Ocala, FLorida, USA',
                                      'Mexico City, Mexico', 'Monterrey, Nuevo Leon, Mexico',
-                                     'California, USA'))
+                                     'California, USA',
+                                     'North Macedonia'))
 
 
 Locations <- Locations %>%
@@ -86,7 +84,7 @@ fig
 
 ## Current projects.
 
-As part of my work in my PhD I'm currently part of the [Center for Animal Disease Modeling and Surveillance at UC Davis](https://cadms.vetmed.ucdavis.edu/)  
+I'm currently working as a post-doctoral researcher at the [Center for Animal Disease Modeling and Surveillance at UC Davis](https://cadms.vetmed.ucdavis.edu/)  
   
   
 ### Spatio temporal trends of COVID-19 in Mexico city
@@ -104,6 +102,7 @@ Porcine reproductive and respiratory syndrome is a disease that affects the swin
 
 
 ### Foot and mouth disease modeling in Ecuador.  
+
 Foot and mouth disease(FMD) is a viral disease that affects cloven hoofed animals such as cows, pigs, sheep, among other domestic and wildlife ruminants. The importance of the disease is in the economic impact for affected countries. There has been great advances towards the eradication of the disease in South America in the last couple of years. Ecuador is in the last phase of eradication and the veterinary services is working hard on the eradication program. In this project in collaboration with AGROCALIDAD and PANAFTOSA, we apply tools from network theory and geostatistics to to develop tools that inform decision making.  
   
 <img src="Images/Ecuador.jpeg" style="width:50%" align="center">
@@ -118,7 +117,7 @@ Since 2018, I also collaborate as consultant for the Veterinary Center for Clini
 
 ### Development of web applications.
   
-I am interested in the development of applications to make more accessible research and analysis of information. In the past I've developed applications for data collection, risk assessment, and visualization of complex data.
+I am interested in the development of applications to make more accessible research and analysis of information. In the past I've developed applications for data collection, risk assessment, and visualization of complex data sets.
 
 
 <img src="Images/Sidequests/NM_Dashboard.png" style="width:300px;"><img src="Images/Sidequests/RA_Dashboard.png" style="width:300px;"><img src="Images/Sidequests/SNA_SA_Dashboard.png" style="width:300px;">
