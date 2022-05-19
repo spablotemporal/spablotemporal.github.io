@@ -11,7 +11,7 @@ output:
 \begin{center}
 DVM, MPVM, PhD.  
   
-website: https://jpablo91.github.io/
+website: http://www.spablo-temporal.network
 \end{center}
 
 
@@ -52,6 +52,9 @@ ________________________
 
 ## Teaching Experience:
 
+#### University of California Davis. Davis, California, United States - Co-Instructor on Health and Ecological Risk Analysis (EPI 224)
+*March 2022 - June 2022*
+
 #### University of California Davis. Davis, California, United States - Teaching assistant on Spatial epidemiology (EPI 223)
 *March 2019 - June 2019*
 
@@ -64,6 +67,7 @@ ________________________
 
 ### Workhsops and training provided:
 
+  - Spatiotemporal analysis of social networks, ICAHS 2022, 17 participants
   - Social Network Analysis, ASF NIFAF virtual workshop, ~40 participants.
   - Análisis espacio-temporal de redes de contactos, UNAM, Mexico City, Mexico, November 19-20, 2019, ~20 participants.
   - Spatio-Temporal analysis of Movement Networks, Geovet 2019, Davis California, October 7, 2019, 9 participants.
@@ -73,7 +77,9 @@ ________________________
 ________________________
 
 ## Publications:
-  - **Gómez-Vázquez, J. P.**, García, Y., Schmidt A.J, Martínez-López, B., Nuño M. (2021). Testing and Vaccination to Reduce the Impact of COVID-19 in Nursing Homes: An Agent-Based Approach. medRxiv 2021.03.22.21254125; doi: https://doi.org/10.1101/2021.03.22.21254125 **THIS IS A PREPRINT AND IS BEING PEER REVIEWED**
+  - **Gómez Vázquez, J.P**., García, Y.E., Schmidt, A.J. et al. Testing and vaccination to reduce the impact of COVID-19 in nursing homes: an agent-based approach. BMC Infect Dis 22, 477 (2022). https://doi.org/10.1186/s12879-022-07385-4
+  
+  - Maier GU, Breitenbuecher J, **Gomez JP**, Samah F, Fausak E, Van Noord M. Vaccination for the Prevention of Neonatal Calf Diarrhea in Cow-Calf Operations: A Scoping Review. Vet Anim Sci. 2022 Feb 19;15:100238. doi: 10.1016/j.vas.2022.100238. PMID: 35243126; PMCID: PMC8866090.
   
   - **Gómez-Vázquez, J. P.**, Quevedo-Valle, M., Flores, U., Portilla Jarufe, K., & Martínez-López, B. (2019). Evaluation of the impact of live pig trade network, vaccination coverage and socio-economic factors in the classical swine fever eradication program in Peru. Preventive Veterinary Medicine, 162(May 2018), 29–37. https://doi.org/10.1016/j.prevetmed.2018.10.019
   
