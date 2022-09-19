@@ -1,5 +1,5 @@
 ---
-title: "Jose Pablo Gomez-Vazquez"
+title: ""
 output:
   pdf_document: 
   keep_tex: true
@@ -8,97 +8,99 @@ output:
   html_notebook: default
 ---
 
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=3cm]{Headshot.png}
+\end{figure}
+
 \begin{center}
+\textbf{Jose Pablo Gomez-Vazquez}
+
 MVZ, MPVM, PhD.  
   
 Sitio web: http://www.spablo-temporal.network
 \end{center}
 
 ________________________
-# Educacion: 
+# Educación: 
 
-
-
-**PhD in Epidemiology** (2017-2021)  
+**PhD en Epidemiología** (2017-2021)  
 *University of California Davis, California, United States*  
   
-
 **Master in Preventive Veterinary Medicine** (2016-2017)  
 *University of California Davis, California, United States*  
   
-
 **Medicina Veterinaria y Zootecnia** (2010-2015)  
 *UANL, Escobedo N.L., Mexico*  
-
 
 ________________________
 
 # Experiencia profesional:
 
-#### Department of Veterinary Medicine and Epidemiology, University of California Davis. Davis, California, United States - Post doctoral researcher
-*January 2022 - Current*
+Department of Veterinary Medicine and Epidemiology, University of California Davis. Davis, California, United States - **Post doctoral researcher**
+*Enero 2022 - Actual*
 
-#### Department of Veterinary Medicine and Epidemiology, University of California Davis. Davis, California, United States - Graduate Student Researcher
-*June 2020 - December 2021*
+Department of Veterinary Medicine and Epidemiology, University of California Davis. Davis, California, United States - **Graduate Student Researcher**
+*Junio 2020 - Diciembre 2021*
 
-#### Department of Population Health and Reproduction, University of California Davis. Davis, California, United States - Graduate Student Researcher
-*August 2019 - June 2020*
+Department of Population Health and Reproduction, University of California Davis. Davis, California, United States - **Graduate Student Researcher**
+*Agosto 2019 - Junio 2020*
 
-#### One Health Institute, University of California Davis. Davis, California, United States - Graduate Student Researcher
-*January 2018 - March 2018*
+One Health Institute, University of California Davis. Davis, California, United States - **Graduate Student Researcher**
+*Enero 2018 - Marzo 2018*
   
-________________________
 
-# Experiencia enseñando:
+# Experiencia en enseñanza:
 
-#### University of California Davis. Davis, California, United States - Co-Instructor en Health and Ecological Risk Analysis (EPI 224)
-*March 2022 - June 2022*
+## Cursos impartidos a nivel posgrado
 
-#### University of California Davis. Davis, California, United States - Teaching assistant en Spatial epidemiology (EPI 223)
-*March 2019 - June 2019*
+University of California Davis. Davis, California, United States - Co-Instructor on Health and Ecological Risk Analysis (EPI 224)
+*Marzo 2022 - Junio 2022*
 
+University of California Davis. Davis, California, United States - Teaching assistant on Spatial epidemiology (EPI 223)
+*Marzo 2019 - Junio 2019*
 
-#### University of California Davis. Davis, California, United States - Teaching assistant en Mathematical Statistics (EPI 203)
-*January 2019 - March 2019*
+University of California Davis. Davis, California, United States - Teaching assistant on Mathematical Statistics (EPI 203)
+*Enero 2019 - Marzo 2019*
 
-#### University of California Davis. Davis, California, United States - Teaching assistant en medical statistics (MPM 204)
-*January 2018 - March 2019*
+University of California Davis. Davis, California, United States - Teaching assistant on medical statistics (MPM 204)
+*Enero 2018 - Marzo 2019*
 
-## Workshops y entrenamientos:
+## Otros cursos y entrenamientos impartidos:
 
 #### Spatiotemporal analysis of social networks  
 Este curso cubre conceptos basicos de analisis espacial, teoria de redes y como incorporar dinamicas espacio-temporales en el analisis de redes de contactos. Este workshop ha sido ofrecido multiples ocasiones en español e ingles con una variedad de participantes incluyendo personal academico, del gobierno y la industria. Anteriormente, este workshop ha sido ofrecido en:
 
-  - *International Conference in Animal Health Research (ICAHS), Coppenhagen, Denmark*, May 2022 17 participants
-  - *ASF NIFAF virtual workshop*, ~40 participants.
-  - *Universidad Nacional Autonoma de Mexico, Mexico City, Mexico*, November, 2019, ~20 participants.
-  - *Geovet 2019, University of California Davis*, October 2019, 9 participants
-  - *Maptime Davis, University of California Davis*, February 2019, ~25 participants
+  - *International Conference in Animal Health Research (ICAHS), Coppenhagen, Denmark*, Mayo 2022 17 participantes
+  - *ASF NIFAF virtual workshop*, Febrero 2021 ~40 participantes
+  - *Universidad Nacional Autonoma de Mexico, Mexico City, Mexico*, Noviembre, 2019, ~20 participantes
+  - *Geovet 2019, University of California Davis*, Octubre 2019, 9 participantes
+  - *Maptime Davis, University of California Davis*, Febrero 2019, ~25 participantes
 
 #### Otros workshops:
-Otros workshops ofrecidos anteriormente, han cubierto conceptos en programacion estadistica, visualizacion de datos y analsis espacial usando herramientas de libre acceso. Algunos de estos wprkshops incluyen 
-Other workshops provided in the past have covered concepts in statistical programming, data visualization and spatial analysis with open access tools. Some of these workshops include: 
+Otros workshops ofrecidos anteriormente, han cubierto conceptos en programacion estadistica, visualizacion de datos y analsis espacial usando herramientas de libre acceso. Algunos de estos cursos incluyen: 
 
-  - Fundamentos para el manejo y analisis de datos con R, *Instituto Nacional de Investigaciones Forestales Agricolas y Pecuarias, virtual workshop*, May 2022, ~20 participants.  
-  - Interactive data visualization of complex structures with R shiny, *Universidad Nacional Autonoma de Mexico, Virtual workshop*, March 2022, ~8 participants.  
-  - Herramientas geoestadisticas en epidemiologia, *Agrocalidad, Quito, Pichincha, Ecuador*, August 12-15, 2019, ~20 participants.
+  - Interactive Geospatial Visualization Dashboards with R & Shiny, *BayGeo, Universidad de San Francisco, San Francusco California*, Octubre 2022.
+  - Fundamentos para el manejo y analisis de datos con R, *Instituto Nacional de Investigaciones Forestales Agricolas y Pecuarias, virtual workshop*, Mayo 2022, ~20 participantes.
+  - Interactive data visualization of complex structures with R shiny, *Universidad Nacional Autonoma de Mexico, Virtual workshop*, March 2022, ~8 participantes.
+  - Herramientas geoestadisticas en epidemiologia, *Agrocalidad, Quito, Pichincha, Ecuador*, Agosto 12-15, 2019, ~20 participantes.
 
   
 ________________________
 
 # Publicaciones:
 
-  - **Gómez Vázquez, J.P**., García, Y.E., Schmidt, A.J. et al. Testing and vaccination to reduce the impact of COVID-19 in nursing homes: an agent-based approach. BMC Infect Dis 22, 477 (2022). https://doi.org/10.1186/s12879-022-07385-4
+  - Ball EE, Pesavento PA, Van Rompay KKA, Keel MK, Singapuri A, **Gomez-Vazquez JP**, et al. (2022) Zika virus persistence in the male macaque reproductive tract. PLoS Negl Trop Dis 16(7): e0010566. https://doi.org/10.1371/journal.pntd.0010566
+  
+  - **Gómez-Vázquez, J.P**., García, Y.E., Schmidt, A.J. et al. Testing and vaccination to reduce the impact of COVID-19 in nursing homes: an agent-based approach. BMC Infect Dis 22, 477 (2022). https://doi.org/10.1186/s12879-022-07385-4
   
   - Maier GU, Breitenbuecher J, **Gomez JP**, Samah F, Fausak E, Van Noord M. Vaccination for the Prevention of Neonatal Calf Diarrhea in Cow-Calf Operations: A Scoping Review. Vet Anim Sci. 2022 Feb 19;15:100238. doi: 10.1016/j.vas.2022.100238. PMID: 35243126; PMCID: PMC8866090.
   
+  - Emery CB, Outerbridge CA, Knych HK, Lam ATH, **Gómez-Vázquez JP**, White SD. Preliminary study of the stability of dexamethasone when added to commercial veterinary ear cleaners over a 90 day period. Vet Dermatol. 2021 Feb 2. doi: 10.1111/vde.12924. Epub ahead of print. PMID: 33528860.  
+  
   - **Gómez-Vázquez, J. P.**, Quevedo-Valle, M., Flores, U., Portilla Jarufe, K., & Martínez-López, B. (2019). Evaluation of the impact of live pig trade network, vaccination coverage and socio-economic factors in the classical swine fever eradication program in Peru. Preventive Veterinary Medicine, 162(May 2018), 29–37. https://doi.org/10.1016/j.prevetmed.2018.10.019
   
-  - Garcia-Mazcorro JF, Castillo-Carranza SA, Guard B, **Gomez-Vazquez JP**, Dowd SE, Brigthsmith DJ. 2016. Comprehensive molecular characterization of bacterial communities in feces of pet birds using 16S marker sequencing. Microbial Ecology Epub ahead of print Aug 27 2016 DOI 10.1007/s00248-016-0840-7.
-  
-### Como consultor:  
-  
-  - Emery CB, Outerbridge CA, Knych HK, Lam ATH, **Gomez-Vazquez JP**, White SD. Preliminary study of the stability of dexamethasone when added to commercial veterinary ear cleaners over a 90 day period. Vet Dermatol. 2021 Feb 2. doi: 10.1111/vde.12924. Epub ahead of print. PMID: 33528860.  
+  - Garcia-Mazcorro JF, Castillo-Carranza SA, Guard B, **Gómez-Vázquez JP**, Dowd SE, Brigthsmith DJ. 2016. Comprehensive molecular characterization of bacterial communities in feces of pet birds using 16S marker sequencing. Microbial Ecology Epub ahead of print Aug 27 2016 DOI 10.1007/s00248-016-0840-7.
   
 ________________________
 
@@ -106,21 +108,28 @@ ________________________
 
 ### Presentaciones orales:
 
+  - An open access framework for quantitative rapid risk assessment, *International Symposium in Veterinary Epidemiology and Economics (ISVEE) 16, Halifax, Canada, 2022*.  
   - A framework for a quantitative rapid risk assessment open access tool, *Congreso Panamericano de Ciencias Veterinarias, November 2021, Virtual conference*
   - Spatio-Temporal analysis of the trade network of the cattle industry in California, October 2019, *GeoVet 2019, Davis, California, United States*
   - Evaluacion espacio-temporal de factores de riesgo para la ocurrencia de peste porcina clásica en Perú (Spatio-Temporal analysis for the CSF occurrence in Peru), October 2017, *“III SIEVMP (Iberoamerican society of veterinary epidemiology and preventive medicine) symposium”, Valdivia, Chile.*
 
 
-### Posters:
+### Presentaciones de posters:
 
+  - Spatial-explicit agent-based modeling to inform targeted surveillance and emergency response against foot-and-mouth disease in the last phase of eradication programs, *International Symposium in Veterinary Epidemiology and Economics (ISVEE) 16, Halifax, Canada, 2022*.  
+  - Evaluation of vaccination and control strategies of porcine reproductive and respiratory syndrome (PRRS) in US sow farms using an agent-based approach, *International Symposium in Veterinary Epidemiology and Economics (ISVEE) 16, Halifax, Canada, 2022*.  
   - Spatial Explicit Agent based model to evaluate intervention strategies for FMD in Ecuador, *Congreso Panamericano de Ciencias Veterinarias, November 2021, Virtual conference*
   - Identification of areas at risk for low immunity herds against Foot-and-Mouth disease virus in Ecuador using maximum entropy models, November 2018, *“International Symposium of Veterinary Epidemiology and Economics 15”, Chiang Mai, Thailand*
   - Live pig trade network modeling and prediction using Network analysis and exponential random graph models in Peru, June 2018, *25th International Pig Veterinary Society Congress”, Chongging Yuelai, China*
   - Herramientas bioinformáticas para el estudio de la microbiota intestinal” (Bioinformatics tools for gastrointestinal microbiota analysis), October 2015, *“XXVIII Congreso Nacional de Investigación en Medicina UANL” (National symposium of Medical research UANL), Monterrey N.L., Mexico*
   - Perfil metabólico de comunidades microbianas en heces de aves en cautiverio” (Metabolic profiles of pet birds microbiota), October 2015, *“4th KALAANKAB Symposium”, Villahermosa, Tabasco, Mexico*
 
-### Organizacion
+### Comite organizador
 
   - Management and local organizing team, *GeoVet 2019, Davis, California, United States*
 
+### Otras invitaciones a platicas
+
+  - Seminario internacional pre-COSALFA 49, Agosto 2022, https://youtu.be/MDpyuaJB544?t=3354
+  - Planeteando Cows and Bikes festival, Abril 2022, https://youtu.be/Gk3705Cem8g?t=16483
 

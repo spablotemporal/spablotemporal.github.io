@@ -13,8 +13,8 @@
 
 <title>Training</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
-<script src="site_libs/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -82,6 +83,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -234,7 +238,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -259,7 +263,7 @@ $(document).ready(function () {
   <a href="Training.html">Training</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Contact
      
     <span class="caret"></span>
@@ -316,11 +320,48 @@ $(document).ready(function () {
 </div>
 
 
-<p>One of my interests is in building bridges with different institutions that can promove future colaborations. I’m interested in exchanging ideas and knowledge with others. With contributions of different colaborators, I have created two workshops that I have been offering this last year and I’m interested in bringing this knowledge to other places.</p>
+<p>One of my interests is in building bridges with different institutions that can promote future collaborations. I’m interested in exchanging ideas and knowledge with others. With contributions of different collaborators, I have created a couple of workshops that I have been offering since 2019.</p>
 <p>Other topics for workshops might be available upon request.<br />
 <strong>Workshops can be offered in English and Spanish</strong></p>
 <p><img src="Images/WS19.jpg"></p>
 <hr />
+<div id="getting-started-with-r-studio-for-research-and-development" class="section level2">
+<h2>Getting started with R studio for research and development</h2>
+<p>This is an introduction to R studio and how to integrate it for research. Some of the topics covered include:</p>
+<ul>
+<li>Project organization and version control</li>
+<li>Basics of R programming</li>
+<li>Basics of data visualization</li>
+<li>Using Rstudio to write your manuscripts and manage references</li>
+<li>Automate report generation.</li>
+</ul>
+<hr />
+</div>
+<div id="r-for-statistical-analysis" class="section level2">
+<h2>R for statistical analysis</h2>
+<p>This workshop introduces on how to use R for statistical analysis. Some of the topics covered include:</p>
+<ul>
+<li>Hypothesis testing</li>
+<li>Which statistical method should I use?</li>
+<li>Regression analysis</li>
+<li>Data visualization</li>
+<li>Generation of reports</li>
+</ul>
+<p><img src="Images/SA/DAG.png" style="width:300px;"><img src="Images/SA/RFCART.png" style="width:300px;"><img src="Images/SA/Density.png" style="width:300px;"></p>
+<hr />
+</div>
+<div id="developing-interactive-dashboards-for-data-analysis-and-visualization" class="section level2">
+<h2>Developing interactive dashboards for data analysis and visualization</h2>
+<p>This workshop covers the basics on using shiny to develop interactive dashboards. The dashboards can be used for data visualization, analysis or collection of information. Some of the topics covered includes:</p>
+<ul>
+<li>Introduction to R shiny</li>
+<li>Generate static and interactive visualizations</li>
+<li>Strategies to make your dashboard more efficient</li>
+<li>Uploading your dashboard to a server so it can be shared and distributed.</li>
+</ul>
+<p><img src="Images/NM/NM_DashMap.png" style="width:300px;"><img src="Images/Ecu/Ecu_DashScenarios.png" style="width:300px;"><img src="Images/NM/NM_DashCollections.png" style="width:300px;"></p>
+<hr />
+</div>
 <div id="geostatistical-tools-for-epidemiology" class="section level2">
 <h2>Geostatistical tools for Epidemiology</h2>
 <p>The aim of this workshop is to provide an overview of different tools to manipulate and analyse spatial data. Some of the topics covered include:</p>

@@ -2,7 +2,7 @@
 title: "Training"
 ---
 
-One of my interests is in building bridges with different institutions that can promove future colaborations. I'm interested in exchanging ideas and knowledge with others. With contributions of different colaborators, I have created two workshops that I have been offering this last year and I'm interested in bringing this knowledge to other places.  
+One of my interests is in building bridges with different institutions that can promote future collaborations. I'm interested in exchanging ideas and knowledge with others. With contributions of different collaborators, I have created a couple of workshops that I have been offering since 2019.  
 
 Other topics for workshops might be available upon request.  
 **Workshops can be offered in English and Spanish**
@@ -12,6 +12,45 @@ Other topics for workshops might be available upon request.
   
   
   
+________________________
+
+## Getting started with R studio for research and development
+
+This is an introduction to R studio and how to integrate it for research. Some of the topics covered include:
+  
+  - Project organization and version control
+  - Basics of R programming
+  - Basics of data visualization
+  - Using Rstudio to write your manuscripts and manage references
+  - Automate report generation.
+  
+________________________
+
+## R for statistical analysis
+
+This workshop introduces on how to use R for statistical analysis. Some of the topics covered include:
+
+  - Hypothesis testing 
+  - Which statistical method should I use?
+  - Regression analysis
+  - Data visualization
+  - Generation of reports
+  
+<img src="Images/SA/DAG.png" style="width:300px;"><img src="Images/SA/RFCART.png" style="width:300px;"><img src="Images/SA/Density.png" style="width:300px;">
+
+________________________
+
+## Developing interactive dashboards for data analysis and visualization
+
+This workshop covers the basics on using shiny to develop interactive dashboards. The dashboards can be used for data visualization, analysis or collection of information. Some of the topics covered includes: 
+  
+  - Introduction to R shiny
+  - Generate static and interactive visualizations
+  - Strategies to make your dashboard more efficient
+  - Uploading your dashboard to a server so it can be shared and distributed.
+
+<img src="Images/NM/NM_DashMap.png" style="width:300px;"><img src="Images/Ecu/Ecu_DashScenarios.png" style="width:300px;"><img src="Images/NM/NM_DashCollections.png" style="width:300px;">
+
 ________________________
 
 ## Geostatistical tools for Epidemiology
