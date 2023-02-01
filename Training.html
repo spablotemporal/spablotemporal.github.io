@@ -13,7 +13,7 @@
 
 <title>Training</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -143,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -176,8 +180,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -185,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -277,17 +274,17 @@ $(document).ready(function () {
       </a>
     </li>
     <li>
-      <a href="https://github.com/jpablo91">
+      <a href="https://github.com/spablotemporal">
         <span class="fa fa-github-alt"></span>
          
         Github
       </a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/pablo-gomez-v-b19553129/">
-        <span class="fa fa-linkedin"></span>
+      <a href="https://www.researchgate.net/profile/Jose-Gomez-Vazquez?ev=hdr_xprf">
+        <span class="fa fa-book"></span>
          
-        LinkedIn
+        ResearchGate
       </a>
     </li>
     <li>
@@ -320,13 +317,22 @@ $(document).ready(function () {
 </div>
 
 
-<p>One of my interests is in building bridges with different institutions that can promote future collaborations. I’m interested in exchanging ideas and knowledge with others. With contributions of different collaborators, I have created a couple of workshops that I have been offering since 2019. Some of these workshop has been offered multiple times in both Spanish and English, having a wide variety of participants including academics, government and industry from different countries.</p>
+<p>One of my interests is in building bridges with different
+institutions that can promote future collaborations. I’m interested in
+exchanging ideas and knowledge with others. With contributions of
+different collaborators, I have created a couple of workshops that I
+have been offering since 2019. Some of these workshop has been offered
+multiple times in both Spanish and English, having a wide variety of
+participants including academics, government and industry from different
+countries.</p>
 <p>Other topics for workshops might be available upon request.</p>
 <p><img src="Images/WS19.jpg"></p>
 <hr />
-<div id="getting-started-with-r-studio-for-research-and-development" class="section level2">
+<div id="getting-started-with-r-studio-for-research-and-development"
+class="section level2">
 <h2>Getting started with R studio for research and development</h2>
-<p>This is an introduction to R studio and how to integrate it for research. Some of the topics covered include:</p>
+<p>This is an introduction to R studio and how to integrate it for
+research. Some of the topics covered include:</p>
 <ul>
 <li>Project organization and version control</li>
 <li>Basics of R programming</li>
@@ -338,7 +344,8 @@ $(document).ready(function () {
 </div>
 <div id="r-for-statistical-analysis" class="section level2">
 <h2>R for statistical analysis</h2>
-<p>This workshop introduces on how to use R for statistical analysis. Some of the topics covered include:</p>
+<p>This workshop introduces on how to use R for statistical analysis.
+Some of the topics covered include:</p>
 <ul>
 <li>Hypothesis testing</li>
 <li>Which statistical method should I use?</li>
@@ -349,21 +356,29 @@ $(document).ready(function () {
 <p><img src="Images/SA/DAG.png" style="width:300px;"><img src="Images/SA/RFCART.png" style="width:300px;"><img src="Images/SA/Density.png" style="width:300px;"></p>
 <hr />
 </div>
-<div id="developing-interactive-dashboards-for-data-analysis-and-visualization" class="section level2">
-<h2>Developing interactive dashboards for data analysis and visualization</h2>
-<p>This workshop covers the basics on using shiny to develop interactive dashboards. The dashboards can be used for data visualization, analysis or collection of information. Some of the topics covered includes:</p>
+<div
+id="developing-interactive-dashboards-for-data-analysis-and-visualization"
+class="section level2">
+<h2>Developing interactive dashboards for data analysis and
+visualization</h2>
+<p>This workshop covers the basics on using shiny to develop interactive
+dashboards. The dashboards can be used for data visualization, analysis
+or collection of information. Some of the topics covered includes:</p>
 <ul>
 <li>Introduction to R shiny</li>
 <li>Generate static and interactive visualizations</li>
 <li>Strategies to make your dashboard more efficient</li>
-<li>Uploading your dashboard to a server so it can be shared and distributed.</li>
+<li>Uploading your dashboard to a server so it can be shared and
+distributed.</li>
 </ul>
 <p><img src="Images/NM/NM_DashMap.png" style="width:300px;"><img src="Images/Ecu/Ecu_DashScenarios.png" style="width:300px;"><img src="Images/NM/NM_DashCollections.png" style="width:300px;"></p>
 <hr />
 </div>
 <div id="geostatistical-tools-for-epidemiology" class="section level2">
 <h2>Geostatistical tools for Epidemiology</h2>
-<p>The aim of this workshop is to provide an overview of different tools to manipulate and analyse spatial data. Some of the topics covered include:</p>
+<p>The aim of this workshop is to provide an overview of different tools
+to manipulate and analyse spatial data. Some of the topics covered
+include:</p>
 <ul>
 <li>Manipulation of databases.</li>
 <li>Statistical Inference.</li>
@@ -372,21 +387,28 @@ $(document).ready(function () {
 <li>Geostatistical tools for inference.</li>
 </ul>
 <p><img src="Images/T/Map.png" style="width:300px;"><img src="Images/T/RoadUse.png" style="width:300px;"><img src="Images/T/SpatialHex.png" style="width:300px;"></p>
-<p>More information <a href="WS1.html">English</a> | <a href="WS1Spa.html">Spanish</a></p>
+<p>More information <a href="WS1.html">English</a> | <a
+href="WS1Spa.html">Spanish</a></p>
 <hr />
 </div>
-<div id="spatio-temporal-analysis-of-contact-networks" class="section level2">
+<div id="spatio-temporal-analysis-of-contact-networks"
+class="section level2">
 <h2>Spatio-Temporal Analysis of Contact networks</h2>
-<p>This workshop covers the integration of Network Theory and spatio-Temporal tools for descriptive analysis and some inference of contact networks. Some of the topics covered in this workshop includes:</p>
+<p>This workshop covers the integration of Network Theory and
+spatio-Temporal tools for descriptive analysis and some inference of
+contact networks. Some of the topics covered in this workshop
+includes:</p>
 <ul>
 <li>Static and dynamic network analysis.</li>
 <li>Visualization of spatio-temporal networks.</li>
 <li>Network Based models and applications.</li>
 </ul>
 <p><img src="Images/T/CNT.png" style="width:300px;"><img src="Images/T/TS2.png" style="width:300px;"><img src="Images/T/FNetwork.png" style="width:300px;"></p>
-<p>More information <a href="WS2.html">English</a> | <a href="WS2Spa.html">Spanish</a></p>
+<p>More information <a href="WS2.html">English</a> | <a
+href="WS2Spa.html">Spanish</a></p>
 <hr />
-<p>More information is available upon request contacting: <a href="mailto:jpgo@ucdavis.edu" class="email">jpgo@ucdavis.edu</a></p>
+<p>More information is available upon request contacting: <a
+href="mailto:jpgo@ucdavis.edu" class="email">jpgo@ucdavis.edu</a></p>
 </div>
 
 

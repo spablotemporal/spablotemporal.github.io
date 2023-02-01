@@ -13,7 +13,7 @@
 
 <title>About me</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -35,13 +35,13 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<script src="site_libs/plotly-binding-4.10.0/plotly.js"></script>
+<script src="site_libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<script src="site_libs/plotly-binding-4.10.1/plotly.js"></script>
 <script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
 <link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
 <script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
-<link href="site_libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="site_libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
+<link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -153,11 +153,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -186,8 +190,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -195,16 +199,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -360,17 +357,17 @@ div.tocify {
       </a>
     </li>
     <li>
-      <a href="https://github.com/jpablo91">
+      <a href="https://github.com/spablotemporal">
         <span class="fa fa-github-alt"></span>
          
         Github
       </a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/pablo-gomez-v-b19553129/">
-        <span class="fa fa-linkedin"></span>
+      <a href="https://www.researchgate.net/profile/Jose-Gomez-Vazquez?ev=hdr_xprf">
+        <span class="fa fa-book"></span>
          
-        LinkedIn
+        ResearchGate
       </a>
     </li>
     <li>
@@ -406,36 +403,70 @@ div.tocify {
 <p>
 <p><img src ="Images/Headshot.png" style="width:30%;float:right"></p>
 <h3>
-Hi I’m Pablo. I have always been fascinated by the application of mathematics to solve problems, I study Diseases in populations and in my free time I enjoy applying concepts of music, math and programming to create <a href="https://linktr.ee/synthesaurio">music</a>.
+Hi I’m Pablo. I have always been fascinated by the application of
+mathematics to solve problems, I study Diseases in populations and in my
+free time I enjoy applying concepts of music, math and programming to
+create <a href="https://linktr.ee/synthesaurio">music</a>.
 </h3>
 </p>
 <hr />
 <div id="research-interest" class="section level2">
 <h2>Research Interest</h2>
-<p>I find exciting the applications of spatio-temporal statistics and network theory to study the dynamic of diseases in populations and the impact of anthropogenic activities in human, animal and environmental health.<br />
-I am also interested in the accessibility of tools that can be used to support decision making. Most of my work is available trough my github profile and I enjoy working with others to develop open access tools (i.e. r packages, dashboards for data collection, visualization and analysis, among others).</p>
+<p>I find exciting the applications of spatio-temporal statistics and
+network theory to study the dynamic of diseases in populations and the
+impact of anthropogenic activities in human, animal and environmental
+health.<br />
+I am also interested in the accessibility of tools that can be used to
+support decision making. Most of my work is available trough my github
+profile and I enjoy working with others to develop open access tools
+(i.e. r packages, dashboards for data collection, visualization and
+analysis, among others).</p>
 <hr />
 </div>
-<div id="places-of-previous-and-ongoing-collaborations" class="section level1">
+<div id="places-of-previous-and-ongoing-collaborations"
+class="section level1">
 <h1>Places of previous and ongoing collaborations</h1>
-<div id="htmlwidget-6aa2fc7033b9ebda6cf8" style="width:672px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6aa2fc7033b9ebda6cf8">{"x":{"visdat":{"1359c6b66b229":["function () ","plotlyVisDat"]},"cur_data":"1359c6b66b229","attrs":{"1359c6b66b229":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"scatter","mode":"markers","marker":{"color":"red"},"hovertext":["Quito, Ecuador","Lima, Peru","Iowa, USA","Pretoria, South Africa","Muizenberg, South Africa","Ocala, FLorida, USA","Mexico City, Mexico","Monterrey, Nuevo Leon, Mexico","California, USA","North Macedonia"],"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"mapType":"geo","showlegend":false,"geo":{"domain":{"x":[0,1],"y":[0,1]},"showland":true,"showcountries":true,"showocean":true,"countrywidth":0.7,"landcolor":"#80BFA6","oceancolor":"#808CB3","projection":{"type":"orthographic","rotation":{"lon":-100,"lat":10,"roll":0}},"lonaxis":{"showgrid":true,"gridcolor":"rgba(51,51,51,1)","gridwidth":0.2},"lataxis":{"showgrid":true,"gridcolor":"rgba(51,51,51,1)","gridwidth":0.2}},"title":"","hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"type":"scattergeo","mode":"markers","marker":{"color":"red","line":{"color":"rgba(31,119,180,1)"}},"hovertext":["Quito, Ecuador","Lima, Peru","Iowa, USA","Pretoria, South Africa","Muizenberg, South Africa","Ocala, FLorida, USA","Mexico City, Mexico","Monterrey, Nuevo Leon, Mexico","California, USA","North Macedonia"],"line":{"color":"rgba(31,119,180,1)"},"geo":"geo","lat":[-0.1806532,-12.0463731,41.8780025,-25.7478676,-34.0898847,29.1871986,19.4326077,25.6866142,36.778261,41.608635],"lon":[-78.4678382,-77.042754,-93.097702,28.2292712,18.495859,-82.1400923,-99.133208,-100.3161126,-119.4179324,21.745275],"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-19064dc3f85c56cd3b6a" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-19064dc3f85c56cd3b6a">{"x":{"visdat":{"b8fd3418da3f":["function () ","plotlyVisDat"]},"cur_data":"b8fd3418da3f","attrs":{"b8fd3418da3f":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"scatter","mode":"markers","marker":{"color":"red"},"hovertext":["Quito, Ecuador","Lima, Peru","Iowa, USA","Pretoria, South Africa","Muizenberg, South Africa","Ocala, FLorida, USA","Mexico City, Mexico","Monterrey, Nuevo Leon, Mexico","California, USA","North Macedonia"],"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"mapType":"geo","showlegend":false,"geo":{"domain":{"x":[0,1],"y":[0,1]},"showland":true,"showcountries":true,"showocean":true,"countrywidth":0.7,"landcolor":"#80BFA6","oceancolor":"#808CB3","projection":{"type":"orthographic","rotation":{"lon":-100,"lat":10,"roll":0}},"lonaxis":{"showgrid":true,"gridcolor":"rgba(51,51,51,1)","gridwidth":0.2},"lataxis":{"showgrid":true,"gridcolor":"rgba(51,51,51,1)","gridwidth":0.2}},"title":"","hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"type":"scattergeo","mode":"markers","marker":{"color":"red","line":{"color":"rgba(31,119,180,1)"}},"hovertext":["Quito, Ecuador","Lima, Peru","Iowa, USA","Pretoria, South Africa","Muizenberg, South Africa","Ocala, FLorida, USA","Mexico City, Mexico","Monterrey, Nuevo Leon, Mexico","California, USA","North Macedonia"],"line":{"color":"rgba(31,119,180,1)"},"geo":"geo","lat":[-0.1806532,-12.0463731,41.8780025,-25.7478676,-34.0898847,29.1871986,19.4326077,25.6866142,36.778261,41.608635],"lon":[-78.4678382,-77.042754,-93.097702,28.2292712,18.495859,-82.1400923,-99.133208,-100.3161126,-119.4179324,21.745275],"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 <div id="current-projects." class="section level2">
 <h2>Current projects.</h2>
-<p>I’m currently working as a post-doctoral researcher at the <a href="https://cadms.vetmed.ucdavis.edu/">Center for Animal Disease Modeling and Surveillance at UC Davis</a></p>
-<div id="spatio-temporal-trends-of-covid-19-in-mexico-city" class="section level3">
-<h3>Spatio temporal trends of COVID-19 in Mexico city</h3>
-<p>Mexico city is one of the largests cities in the world with a very complex population dynamic. In this project we used spatio-temporal methods to quantify the impact of COVID-19 at city level in Mexico City and explored the effect of different socio-economic characteristics in a increased risk of the incidence of the disease. THis project is currently under peer review.</p>
-<p><img src="Images/COVIDMx.png" style="width:70%" align="center"></p>
+<p>I’m currently working as a post-doctoral researcher at the <a
+href="https://cadms.vetmed.ucdavis.edu/">Center for Animal Disease
+Modeling and Surveillance at UC Davis</a></p>
+<div id="quantrra-a-framewrok-for-quantitative-rapid-risk-assessment."
+class="section level3">
+<h3>QuantRRA: A framewrok for quantitative rapid risk assessment.</h3>
+<p>QuantRRA is a package for rapid risk assessment developed for the
+statistical software R with the objective of providing a open source
+framework for a more transparent and reproducible risk assessment. This
+R package also includes an interactive interface for people that is not
+familiarized to coding environments. This project proposes a free
+alternative to software such as <span class="citation">@Risk</span>.</p>
+<p><img src="Images/QuantRRA/RunQuantRRA.gif" style="width:50%" align="center"></p>
 </div>
-<div id="the-impact-of-prrs-in-the-swine-industry" class="section level3">
+<div id="the-impact-of-prrs-in-the-swine-industry"
+class="section level3">
 <h3>The impact of PRRS in the swine industry</h3>
-<p>Porcine reproductive and respiratory syndrome is a disease that affects the swine industry and has been a challenge to control in north america. In this project we developed a intra farm agent based model to estimate the effect of interventions to reduce the impact of the disease.</p>
+<p>Porcine reproductive and respiratory syndrome is a disease that
+affects the swine industry and has been a challenge to control in north
+america. In this project we developed a intra farm agent based model to
+estimate the effect of interventions to reduce the impact of the
+disease.</p>
 <p><img src="Images/PRRS_Model.png" style="width:70%" align="center"></p>
 </div>
-<div id="foot-and-mouth-disease-modeling-in-ecuador." class="section level3">
+<div id="foot-and-mouth-disease-modeling-in-ecuador."
+class="section level3">
 <h3>Foot and mouth disease modeling in Ecuador.</h3>
-<p>Foot and mouth disease(FMD) is a viral disease that affects cloven hoofed animals such as cows, pigs, sheep, among other domestic and wildlife ruminants. The importance of the disease is in the economic impact for affected countries. There has been great advances towards the eradication of the disease in South America in the last couple of years. Ecuador is in the last phase of eradication and the veterinary services is working hard on the eradication program. In this project in collaboration with AGROCALIDAD and PANAFTOSA, we apply tools from network theory and geostatistics to to develop tools that inform decision making.</p>
+<p>Foot and mouth disease(FMD) is a viral disease that affects cloven
+hoofed animals such as cows, pigs, sheep, among other domestic and
+wildlife ruminants. The importance of the disease is in the economic
+impact for affected countries. There has been great advances towards the
+eradication of the disease in South America in the last couple of years.
+Ecuador is in the last phase of eradication and the veterinary services
+is working hard on the eradication program. In this project in
+collaboration with AGROCALIDAD and PANAFTOSA, we apply tools from
+network theory and geostatistics to to develop tools that inform
+decision making.</p>
 <p><img src="Images/Ecuador.jpeg" style="width:50%" align="center"></p>
 <hr />
 </div>
@@ -444,25 +475,74 @@ I am also interested in the accessibility of tools that can be used to support d
 <h2>Other Side Quests.</h2>
 <div id="consulting" class="section level3">
 <h3>Consulting</h3>
-<p>Since 2018, I also collaborate as consultant for the Veterinary Center for Clinical Trials of the Veterinary Teaching Hospital of UC Davis. As part of my work there I assist on study design, sample size estimation and data analysis. You can <a href="https://www.picktime.com/6b6b1cbf-8f49-47a6-9a39-65573880dd13">book me</a> trough my department website</p>
+<p>Since 2018, I also collaborate as consultant for the Veterinary
+Center for Clinical Trials of the Veterinary Teaching Hospital of UC
+Davis. As part of my work there I assist on study design, sample size
+estimation and data analysis. You can <a
+href="https://www.picktime.com/6b6b1cbf-8f49-47a6-9a39-65573880dd13">book
+me</a> trough my department website</p>
 </div>
 <div id="development-of-web-applications." class="section level3">
 <h3>Development of web applications.</h3>
-<p>I am interested in the development of applications to make more accessible research and analysis of information. In the past I’ve developed applications for data collection, risk assessment, and visualization of complex data sets.</p>
-<p><img src="Images/Sidequests/NM_Dashboard.png" style="width:300px;"><img src="Images/Sidequests/RA_Dashboard.png" style="width:300px;"><img src="Images/Sidequests/SNA_SA_Dashboard.png" style="width:300px;"></p>
+<p>I am interested in the development of applications to make more
+accessible research and analysis of information. In the past I’ve
+developed applications for data collection, risk assessment, and
+visualization of complex data sets.</p>
+<p><img src="Images/Sidequests/NM_Dashboard.png" style="width:200px;"><img src="Images/Sidequests/RA_Dashboard.png" style="width:200px;"><img src="Images/Sidequests/SNA_SA_Dashboard.png" style="width:200px;"></p>
+</div>
+<div id="data-perception" class="section level3">
+<h3>Data perception</h3>
+<p>I like exploring new perspectives in data visualization. Here are
+some examples of the experimental tools I like to use:</p>
+<div id="d-data-visualization" class="section level4">
+<h4>3D data visualization</h4>
+<p><img src="Images/Sidequests/experimental/NeuralTDA.png" style="width:50%" align="center"></p>
+</div>
+<div id="augmented-reality" class="section level4">
+<h4>Augmented reality</h4>
+<p><img src="Images/Sidequests/experimental/AR01.jpg" style="width:200px;"><img src="Images/Sidequests/experimental/AR02.jpg" style="width:200px;"><img src="Images/Sidequests/experimental/AR03.jpg" style="width:200px;"></p>
+</div>
+<div id="data-sonification" class="section level4">
+<h4>Data Sonification</h4>
+<p><img src="Images/Sidequests/experimental/sonification.jpeg" style="width:50%" align="center"></p>
 <hr />
+</div>
 </div>
 </div>
 <div id="previous-projects" class="section level2">
 <h2>Previous projects</h2>
-<div id="testing-and-vaccination-to-reduce-the-impact-of-covid-19-in-nursery-homes." class="section level3">
-<h3>Testing and Vaccination to reduce the impact of COVID 19 in nursery homes.</h3>
-<p>Residents of long-term care facilities have experienced a disproportionate burden of the COVID-19 pandemic. In this project we use Agent based modeling to explore the interventions such as testing and vaccination in reducing the impact of COVID-19 outbreaks in nursery homes. Pre print for this project can be found in this <a href="https://www.medrxiv.org/content/10.1101/2021.03.22.21254125v1">Link</a></p>
+<div id="spatio-temporal-trends-of-covid-19-in-mexico-city"
+class="section level3">
+<h3>Spatio temporal trends of COVID-19 in Mexico city</h3>
+<p>Mexico city is one of the largests cities in the world with a very
+complex population dynamic. In this project we used spatio-temporal
+methods to quantify the impact of COVID-19 at city level in Mexico City
+and explored the effect of different socio-economic characteristics in a
+increased risk of the incidence of the disease. THis project is
+currently under peer review.</p>
+<p><img src="Images/COVIDMx.png" style="width:70%" align="center"></p>
+</div>
+<div
+id="testing-and-vaccination-to-reduce-the-impact-of-covid-19-in-nursery-homes."
+class="section level3">
+<h3>Testing and Vaccination to reduce the impact of COVID 19 in nursery
+homes.</h3>
+<p>Residents of long-term care facilities have experienced a
+disproportionate burden of the COVID-19 pandemic. In this project we use
+Agent based modeling to explore the interventions such as testing and
+vaccination in reducing the impact of COVID-19 outbreaks in nursery
+homes. Pre print for this project can be found in this <a
+href="https://www.medrxiv.org/content/10.1101/2021.03.22.21254125v1">Link</a></p>
 <p><img src="Images/COVIDNH/COVIDNHSchematics.png" style="width:50%" align="center"></p>
 </div>
 <div id="classical-swine-fever-in-peru." class="section level3">
 <h3>Classical Swine Fever in Peru.</h3>
-<p>Classical Swine Fever is a viral disease that affects the swine industry. In Peru, the disease is endemic and there is a current vaccination program. We applied methodologies from network theory and regression analysis to investigate the asociation of the incidence of the disaese with socio economic factors and the networ structure, and evaluate the vaccination program.</p>
+<p>Classical Swine Fever is a viral disease that affects the swine
+industry. In Peru, the disease is endemic and there is a current
+vaccination program. We applied methodologies from network theory and
+regression analysis to investigate the asociation of the incidence of
+the disaese with socio economic factors and the networ structure, and
+evaluate the vaccination program.</p>
 <p><img src="Images/Peru.jpg" style="width:30%" align="center"></p>
 <hr />
 </div>

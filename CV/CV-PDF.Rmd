@@ -65,29 +65,33 @@ University of California Davis. Davis, California, United States - Teaching assi
 University of California Davis. Davis, California, United States - Teaching assistant on medical statistics (MPM 204)
 *January 2018 - March 2019*
 
-## Workhsops and training provided:
+## Workshops, trainings and other courses developed:
 
-#### Spatiotemporal analysis of social networks  
-This workshops covers basic concepts of spatial analysis, network theory, and how to incorporate spatio-temporal dynamics in the analysis of contact networks. This workshop has been offered multiple times in both Spanish and English, having a wide variety of participants including academics, government and industry. 
-In the past, the workshop has been offered at:
-
-  - *International Conference in Animal Health Research (ICAHS), Coppenhagen, Denmark*, May 2022 17 participants
-  - *ASF NIFAF virtual workshop*, ~40 participants.
-  - *Universidad Nacional Autonoma de Mexico, Mexico City, Mexico*, November, 2019, ~20 participants.
-  - *Geovet 2019, University of California Davis*, October 2019, 9 participants
-  - *Maptime Davis, University of California Davis*, February 2019, ~25 participants
+  - Interactive data visualization of complex systems with R shiny, offered at:
+    - *Bayarea Geo, University of San Francisco*, October 2022, 6 participants.
+    - *Universidad Nacional Autonoma de Mexico, Virtual workshop*, March 2022, ~8 participants.
+    
+  - Spatiotemporal analysis of social networks, offered at:  
+    - *International Conference in Animal Health Research (ICAHS), Coppenhagen, Denmark*, May 2022 17 participants
+    - *ASF NIFAF virtual workshop*, ~40 participants.
+    - *Universidad Nacional Autonoma de Mexico, Mexico City, Mexico*, November, 2019, ~20 participants.
+    - *Geovet 2019, University of California Davis*, October 2019, 9 participants
+    - *Maptime Davis, University of California Davis*, February 2019, ~25 participants
+    
 
 #### Other workshops:
 Other workshops provided in the past have covered concepts in statistical programming, data visualization and spatial analysis with open access tools. Some of these workshops include: 
 
   - Fundamentos para el manejo y analisis de datos con R, *Instituto Nacional de Investigaciones Forestales Agricolas y Pecuarias, virtual workshop*, May 2022, ~20 participants.
-  - Interactive data visualization of complex structures with R shiny, *Universidad Nacional Autonoma de Mexico, Virtual workshop*, March 2022, ~8 participants.
-  - Herramientas geoestadisticas en epidemiologia, *Agrocalidad, Quito, Pichincha, Ecuador*, August 12-15, 2019, ~20 participants.
+  - Geting started with R for inference in epidemiology, *Agencia de Regulación y Control Fito y Zoosanitario - AGROCALIDAD, Quito, Pichincha, Ecuador*, August 2018, 12 participants.
 
   
 ________________________
 
 # Publications:
+
+  - Ngoshe YB, Etter E, **Gomez-Vazquez JP**, Thompson PN. Knowledge, Attitudes, and Practices of Communal Livestock Farmers regarding Animal Health and Zoonoses in Far Northern KwaZulu-Natal, South Africa. International Journal of Environmental Research and Public Health. 2023; 20(1):511. https://doi.org/10.3390/ijerph20010511
+  
   - Ball EE, Pesavento PA, Van Rompay KKA, Keel MK, Singapuri A, **Gomez-Vazquez JP**, et al. (2022) Zika virus persistence in the male macaque reproductive tract. PLoS Negl Trop Dis 16(7): e0010566. https://doi.org/10.1371/journal.pntd.0010566
   
   - **Gómez-Vázquez, J.P**., García, Y.E., Schmidt, A.J. et al. Testing and vaccination to reduce the impact of COVID-19 in nursing homes: an agent-based approach. BMC Infect Dis 22, 477 (2022). https://doi.org/10.1186/s12879-022-07385-4

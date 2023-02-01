@@ -27,10 +27,10 @@ navbar:
       href: https://jpablo91.youcanbook.me
     - icon: fa-github-alt
       text: Github
-      href: https://github.com/jpablo91
-    - icon: fa-linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/pablo-gomez-v-b19553129/
+      href: https://github.com/spablotemporal
+    - icon: fa-book
+      text: ResearchGate
+      href: https://www.researchgate.net/profile/Jose-Gomez-Vazquez?ev=hdr_xprf
     - icon: fa-optin-monster
       text: email me
       href: mailto:jpgo@ucdavis.edu

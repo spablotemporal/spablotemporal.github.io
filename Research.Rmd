@@ -86,13 +86,11 @@ fig
 
 I'm currently working as a post-doctoral researcher at the [Center for Animal Disease Modeling and Surveillance at UC Davis](https://cadms.vetmed.ucdavis.edu/)  
   
-  
-### Spatio temporal trends of COVID-19 in Mexico city
-  
-Mexico city is one of the largests cities in the world with a very complex population dynamic. In this project we used spatio-temporal methods to quantify the impact of COVID-19 at city level in Mexico City and explored the effect of different socio-economic characteristics in a increased risk of the incidence of the disease. THis project is currently under peer review.  
+### QuantRRA: A framewrok for quantitative rapid risk assessment.   
 
-<img src="Images/COVIDMx.png" style="width:70%" align="center">
-  
+QuantRRA is a package for rapid risk assessment developed for the statistical software R with the objective of providing a open source framework for a more transparent and reproducible risk assessment. This R package also includes an interactive interface for people that is not familiarized to coding environments. This project proposes a free alternative to software such as @Risk. 
+
+<img src="Images/QuantRRA/RunQuantRRA.gif" style="width:50%" align="center">
   
 ### The impact of PRRS in the swine industry
 
@@ -120,13 +118,39 @@ Since 2018, I also collaborate as consultant for the Veterinary Center for Clini
 I am interested in the development of applications to make more accessible research and analysis of information. In the past I've developed applications for data collection, risk assessment, and visualization of complex data sets.
 
 
-<img src="Images/Sidequests/NM_Dashboard.png" style="width:300px;"><img src="Images/Sidequests/RA_Dashboard.png" style="width:300px;"><img src="Images/Sidequests/SNA_SA_Dashboard.png" style="width:300px;">
+<img src="Images/Sidequests/NM_Dashboard.png" style="width:200px;"><img src="Images/Sidequests/RA_Dashboard.png" style="width:200px;"><img src="Images/Sidequests/SNA_SA_Dashboard.png" style="width:200px;">
+
+
+### Data perception
+
+I like exploring new perspectives in data visualization. Here are some examples of the experimental tools I like to use: 
+
+#### 3D data visualization
+
+<img src="Images/Sidequests/experimental/NeuralTDA.png" style="width:50%" align="center">
+
+#### Augmented reality
+
+<img src="Images/Sidequests/experimental/AR01.jpg" style="width:200px;"><img src="Images/Sidequests/experimental/AR02.jpg" style="width:200px;"><img src="Images/Sidequests//experimental/AR03.jpg" style="width:200px;">
+
+#### Data Sonification
+
+<img src="Images/Sidequests/experimental/sonification.jpeg" style="width:50%" align="center">
+
 
 ________________________
 
 
 
 ## Previous projects
+
+
+### Spatio temporal trends of COVID-19 in Mexico city
+  
+Mexico city is one of the largests cities in the world with a very complex population dynamic. In this project we used spatio-temporal methods to quantify the impact of COVID-19 at city level in Mexico City and explored the effect of different socio-economic characteristics in a increased risk of the incidence of the disease. THis project is currently under peer review.  
+
+<img src="Images/COVIDMx.png" style="width:70%" align="center">
+
 
 ### Testing and Vaccination to reduce the impact of COVID 19 in nursery homes. 
 
