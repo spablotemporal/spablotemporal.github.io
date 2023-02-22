@@ -1,0 +1,31 @@
+---
+title: "DataArt"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = F, message = F)
+library(dplyr); library(ggplot2); library(ggpubr);library(Pabloverse)
+```
+
+# Data visualization
+
+## 3D visualization
+
+## Augmented reality
+
+# Creative coding
+
+## Ray marching
+
+## Feedback 
+
+## Celular automata
+
+## Machine learning
+
+# Data sonification
+

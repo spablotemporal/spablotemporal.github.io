@@ -19,6 +19,8 @@ navbar:
     href: CV.html
   - text: Training
     href: Training.html
+  - text: Data Art
+    href: DataArt.html
     
   - text: Contact
     menu:
