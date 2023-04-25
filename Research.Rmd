@@ -17,25 +17,26 @@ output:
 ________________________
 
 
-## Research Interest
+# Research Interest
 
 I find exciting the applications of spatio-temporal statistics and network theory to study the dynamic of diseases in populations and the impact of anthropogenic activities in human, animal and environmental health.  
 I am also interested in the accessibility of tools that can be used to support decision making. Most of my work is available trough my github profile and I enjoy working with others to develop open access tools (i.e. r packages, dashboards for data collection, visualization and analysis, among others). 
 
 ________________________
 
-# Places of previous and ongoing collaborations
+## Places of previous and ongoing collaborations
 
 ```{r echo=FALSE, warning = F, message = F}
 library(dplyr); library(plotly)
 library(ggmap)
 register_google(key = "AIzaSyBGmagUalZVXS-8eoCTfyoGYm_m6AxcEt8", write = TRUE)
 Locations <- data.frame(location = c('Quito, Ecuador', 
+                                     'Port of Spain, Trinidad and Tobago',
                                      'Lima, Peru',
                                      'Iowa, USA',
                                      'Pretoria, South Africa',
                                      'Muizenberg, South Africa', 
-                                     'Ocala, FLorida, USA',
+                                     'Ocala, Florida, USA',
                                      'Mexico City, Mexico', 'Monterrey, Nuevo Leon, Mexico',
                                      'California, USA',
                                      'North Macedonia'))
@@ -82,11 +83,25 @@ fig <- plot_geo(Locations) %>%
 fig
 ```
 
-## Current projects.
+```{r eval = F, include = F}
+w <- st_as_sf(rnaturalearthdata::countries110)
+
+
+map <- ggplot() +
+  geom_sf(data = w, fill = '#F9DBBB', col = 'grey10', lwd = 0.08) +
+  geom_point(data = Locations, aes(x = lon, y = lat), col = '#FF0303', pch = 18, size = 4) +
+  theme_void()
+
+map %>% 
+  ggsave(filename = 'Images/world.png', width = 7, height = 4)
+```
+
+
+# Current projects.
 
 I'm currently working as a post-doctoral researcher at the [Center for Animal Disease Modeling and Surveillance at UC Davis](https://cadms.vetmed.ucdavis.edu/)  
   
-### QuantRRA: A framewrok for quantitative rapid risk assessment.   
+### QuantRRA: A framework for quantitative rapid risk assessment.   
 
 QuantRRA is a package for rapid risk assessment developed for the statistical software R with the objective of providing a open source framework for a more transparent and reproducible risk assessment. This R package also includes an interactive interface for people that is not familiarized to coding environments. This project proposes a free alternative to software such as @Risk. 
 
@@ -107,7 +122,7 @@ Foot and mouth disease(FMD) is a viral disease that affects cloven hoofed animal
 
 ________________________
 
-## Other Side Quests.
+# Other Side Quests.
 
 ### Consulting 
 
@@ -142,7 +157,7 @@ ________________________
 
 
 
-## Previous projects
+# Previous projects
 
 
 ### Spatio temporal trends of COVID-19 in Mexico city

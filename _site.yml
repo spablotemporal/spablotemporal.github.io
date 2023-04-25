@@ -8,7 +8,7 @@ output:
 navbar:
   logo:
     image: Images/LogoNB.png
-    href: https://www.rstudio.com
+    href: https://www.spablo-temporal.network
   title: "<img id=\"logo\" style=\"width: 30px;\" src=\"Images/logo-nb.png\" />"
   right:
   - text: Home

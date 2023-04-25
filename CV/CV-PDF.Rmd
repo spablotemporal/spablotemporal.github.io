@@ -1,17 +1,18 @@
 ---
-title: ""
+title: ''
 output:
-  pdf_document: 
-  keep_tex: true
+  pdf_document: null
+  keep_tex: yes
   includes:
-        in_header: header.tex
+    in_header: header.tex
   html_notebook: default
+  word_document: default
 ---
 
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=3cm]{Headshot.png}
-\end{figure}
+<!-- \begin{figure}[htp] -->
+<!--     \centering -->
+<!--     \includegraphics[width=3cm]{Headshot.png} -->
+<!-- \end{figure} -->
 
 \begin{center}
 Jose Pablo Gomez-Vazquez 
@@ -38,35 +39,39 @@ ________________________
 
 # Profesional Experience:
 
-Department of Veterinary Medicine and Epidemiology, University of California Davis. Davis, California, United States - **Post doctoral researcher**
+**Post doctoral researcher** - Department of Veterinary Medicine and Epidemiology, University of California Davis. Davis, California, United States,
 *January 2022 - Current*
 
-Department of Veterinary Medicine and Epidemiology, University of California Davis. Davis, California, United States - **Graduate Student Researcher**
+**Graduate Student Researcher** - Department of Veterinary Medicine and Epidemiology, University of California Davis. Davis, California, United States,
 *June 2020 - December 2021*
 
-Department of Population Health and Reproduction, University of California Davis. Davis, California, United States - **Graduate Student Researcher**
+**Graduate Student Researcher** - Department of Population Health and Reproduction, University of California Davis. Davis, California, United States,
 *August 2019 - June 2020*
 
-One Health Institute, University of California Davis. Davis, California, United States - **Graduate Student Researcher**
+**Graduate Student Researcher** - One Health Institute, University of California Davis. Davis, California, United States,
 *January 2018 - March 2018*
   
 
 # Teaching Experience:
 
-University of California Davis. Davis, California, United States - Co-Instructor on Health and Ecological Risk Analysis (EPI 224)
+**Health and Ecological Risk Analysis (EPI 224)**, Co-Instructor - University of California Davis. Davis, California, United States,
 *March 2022 - June 2022*
 
-University of California Davis. Davis, California, United States - Teaching assistant on Spatial epidemiology (EPI 223)
+**Spatial epidemiology (EPI 223)**, Teaching assistant - University of California Davis. Davis, California, United States,
 *March 2019 - June 2019*
 
-University of California Davis. Davis, California, United States - Teaching assistant on Mathematical Statistics (EPI 203)
+**Mathematical Statistics (EPI 203)**, Teaching assistant - University of California Davis. Davis, California, United States,
 *January 2019 - March 2019*
 
-University of California Davis. Davis, California, United States - Teaching assistant on medical statistics (MPM 204)
+**Medical statistics (MPM 204)**, Teaching assistant - University of California Davis. Davis, California, United States, 
 *January 2018 - March 2019*
 
 ## Workshops, trainings and other courses developed:
 
+  - Using R for reproducible research in animal health, offered at:
+    - *Chattogram Veterinary and Animal Sciences University, Chattogram, Bangladesh*, May 2023
+    - *The Ministry of Agriculture, Land and Fisheries MALF, Port of Spain, Trinidad and Tobago*, May 2023
+    
   - Interactive data visualization of complex systems with R shiny, offered at:
     - *Bayarea Geo, University of San Francisco*, October 2022, 6 participants.
     - *Universidad Nacional Autonoma de Mexico, Virtual workshop*, March 2022, ~8 participants.
@@ -126,7 +131,15 @@ ________________________
   - Live pig trade network modeling and prediction using Network analysis and exponential random graph models in Peru, June 2018, *25th International Pig Veterinary Society Congress”, Chongging Yuelai, China*
   - Herramientas bioinformáticas para el estudio de la microbiota intestinal” (Bioinformatics tools for gastrointestinal microbiota analysis), October 2015, *“XXVIII Congreso Nacional de Investigación en Medicina UANL” (National symposium of Medical research UANL), Monterrey N.L., Mexico*
   - Perfil metabólico de comunidades microbianas en heces de aves en cautiverio” (Metabolic profiles of pet birds microbiota), October 2015, *“4th KALAANKAB Symposium”, Villahermosa, Tabasco, Mexico*
+  
+## Other talks:
+
+  - [Simulation modeling for the evaluation of the introduction and spread of ASF, 2nd Working meeting: The role of wildlife in potential spread of ASFv in the American Continent, GF-TADS, WOAH, March 2023](https://rr-americas.woah.org/en/events/2nd-working-meeting-the-role-of-wildlife-in-potential-spread-of-asfv-in-the-american-continent/)
+  - [Evaluacion de estrategias de control y prevencion de enfermedades transfronterizas mediante el uso de modelos de simulacion, 30ª Reunión anual CONASA, October 2022](https://youtu.be/TxhmnWahgpI?t=6322)
+  - [Aplicacion de modelaje para simular una emergencia de fiebre aftosa, SEMINARIO INTERNACIONAL PRE COSALFA 49 - “En el contexto de un estatus de libre sin vacunación, PAHO, WHO", August 2022](https://www.youtube.com/live/MDpyuaJB544?feature=share&t=3353)
 
 ### Organization
 
   - Management and local organizing team, *GeoVet 2019, Davis, California, United States*
+  
+  

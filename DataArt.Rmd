@@ -17,13 +17,19 @@ library(dplyr); library(ggplot2); library(ggpubr);library(Pabloverse)
 
 ## Augmented reality
 
+
+
 # Creative coding
 
 ## Ray marching
 
+<<<<<<< HEAD
 Ray marching is a 3D modeling technique that I find really interesting. On brief, raymarching simulates a canvas where the pixels try to represent a 3 dimensional scene based on code. This technique can achieve some really interesting and abstract scenes. To me is trying to explain with code to a computer how to see the an imaginary landscape. Here are some examples of my work with Raymarching: 
 
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/801443984?h=8a9dc0b790" width="640" height="640" frameborder="0" allowfullscreen></iframe>
+=======
+<div style="padding:30% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/801443984?h=8a9dc0b790&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="RM_01"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+>>>>>>> bfe2c25 (updated CV)
 
 ## Feedback 
 
