@@ -9,10 +9,10 @@ output:
   word_document: default
 ---
 
-<!-- \begin{figure}[htp] -->
-<!--     \centering -->
-<!--     \includegraphics[width=3cm]{Headshot.png} -->
-<!-- \end{figure} -->
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=3cm]{Headshot.png}
+\end{figure}
 
 \begin{center}
 Jose Pablo Gomez-Vazquez 
@@ -73,6 +73,7 @@ ________________________
     - *The Ministry of Agriculture, Land and Fisheries MALF, Port of Spain, Trinidad and Tobago*, May 2023
     
   - Interactive data visualization of complex systems with R shiny, offered at:
+    - *Geovet 2023, Silvi Marina, Teramo, Italy*
     - *Bayarea Geo, University of San Francisco*, October 2022, 6 participants.
     - *Universidad Nacional Autonoma de Mexico, Virtual workshop*, March 2022, ~8 participants.
     
