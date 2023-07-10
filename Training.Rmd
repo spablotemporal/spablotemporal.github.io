@@ -2,27 +2,31 @@
 title: "Training"
 ---
 
-One of my interests is in building bridges with different institutions that can promote future collaborations. I'm interested in exchanging ideas and knowledge with others. With contributions of different collaborators, I have created a couple of workshops that I have been offering since 2019. Some of these workshop has been offered multiple times in both Spanish and English, having a wide variety of participants including academics, government and industry from different countries.  
+One of my interests is in building bridges with different institutions that can promote future collaborations. I'm interested in exchanging ideas and knowledge with others. With contributions of different collaborators, I have created a couple of workshops that I have been offering since 2019. Some of these workshop has been offered multiple times in both Spanish and English, having a wide variety of participants including academics, government and industry from different countries. Workshops are available both remote and in person formats.  
 
 Other topics for workshops might be available upon request.  
 
   
-<img src="Images/WS19.jpg">  
+![](Images/workshops/unam19.jpg)
+
+<img src="Images/workshops/bangladesh.jpg" style="width:450px;"><img src="Images/workshops/mgsa_dataViz.jpeg" style="width:450px;">
+
   
   
   
 ________________________
 
-## Getting started with R studio for research and development
+## Getting started with R for epidemiology research
 
-This is an introduction to R studio and how to integrate it for research. Some of the topics covered include:
+This is an introduction to R studio and how to integrate it for research with emphasis in epidemiology. Some of the topics covered include:
   
   - Project organization and version control
-  - Basics of R programming
-  - Basics of data visualization
-  - Using Rstudio to write your manuscripts and manage references
-  - Automate report generation.
-  
+  - R programming
+  - Data processing
+  - Data visualization
+
+[More information](https://cadms-ucd.github.io/PROCINORTE_TT/index.html)  
+
 ________________________
 
 ## R for statistical analysis

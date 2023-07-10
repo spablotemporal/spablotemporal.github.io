@@ -37,6 +37,7 @@ Locations <- data.frame(location = c('Quito, Ecuador',
                                      'Pretoria, South Africa',
                                      'Muizenberg, South Africa', 
                                      'Ocala, Florida, USA',
+                                     'Chittagong, Bangladesh',
                                      'Mexico City, Mexico', 'Monterrey, Nuevo Leon, Mexico',
                                      'California, USA',
                                      'North Macedonia'))
