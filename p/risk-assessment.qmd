@@ -22,6 +22,8 @@ title-slide-attributes:
 
 ![](img/ra/ModelTbl.png){.fragment .fade-in-then-out fragment-index=4 fig-align="center"}
 
+![](img/ra/ra-strata.png){.fragment .fade-in-then-out fragment-index=5 fig-align="center"}
+
 
 :::
 
