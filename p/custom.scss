@@ -1,0 +1,100 @@
+// Themes: https://quarto.org/docs/presentations/revealjs/themes.html
+// Other slide options: https://quarto.org/docs/presentations/revealjs/
+
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+
+// fonts
+$font-family-sans-serif: 'Alegreya Sans', sans-serif;
+
+// colors
+$theme-pink: #EBD4EA;
+$theme-light: #99D9DD;
+
+$body-bg: #000 !default;
+$body-color: #EBD4EA !default;
+$link-color: #A0E7B5 !default;
+$selection-bg: #C99CCf !default;
+//$presentation-heading-color: #900;
+
+// headings
+//$presentation-heading-font: "Quicksand", sans-serif !default;
+$presentation-heading-text-transform: uppercase !default;
+//$presentation-heading-font-weight: normal !default;
+//$presentation-heading-letter-spacing: -0.08em;
+
+// code blocks
+$code-block-bg: #758784F0;
+//$code-block-bg: #CFFDDFA0;
+$code-block-border-color: #232;
+
+/*-- scss:mixins --*/
+// TITLE SLIDE --------------------------
+// title
+.title {
+  font-size: 80px !important;
+  //color: red !important;
+}
+// Author name
+.quarto-title-author-name {
+  font-size: 30px;
+  color: #EFEFEF !important;
+}
+
+// Background generator
+@mixin bodyBackground() {
+  @include radial-gradient(#283433, #002320);
+}
+
+/*-- scss:rules --*/
+.pink {
+  color: $theme-pink;
+  //font-weight: bold;
+}
+
+.black{
+  color: #000;
+}
+
+.green{
+  color: #80B061;
+}
+
+.red{
+  color: #D00;
+}
+
+.sectionhead {
+  font-size: 1em;
+  text-align: center;
+  color: $presentation-heading-color;
+  font-family: $presentation-heading-font;
+  background-color: $body-bg;
+  margin: 1px;
+  padding: 2px 2px 2px 2px;
+  width: 120px;
+  border-left: 10px solid;
+}
+
+// Footer panel
+/*
+.reveal .footer {
+ color: #ff0000 !important;
+ display: inline-block ;
+  width: 40px;
+  height: 15px;
+  padding: 5px;
+  border: 1px solid #D0E9D1;
+  background-color: #00000050; 
+}
+*/
+
+// To show fragments in same line
+.inline-fragment {
+  display: flex;
+}
+
+.inline-fragment p {
+  padding-right: 10px;
+}

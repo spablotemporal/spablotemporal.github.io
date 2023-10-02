@@ -1,0 +1,97 @@
+---
+title: "Risk Assesment with QuantRRA"
+author: "Pablo Gomez"
+format: 
+  revealjs:
+    theme: [dark, custom.scss]
+title-slide-attributes:
+    data-background-image: img/bg_main_title.png
+---
+
+## Risk assessment intro{background-image="img/bg.png"}
+
+</br>
+
+:::{.r-stack}
+
+![](img/ra/RiskAnalysisComponents.png){.fragment .fade-in-then-out fragment-index=1 fig-align="center"}
+
+
+![](img/ra/ra-classifications.png){.fragment .fade-in-then-out fragment-index=2 fig-align="center"}
+
+
+![](img/ra/ModelTbl.png){.fragment .fade-in-then-out fragment-index=4 fig-align="center"}
+
+
+:::
+
+## [What do we need?]{.r-fit-text}  {background-image="img/bg.png"}
+
+</br>
+
+:::{.r-stack}
+![](img/ra/models_01.png){.fragment .fade-in-then-out fragment-index="1" style="width:95%;"}
+
+![](img/ra/models_02.png){.fragment .fade-in-then-out fragment-index="2"}
+
+![](img/ra/models_03.png){.fragment .fade-in-then-out fragment-index="3"}
+
+![](img/ra/models_04.png){.fragment .fade-in-then-semi-out fragment-index="4"}
+:::
+
+## Where is QuantRRA development now?{background-image="img/bg.png"}
+
+::::{.columns}
+
+:::{.column width="33%"}
+![](img/ra/github.png){.fragment .fade-in fragment-index=1 fig-align="center"}
+
+:::
+
+:::{.column width="33%"}
+![](img/ra/shiny.png){.fragment .fade-in fragment-index=2 fig-align="center"}
+
+:::
+
+:::{.column width="33%"}
+
+![](img/ra/paper.png){.fragment .fade-in fragment-index=3 fig-align="center"}
+:::
+
+::::
+
+
+## Example of ASF in Spain{background-image="img/bg.png"}
+
+</br>
+
+:::{.r-stack}
+
+![](img/ra/CarolinaModelTree.png){.fragment .fade-in-then-out fragment-index=1}
+
+![](img/ra/CarolinaModelTbl.png){.fragment .fade-in-then-out fragment-index=2}
+
+:::
+
+## Comparison with benchmark software{background-image="img/bg.png"}
+
+![](img/ra/Carolina_Comparison.png){fig-align="center"}
+
+## Can we use the same assumptions?{background-image="img/bg.png"}
+
+-   is a risk assessment needed?
+  - what pathways could be interesting? 
+  - Generic RA for free regions
+  - 
+
+## [Expert opinion]{style="color:black;"} {background-image="img/bg_2.png"}
+
+:::{.r-stack}
+
+![](img/ra/eke-Sections.png){.fragment .fade-in-then-out fragment-index=1}
+
+![](img/ra/eke-Characteristics.png){.fragment .fade-in-then-out fragment-index=2 width="90%"}
+
+:::
+
+## Opportunities for publications...{background-image="img/bg.png"}
