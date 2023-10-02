@@ -71,18 +71,21 @@ title-slide-attributes:
 
 ![](img/ra/CarolinaModelTbl.png){.fragment .fade-in-then-out fragment-index=2}
 
+![](img/ra/carolina-parameters.png){.fragment .fade-in-then-out fragment-index=3 width="40%" fig-align="center"}
+
+
 :::
 
 ## Comparison with benchmark software{background-image="img/bg.png"}
 
 ![](img/ra/Carolina_Comparison.png){fig-align="center"}
 
-## Can we use the same assumptions?{background-image="img/bg.png"}
+<!-- ## Can we use the same assumptions?{background-image="img/bg.png"} -->
 
--   is a risk assessment needed?
-  - what pathways could be interesting? 
-  - Generic RA for free regions
-  - 
+<!-- -   is a risk assessment needed? -->
+<!--   - what pathways could be interesting?  -->
+<!--   - Generic RA for free regions -->
+<!--   -  -->
 
 ## [Expert opinion]{style="color:black;"} {background-image="img/bg_2.png"}
 
@@ -92,6 +95,12 @@ title-slide-attributes:
 
 ![](img/ra/eke-Characteristics.png){.fragment .fade-in-then-out fragment-index=2 width="90%"}
 
+![](img/ra/eke-TP.png){.fragment .fade-in-then-out fragment-index=3 width="70%"}
+
+![](img/ra/eke-Interventions.png){.fragment .fade-in-then-out fragment-index=4 width="70%"}
+
 :::
 
-## Opportunities for publications...{background-image="img/bg.png"}
+## Acknowledgements{background-image="img/bg.png"}
+
+![](img/acknowledgements.png)
