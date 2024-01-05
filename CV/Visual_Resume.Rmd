@@ -1,0 +1,44 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+[Milestone timeline example](https://benalexkeen.com/creating-a-timeline-graphic-using-r-and-ggplot2/)
+[Other visual examples](https://justintsui.com/visual-resume-explained-innovation-specialist/)
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(Pabloverse)
+```
+
+
+```{r}
+data.frame(
+  description = c('DVM' ,'MPVM', 'PhD', 'GSR', 'Post-doc'),
+  type = c('Education', 'Education', 'Education', 'Research', 'Research'),
+  start = c('2010-01-01', '2016-07-01', '2017-09-01', '2017-10-01', '2022-01-01'),
+  end = c('2015-06-01', '2017-07-01', '2021-11-01', '2021-11-01', '2023-01-01')
+) %>% 
+  mutate_at(.vars = c('start', 'end'), .funs = as.Date) %>% 
+  ggplot() +
+  geom_segment(aes(y = type, yend = type, x = start, xend = end, col = type), lwd = 5) +
+  geom_text(aes(y = type, x = start + 150, label = description), col = 'grey90') +
+  scale_color_manual(values = c('red4', 'blue4')) +
+  coord_fixed(ratio = 100) +
+  theme(
+    axis.text.y = element_blank(), axis.ticks.y = element_blank(), 
+    panel.background = element_rect(fill = hCol(h = 0.3, b = 0.99, s = 0.0)), panel.grid = element_line(colour = hCol(h = 0.3, b = 0.95, s = 0.06))
+  ) +
+  labs(y = '')
+```
+
+```{r}
+time_line <- df %>% 
+ ggplot(aes(x = as.Date(start), y = number, color = party_factor)) +
+ geom_segment(aes(xend = as.Date(end), yend = number, color =  party_factor), size = 6) +
+ geom_text(aes(label = order, hjust = ifelse(taoiseach_number < 2, -0.7, 1.1)), size = 8, show.legend = FALSE) +
+ scale_color_manual(values = c("Fine Gael" = "#004266", "Fianna Fáil" = "#FCB322", "Cumann na nGaedheal" = "#D62828"))
+```
+
+

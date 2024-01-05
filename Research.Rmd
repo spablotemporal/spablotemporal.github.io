@@ -100,7 +100,7 @@ map %>%
 
 # Current projects.
 
-I'm currently working as a post-doctoral researcher at the [Center for Animal Disease Modeling and Surveillance at UC Davis](https://cadms.vetmed.ucdavis.edu/)  
+I'm currently working as a Project Scientist at the [Center for Animal Disease Modeling and Surveillance at UC Davis](https://cadms.vetmed.ucdavis.edu/)  
   
 ### QuantRRA: A framework for quantitative rapid risk assessment.   
 

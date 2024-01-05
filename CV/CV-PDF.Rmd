@@ -1,12 +1,12 @@
 ---
 title: ''
 output:
-  pdf_document: null
+  word_document: default
   keep_tex: yes
   includes:
     in_header: header.tex
   html_notebook: default
-  word_document: default
+  pdf_document: null
 editor_options: 
   markdown: 
     wrap: 72
@@ -27,8 +27,11 @@ DVM, MPVM, PhD.
 website: http://www.spablo-temporal.network. 
 
 keywords: stochastic modeling; spatiotemporal statistics; agent based modeling; graph theory; data visualization
+
+updated on: `r Sys.Date()`
 \end{center}
 ```
+
 
 ------------------------------------------------------------------------
 
