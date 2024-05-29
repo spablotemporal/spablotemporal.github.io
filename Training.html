@@ -11,9 +11,9 @@
 
 
 
-<title>Training</title>
+<title>Course Catalog</title>
 
-<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -29,11 +29,14 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -221,6 +224,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -228,6 +294,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -315,23 +391,27 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Training</h1>
+<h1 class="title toc-ignore">Course Catalog</h1>
 
 </div>
 
 
-<p>One of my interests is in building bridges with different
-institutions that can promote future collaborations. I’m interested in
-exchanging ideas and knowledge with others. With contributions of
-different collaborators, I have created a couple of workshops that I
-have been offering since 2019. Some of these workshop has been offered
-multiple times in both Spanish and English, having a wide variety of
-participants including academics, government and industry from different
-countries. Workshops are available both remote and in person
-formats.</p>
+<p>I believe that facilitating information in succinct and clear ways in
+the form of courses, mentoring, and developing teaching materials is as
+important as my research itself to expand the impact and reach of my
+work. I have developed extensive teaching materials in diverse topics,
+both in Spanish and English, at introductory and advanced level. I
+recognize that all my teaching activities are not only beneficial to the
+students I interact with, but are highly valuable to me as well. I have
+learn so much from previous students and continuously improve my
+materials upon the experiences from the diverse audiences is presented
+to. Previous workshops have been developed and adapted to doverse
+audience having a wide variety of participants including academics,
+government and industry from different countries. Workshops are
+available both remote and in person formats.</p>
 <p>Other topics for workshops might be available upon request.</p>
 <p><img src="Images/workshops/unam19.jpg" /></p>
-<p><img src="Images/workshops/bangladesh.jpg" style="width:450px;"><img src="Images/workshops/mgsa_dataViz.jpeg" style="width:450px;"></p>
+<p><img src="Images/workshops/bangladesh.jpg" style="width:300px;"><img src="Images/workshops/mgsa_dataViz.jpeg" style="width:300px;"></p>
 <hr />
 <div id="getting-started-with-r-for-epidemiology-research"
 class="section level2">
@@ -378,8 +458,9 @@ or collection of information. Some of the topics covered includes:</p>
 <li>Uploading your dashboard to a server so it can be shared and
 distributed.</li>
 </ul>
-<p><img src="Images/NM/NM_DashMap.png" style="width:300px;"><img src="Images/Ecu/Ecu_DashScenarios.png" style="width:300px;"><img src="Images/NM/NM_DashCollections.png" style="width:300px;"></p>
-<hr />
+<p><img src="Images/NM/NM_DashMap.png" style="width:250px;"><img src="Images/Ecu/Ecu_DashScenarios.png" style="width:250px;"><img src="Images/NM/NM_DashCollections.png" style="width:250px;"></p>
+<p><a href="https://www.spablo-temporal.network/ShinyWorkshop/">Workshop
+materials</a> ________________________</p>
 </div>
 <div id="geostatistical-tools-for-epidemiology" class="section level2">
 <h2>Geostatistical tools for Epidemiology</h2>
@@ -393,7 +474,7 @@ include:</p>
 <li>Spatial Autocorrelation</li>
 <li>Geostatistical tools for inference.</li>
 </ul>
-<p><img src="Images/T/Map.png" style="width:300px;"><img src="Images/T/RoadUse.png" style="width:300px;"><img src="Images/T/SpatialHex.png" style="width:300px;"></p>
+<p><img src="Images/T/Map.png" style="width:250px;"><img src="Images/T/RoadUse.png" style="width:250px;"><img src="Images/T/SpatialHex.png" style="width:250px;"></p>
 <p>More information <a href="WS1.html">English</a> | <a
 href="WS1Spa.html">Spanish</a></p>
 <hr />
@@ -410,9 +491,28 @@ includes:</p>
 <li>Visualization of spatio-temporal networks.</li>
 <li>Network Based models and applications.</li>
 </ul>
-<p><img src="Images/T/CNT.png" style="width:300px;"><img src="Images/T/TS2.png" style="width:300px;"><img src="Images/T/FNetwork.png" style="width:300px;"></p>
+<p><img src="Images/T/CNT.png" style="width:250px;"><img src="Images/T/TS2.png" style="width:250px;"><img src="Images/T/FNetwork.png" style="width:250px;"></p>
 <p>More information <a href="WS2.html">English</a> | <a
 href="WS2Spa.html">Spanish</a></p>
+<hr />
+</div>
+<div id="risk-assessment-with-quantrra" class="section level2">
+<h2>Risk assessment with quantrra</h2>
+<p>Risk assessment (RA) has been proven to be a valuable tool for
+supporting decision-making. In the context of transboundary animal
+diseases, RA is critical for any disease control program to evaluate the
+risk of a potential introduction and identify areas where reinforced
+surveillance can have higher impact on reducing the risk. Although there
+are several tools available for RA, many of these tools are not very
+accessible and can be time consuming to implement. In this workshop we
+will cover basics of RA using open access tools. We will use examples in
+animal health epidemiology. Learning objectives: This workshop will
+cover the how to develop risk assessment and its implementation with R
+and the quantrra library. Expected outcomes: Participants will have a
+basic understanding on how to develop and implement risk assessment
+using R, and how to interpret the results of the analysis.</p>
+<p><a
+href="http://spablo-temporal.network/ra-workshop/">Materials</a></p>
 <hr />
 <p>More information is available upon request contacting: <a
 href="mailto:jpgo@ucdavis.edu" class="email">jpgo@ucdavis.edu</a></p>
@@ -420,6 +520,8 @@ href="mailto:jpgo@ucdavis.edu" class="email">jpgo@ucdavis.edu</a></p>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -452,6 +554,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

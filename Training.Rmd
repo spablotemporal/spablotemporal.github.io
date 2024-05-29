@@ -1,15 +1,20 @@
 ---
-title: "Training"
+title: "Course Catalog"
+output:
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
-One of my interests is in building bridges with different institutions that can promote future collaborations. I'm interested in exchanging ideas and knowledge with others. With contributions of different collaborators, I have created a couple of workshops that I have been offering since 2019. Some of these workshop has been offered multiple times in both Spanish and English, having a wide variety of participants including academics, government and industry from different countries. Workshops are available both remote and in person formats.  
+I believe that facilitating information in succinct and clear ways in the form of courses, mentoring, and developing teaching materials is as important as my research itself to expand the impact and reach of my work. I have developed extensive teaching materials in diverse topics, both in Spanish and English, at introductory and advanced level. I recognize that all my teaching activities are not only beneficial to the students I interact with, but are highly valuable to me as well. I have learn so much from previous students and continuously improve my materials upon the experiences from the diverse audiences is presented to.
+Previous workshops have been developed and adapted to doverse audience having a wide variety of participants including academics, government and industry from different countries. Workshops are available both remote and in person formats.  
 
 Other topics for workshops might be available upon request.  
 
   
 ![](Images/workshops/unam19.jpg)
 
-<img src="Images/workshops/bangladesh.jpg" style="width:450px;"><img src="Images/workshops/mgsa_dataViz.jpeg" style="width:450px;">
+<img src="Images/workshops/bangladesh.jpg" style="width:300px;"><img src="Images/workshops/mgsa_dataViz.jpeg" style="width:300px;">
 
   
   
@@ -52,8 +57,9 @@ This workshop covers the basics on using shiny to develop interactive dashboards
   - Strategies to make your dashboard more efficient
   - Uploading your dashboard to a server so it can be shared and distributed.
 
-<img src="Images/NM/NM_DashMap.png" style="width:300px;"><img src="Images/Ecu/Ecu_DashScenarios.png" style="width:300px;"><img src="Images/NM/NM_DashCollections.png" style="width:300px;">
+<img src="Images/NM/NM_DashMap.png" style="width:250px;"><img src="Images/Ecu/Ecu_DashScenarios.png" style="width:250px;"><img src="Images/NM/NM_DashCollections.png" style="width:250px;">
 
+[Workshop materials](https://www.spablo-temporal.network/ShinyWorkshop/)
 ________________________
 
 ## Geostatistical tools for Epidemiology
@@ -66,7 +72,7 @@ The aim of this workshop is to provide an overview of different tools to manipul
   - Spatial Autocorrelation
   - Geostatistical tools for inference.
 
-<img src="Images/T/Map.png" style="width:300px;"><img src="Images/T/RoadUse.png" style="width:300px;"><img src="Images/T/SpatialHex.png" style="width:300px;">
+<img src="Images/T/Map.png" style="width:250px;"><img src="Images/T/RoadUse.png" style="width:250px;"><img src="Images/T/SpatialHex.png" style="width:250px;">
 
 More information [English](WS1.html) | [Spanish](WS1Spa.html)
 
@@ -81,11 +87,20 @@ This workshop covers the integration of Network Theory and spatio-Temporal tools
   - Visualization of spatio-temporal networks.
   - Network Based models and applications. 
   
-<img src="Images/T/CNT.png" style="width:300px;"><img src="Images/T/TS2.png" style="width:300px;"><img src="Images/T/FNetwork.png" style="width:300px;">
+<img src="Images/T/CNT.png" style="width:250px;"><img src="Images/T/TS2.png" style="width:250px;"><img src="Images/T/FNetwork.png" style="width:250px;">
 
 More information [English](WS2.html) | [Spanish](WS2Spa.html)
 
 ________________________
 
+## Risk assessment with quantrra
+
+Risk assessment (RA) has been proven to be a valuable tool for supporting decision-making. In the context of transboundary animal diseases, RA is critical for any disease control program to evaluate the risk of a potential introduction and identify areas where reinforced surveillance can have higher impact on reducing the risk. Although there are several tools available for RA, many of these tools are not very accessible and can be time consuming to implement. In this workshop we will cover basics of RA using open access tools. We will use examples in animal health epidemiology.
+Learning objectives: This workshop will cover the how to develop risk assessment and its implementation with R and the quantrra library.
+Expected outcomes: Participants will have a basic understanding on how to develop and implement risk assessment using R, and how to interpret the results of the analysis.
+
+[Materials](http://spablo-temporal.network/ra-workshop/)
+
+________________________
   
 More information is available upon request contacting: jpgo@ucdavis.edu
