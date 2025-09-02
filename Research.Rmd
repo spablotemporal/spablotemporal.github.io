@@ -107,6 +107,12 @@ I'm currently working as a Project Scientist at the [Center for Animal Disease M
 QuantRRA is a package for rapid risk assessment developed for the statistical software R with the objective of providing a open source framework for a more transparent and reproducible risk assessment. This R package also includes an interactive interface for people that is not familiarized to coding environments. This project proposes a free alternative to software such as @Risk. 
 
 <img src="Images/QuantRRA/RunQuantRRA.gif" style="width:50%" align="center">
+
+```{r echo=FALSE}
+knitr::include_app(
+  "https://spablotemporal.shinyapps.io/QuantRRA/"
+)
+```
   
 ### The impact of PRRS in the swine industry
 
@@ -181,5 +187,6 @@ Classical Swine Fever is a viral disease that affects the swine industry. In Per
 <img src="Images/Peru.jpg" style="width:30%" align="center">
 
 ________________________
+
 
 
