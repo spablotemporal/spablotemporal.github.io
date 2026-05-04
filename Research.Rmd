@@ -9,7 +9,7 @@ output:
 <p>
 <img src ="Images/Headshot.png" style="width:30%;float:right">
 
-<h3>Hi I'm Pablo. I have always been fascinated by the application of mathematics to solve problems, I study Diseases in populations and in my free time I enjoy applying concepts of music, math and programming to create [music](https://linktr.ee/synthesaurio).</h3>
+<h3>Hi I'm Pablo. I am a research epidemiologist with experience in simulation modeling, data visualization and mixed methods.
 </p>
 
   
@@ -19,8 +19,7 @@ ________________________
 
 # Research Interest
 
-I find exciting the applications of spatio-temporal statistics and network theory to study the dynamic of diseases in populations and the impact of anthropogenic activities in human, animal and environmental health.  
-I am also interested in the accessibility of tools that can be used to support decision making. Most of my work is available trough my github profile and I enjoy working with others to develop open access tools (i.e. r packages, dashboards for data collection, visualization and analysis, among others). 
+I am interested in exploring the relationship between climate change and public health through the lens of participatory approaches and political ecology. Some of my previous work has been done in collaboration with government and research institutions in different countries in Latin America and Africa; and I have developed models for different transboundary animal diseases, food safety and public health. I have a background in veterinary epidemiology and public health, including a DVM degree, Masters in Preventive Veterinary Medicine and a PhD in Epidemiology, and some experience in community organizing and mutual aid efforts. I am currently pursuing a master's degree in political Ecology and Degrowth.
 
 ________________________
 
@@ -100,7 +99,6 @@ map %>%
 
 # Current projects.
 
-I'm currently working as a Project Scientist at the [Center for Animal Disease Modeling and Surveillance at UC Davis](https://cadms.vetmed.ucdavis.edu/)  
   
 ### QuantRRA: A framework for quantitative rapid risk assessment.   
 
